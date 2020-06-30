@@ -12,6 +12,15 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Define API routes here
+// Connect to the Mongo DB
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mern-storedb";
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/mern-storedb",
+  {
+    useCreateIndex: true,
+    useNewUrlParser: true
+  }
+);
 
 // Send every other request to the React app
 // Define any API routes before this runs
