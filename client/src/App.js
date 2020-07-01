@@ -4,7 +4,8 @@ import Header from "./components/App/Header";
 import Account from "./pages/Account";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup"
+import Signup from "./pages/Signup";
+import Home from "./pages/Home";
 
 
 class App extends Component {
@@ -13,7 +14,8 @@ class App extends Component {
       <Router>
       <Header/>
       <Switch>
-        <Route exact path="/"/>
+        <Route exact path="/" component={Home}/>
+        {/* <Route exact path="/home" component={Home}/> */}
         <Route exact path="/account" component={Account}/>
         <Route exact path="/cart" component={Cart}/>
         <Route exact path="/login" component={Login}/>
@@ -21,7 +23,7 @@ class App extends Component {
         <Route exact path="/logout"/>
       </Switch>
       </Router>
-      
+
     );
   }
 }
