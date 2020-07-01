@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -14,9 +14,9 @@ if (process.env.NODE_ENV === "production") {
 
 // Define API routes here
 // Connect to the Mongo DB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mern-storedb";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mern-storedb";
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/mern-storedb",
+ MONGODB_URI,
   {
     useCreateIndex: true,
     useNewUrlParser: true
