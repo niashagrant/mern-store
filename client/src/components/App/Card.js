@@ -1,32 +1,34 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup'
 
-function Card (props) {
-    return (
-    <>
-    {props.product.map(
-        ( product ) => {
+function Cards (props) {
+    // return (
+    // <>
+    // {props.product (
+    //     ( product ) => {
     return (
         <CardGroup>
             <Card>
-            <Card.Img data-id={product.id} alt={product.name} key src={process.env.PUBLIC_URL + product.image}/>
+            <Card.Img data-id={props.id} alt={props.name} key src={process.env.PUBLIC_URL + props.image}/>
             <Card.Body>
-                <Card.Title> {product.title} </Card.Title>
+                <Card.Title> {props.title} </Card.Title>
                     <Card.Text>
-                        {product.price}
+                        {props.price}
                     </Card.Text>
                     <Card.Text>
-                        {product.description}
+                        {props.description}
                     </Card.Text>
             </Card.Body>
             <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">QUEENS!!!</small>
             </Card.Footer>
             </Card>
         </CardGroup>
-        )}
-    )}
-    </>
+        // )
+    // }
+    // )}
+    // </>
     )
 }
-export default Card;
+export default Cards;
