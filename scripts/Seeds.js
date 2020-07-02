@@ -54,7 +54,7 @@ const products=[{
 
 ]
 
-db.Product.insertMany(products)
+db.Products.insertMany(products)
 .then(res=>{
     console.log(res)
 })

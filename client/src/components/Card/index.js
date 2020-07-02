@@ -12,7 +12,7 @@ function Cards (props) {
             <Card>
             <Card.Img data-id={props.id} alt={props.name} key src={process.env.PUBLIC_URL + props.image}/>
             <Card.Body>
-                <Card.Title> {props.title} </Card.Title>
+                <Card.Title> {props.name} </Card.Title>
                     <Card.Text>
                         {props.price}
                     </Card.Text>
@@ -21,7 +21,7 @@ function Cards (props) {
                     </Card.Text>
             </Card.Body>
             <Card.Footer>
-                <small className="text-muted">QUEENS!!!</small>
+                {/* <small className="text-muted">QUEENS!!!</small> */}
             </Card.Footer>
             </Card>
         </CardGroup>
