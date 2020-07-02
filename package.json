@@ -1,7 +1,7 @@
 {
   "name": "mern-store",
   "version": "1.0.0",
-  "description": "Bootcamp Bodega",
+  "description": "Queen St. Market",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",

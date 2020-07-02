@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container';
+import "./style.css"
 
 function MenuBar() {
 
@@ -9,9 +10,9 @@ function MenuBar() {
 
 return (
 
-<Navbar bg="primary" expand="sm" variant="dark">
+<Navbar expand="sm" variant="dark" className="menubar">
   <Container>
-  <Navbar.Brand href="/">Bootcamp Bodega</Navbar.Brand>
+  <Navbar.Brand href="/">Queen St. Market</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
     <Nav>
