@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./components/App/Header";
+import MenuBar from "./components/MenuBar/MenuBar";
 import Account from "./pages/Account";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-      <Header/>
+      <MenuBar/>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/account" component={Account}/>

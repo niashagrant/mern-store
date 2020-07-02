@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container'
 
-function Header() {
+function MenuBar() {
 
   const user = false;
 
@@ -36,4 +36,4 @@ return (
 }
 
 
-export default Header;
+export default MenuBar;

@@ -21,7 +21,7 @@ function Cards (props) {
                     </Card.Text>
             </Card.Body>
             <Card.Footer>
-                <small className="text-muted">QUEENS!!!</small>
+                {/* <small className="text-muted">QUEENS!!!</small> */}
             </Card.Footer>
             </Card>
         </CardGroup>
