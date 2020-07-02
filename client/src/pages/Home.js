@@ -1,10 +1,17 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Cards from '../components/App/Card'
+
 
 
 function Home() {
 
     return (
-        <h6>Home Page</h6>
+        
+        <Container>
+            <Cards/>
+        </Container>
+
     )
 
 }
