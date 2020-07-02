@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Cards from '../components/App/Card'
+import Cards from '../components/Card'
 
 
 
