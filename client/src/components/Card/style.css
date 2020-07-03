@@ -1,0 +1,13 @@
+.eachCard {
+    width: 175px;
+    float: left;
+    margin-bottom: 2vh;
+    margin-right: 3%;
+    align-content: center;
+}
+
+.cardImg {
+    margin: 0 auto;
+    max-height: 200px;
+    max-width: 150px;
+}

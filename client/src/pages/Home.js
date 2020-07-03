@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Container from 'react-bootstrap/Container';
-import Cards from '../components/Card'
-import axios from 'axios'
+import Cards from '../components/Card';
+import axios from 'axios';
 
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
 
     return (
         
-        <Container>
+        <Container className="productContainer text-center" style={{height: "100vh"}}>
             {products.map(( element, index ) =>  
                 <Cards id={element._id} 
                 name={element.name} 
@@ -26,7 +26,6 @@ function Home() {
                 price={element.price} 
                 description={element.description} /> 
             )}
-            {/* cb function: element(ONE AT A TIME), index of array, array */}
         </Container>
 
     )
