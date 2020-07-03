@@ -1,13 +1,15 @@
-import React from 'react';
-
+import React from "react";
+import SignIn from "../components/SignIn";
+import Container from "react-bootstrap/Container";
 
 function Login() {
-
-    return (
-        <h6>Log-in Page</h6>
-    )
-
+  return (
+    <>
+      <Container>
+        <SignIn />
+      </Container>
+    </>
+  );
 }
-
 
 export default Login;

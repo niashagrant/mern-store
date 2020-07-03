@@ -1,13 +1,14 @@
-import React from 'react';
+import React from "react";
+import SignUp from "../components/SignUp";
 
+import Container from "react-bootstrap/Container";
 
-function Signup() {
-
-    return (
-        <h6>Sign-up Page</h6>
-    )
-
+export default function () {
+  return (
+    <>
+      <Container>
+        <SignUp />
+      </Container>
+    </>
+  );
 }
-
-
-export default Signup;
