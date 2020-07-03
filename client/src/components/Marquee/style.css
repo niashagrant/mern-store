@@ -1,5 +1,11 @@
-.jumbotron {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
+/* .jumbotron {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+} */
+
+img {
+  width: 94%;
+  margin: 3%;
+  margin-top: 0;
 }

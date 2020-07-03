@@ -8,24 +8,22 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 
-
-
 class App extends Component {
   render() {
     return (
       <Router>
-      <Marquee/>
-      <MenuBar/>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/account" component={Account}/>
-        <Route exact path="/cart" component={Cart}/>
-        <Route exact path="/login" component={Login}/>
-        <Route exact path="/signup" component={Signup}/>
-        <Route exact path="/logout"/>
-      </Switch>
-      </Router>
+        <MenuBar />
+        <Marquee />
 
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/account" component={Account} />
+          <Route exact path="/cart" component={Cart} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={Signup} />
+          <Route exact path="/logout" />
+        </Switch>
+      </Router>
     );
   }
 }
