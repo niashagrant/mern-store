@@ -5,7 +5,11 @@ const { String } = mongoose.Schema.Types;
 
 const UserSchema = new mongoose.Schema(
   {
-    name: {
+    firstName: {
+      type: String,
+      required: true,
+    },
+    lastName: {
       type: String,
       required: true,
     },
@@ -17,7 +21,6 @@ const UserSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
-      select: false,
     },
   },
   { timestamps: true }
@@ -25,6 +28,10 @@ const UserSchema = new mongoose.Schema(
 
 UserSchema.methods = {
   checkPassword: function (inputPassword) {
+    console.log("password ", inputPassword);
+    console.log("password ", this.password);
+    console.log("first name ", this.firstName);
+    console.log(this);
     return bcrypt.compareSync(inputPassword, this.password);
   },
   hashPassword: (plainTextPassword) => {
