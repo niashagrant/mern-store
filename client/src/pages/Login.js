@@ -1,13 +1,12 @@
-import React from 'react';
-
+import React from "react";
+import SignIn from "../components/SignIn";
 
 function Login() {
-
-    return (
-        <h6>Log-in Page</h6>
-    )
-
+  return (
+    <>
+      <SignIn />
+    </>
+  );
 }
-
 
 export default Login;
