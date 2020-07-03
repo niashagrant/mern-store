@@ -18,7 +18,7 @@ function Home() {
 
     return (
         
-        <Container className="productContainer text-center" style={{height: "100vh"}}>
+        <Container className="productContainer" style={{height: "100vh"}}>
             {products.map(( element, index ) =>  
                 <Cards id={element._id} 
                 name={element.name} 

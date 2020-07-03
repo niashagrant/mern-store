@@ -1,9 +1,9 @@
 .eachCard {
-    width: 175px;
+    width: 200px;
+    height: 330px;
     float: left;
     margin-bottom: 2vh;
     margin-right: 3%;
-    align-content: center;
 }
 
 .cardImg {
