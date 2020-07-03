@@ -5,3 +5,18 @@
 .card {
   border: none;
 }
+
+/* ============== JENS CODE ============
+.eachCard {
+  width: 200px;
+  height: 330px;
+  float: left;
+  margin-bottom: 2vh;
+  margin-right: 3%;
+}
+
+.cardImg {
+  margin: 0 auto;
+  max-height: 200px;
+  max-width: 150px;
+} */
