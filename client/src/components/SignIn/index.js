@@ -1,14 +1,25 @@
-import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
+import React from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
-class Login extends Component {
-  render() {
-    return (
-      <Container>
-        <h1>Sign In</h1>
-      </Container>
-    );
-  }
+function SignIn(props) {
+  return (
+    <Form>
+      <Form.Group controlId="formBasicEmail">
+        <Form.Label>{props.label}</Form.Label>
+        {props.children}
+      </Form.Group>
+
+      {/* <Form.Group controlId="formBasicPassword">
+        <Form.Label>Password</Form.Label>
+        {props.children}
+      </Form.Group> */}
+
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
+  );
 }
 
-export default Login;
+export default SignIn;
