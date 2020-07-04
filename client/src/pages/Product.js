@@ -1,29 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import ProductCard from '../components/ProductCard';
-import getOneProduct from "../utils/API";
+import API from "../utils/API";
 
 
 function Product(props) {
 
-    const [product, setProduct] = useState({});
+    const [product, setProduct] = useState([]);
     const [error, setError] =useState(false);
 
-    const loadThisProduct = productId => {
-        getOneProduct(productId)
-        .then(data => {
-            console.log(data);
-            if(data.error) {
-                setError(data.error);
-            } else {
-                setProduct(data);
-            }
-        })
-    }
+    // const loadThisProduct = productId => {
+    //     getOneProduct(productId)
+    //     .then(data => {
+    //         console.log(data);
+    //         if(data.error) {
+    //             setError(data.error);
+    //         } else {
+    //             setProduct(data);
+    //         }
+    //     })
+    // }
 
     useEffect(() => {
-        // const productId = props.params.productId;
-        // loadThisProduct = (productId);
+      API.getOneProduct()
+      .then(OneProduct =>{
+          setProduct(OneProduct.data)
+          console.log('dbproducts', OneProduct.data)
+      })
     }, []);
             
     return (

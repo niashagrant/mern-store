@@ -14,10 +14,11 @@ const products={
         })
     },
 
-    findById: function(req, res) {
+    findOne: function(req, res) {
         db.Products
-        .findById(req.params.id)
+        .findOne(req.params._id)
         .then(oneProdDb => {
+            console.log("This is our consolelog")
             console.log(oneProdDb)
             res.json(oneProdDb)
         })
