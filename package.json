@@ -18,7 +18,7 @@
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-prebuild":"npm run seed",
-    "heroku-postbuild": "npm run build && npm run seed"
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
