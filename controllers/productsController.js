@@ -2,7 +2,7 @@ const db= require("../models")
 
 const products={
     findAll: function(req,res){
-        console.log('all product route being hit!')
+        // console.log('all product route being hit!')
         db.Products
         .find(req.query)
         .then(ProdDB=>{

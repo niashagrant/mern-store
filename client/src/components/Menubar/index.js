@@ -6,12 +6,12 @@ import "./style.css"
 
 function MenuBar() {
 
-  const user = false;
+  const user = true;
 
 return (
 
 <Navbar expand="sm" variant="dark" className="menubar">
-  <Container>
+  <Container classname="col col-centered">
   <Navbar.Brand href="/">Queen St. Market</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
