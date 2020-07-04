@@ -2,10 +2,9 @@ import axios from "axios";
 
 
  export default {
-     getProducts: function(){
-         return axios.get("/")
+     getOneProduct: function(productId){
+         return axios.get("/product/" + productId)
          
      }
  }
  
-    

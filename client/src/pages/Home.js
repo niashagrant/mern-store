@@ -24,7 +24,9 @@ function Home() {
                 name={element.name} 
                 image={element.mediaUrl} 
                 price={element.price} 
-                description={element.description} /> 
+                description={element.description}
+                productId={element._id}
+                 /> 
             )}
         </Container>
 
