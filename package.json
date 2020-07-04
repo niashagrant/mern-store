@@ -7,6 +7,9 @@
   "environments":{
     "review":{
       "addons":["mongolab"]
+    },
+    "env": {
+      "NODE_ENV": "development"
     }
   },
   "scripts": {
@@ -17,7 +20,7 @@
     "seed": "node scripts/Seeds.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-prebuild":"npm run seed",
+    "postdeploy": "npm run seed",
     "heroku-postbuild": "npm run build"
   },
   "author": "",
