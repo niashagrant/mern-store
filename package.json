@@ -1,8 +1,14 @@
 {
   "name": "mern-store",
+  "addons":["mongolab:sandbox"],
   "version": "1.0.0",
   "description": "Queen St. Market",
   "main": "server.js",
+  "environments":{
+    "review":{
+      "addons":["mongolab"]
+    }
+  },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
