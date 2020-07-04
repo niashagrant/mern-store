@@ -7,12 +7,6 @@
   "environments":{
     "review":{
       "addons":["mongolab"]
-    },
-    "env": {
-      "NODE_ENV": "development"
-    },
-    "scripts":{
-      "postdeploy": "npm run seed"
     }
   },
   "scripts": {
@@ -23,7 +17,7 @@
     "seed": "node scripts/Seeds.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": " npm run build:app && npm run seed"
   },
   "author": "",
   "license": "ISC",
