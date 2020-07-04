@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 
@@ -10,7 +11,20 @@ function Login() {
         </Container>
     )
 
-}
+=======
+import React from "react";
+import SignIn from "../components/SignIn";
+import Container from "react-bootstrap/Container";
 
+function Login() {
+  return (
+    <>
+      <Container>
+        <SignIn />
+      </Container>
+    </>
+  );
+>>>>>>> cab0a6d0b81dacd10e3577cd534d00d954e44f04
+}
 
 export default Login;
