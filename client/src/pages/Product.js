@@ -12,7 +12,6 @@ function Product(props) {
     const loadThisProduct = productId => {
         getOneProduct(productId)
         .then(data => {
-            console.log("JUST WRITE SOMETHING")
             console.log(data);
             if(data.error) {
                 setError(data.error);
