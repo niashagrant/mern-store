@@ -22,7 +22,7 @@ function Cards(props) {
       </Card.Body>
       <Card.Footer className="d-flex justify-content-center">
         <Link to={`/product/${props.productId}`}>
-          <Button className="btn btn-outline-secondary btn-sm bg-white">View Item</Button>
+          <Button  data-link={props.id} className="btn btn-outline-secondary btn-sm bg-white">View Item</Button>
         </Link>
       </Card.Footer>
     </Card>
