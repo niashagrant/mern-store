@@ -28,8 +28,7 @@ function Product(props) {
     }, []);
             
     return (
-        <Container className="col col-sm-1 col-md-9 col-centered">
-            <h6>{product.name}</h6>
+        <Container className="m-auto">
             <ProductCard
             id={product._id} 
             name={product.name} 

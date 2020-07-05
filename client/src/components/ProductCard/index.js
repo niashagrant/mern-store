@@ -1,11 +1,12 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import "./style.css"
 
 function ProductCard (props) {
 
     return (
-    <Card className="eachCard" style={{flex: 1}}>
+    <Card className="eachProductCard" style={{flex: 1}}>
       <Card.Img
         variant="top"
         className="cardImg"
@@ -15,11 +16,11 @@ function ProductCard (props) {
       <Card.Body>
         <Card.Title> {props.name} </Card.Title>
         <Card.Text>{props.description}</Card.Text>
-        <Card.Text className="float-right">${props.price}</Card.Text>
+
       </Card.Body>
-      <Card.Footer className="d-flex justify-content-center">
-        
-          <Button className="btn btn-outline-secondary btn-sm bg-white">Add to Cart</Button>
+      <Card.Footer className="eachProductFooter">
+      <Card.Text className="float-left text-white">${props.price}</Card.Text>
+          <Button className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart</Button>
        
       </Card.Footer>
     </Card>
