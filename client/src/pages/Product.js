@@ -20,25 +20,33 @@ function Product(props) {
     //         }
     //     })
     // }
+    const loadThisProduct = () =>{
+        API.getOneProduct()
+        .then(OneProduct=>{
+            console.log(OneProduct)
+            if(error){
+                setError(OneProduct.error)
+            }else{
+                setProduct(OneProduct.data)
+            }
+        })
+    }
 
     useEffect(() => {
-      API.getOneProduct()
-      .then(OneProduct =>{
-          setProduct(OneProduct.data)
-          console.log('dbproducts', OneProduct.data)
-      })
+        const productId=product.data
+      loadThisProduct(productId)
     }, []);
             
     return (
         <Container className="col col-sm-1 col-md-9 col-centered">
             <h6>Single Product Page</h6>
             <ProductCard
-            // id={productId._id} 
-            // name={name} 
-            // image={mediaUrl} 
-            // price={price} 
-            // description={description}
-            // productId={_id}
+            id={product._id} 
+            name={product.name} 
+            image={product.mediaUrl} 
+            price={product.price} 
+            description={product.description}
+            
             />
         </Container>
     )
