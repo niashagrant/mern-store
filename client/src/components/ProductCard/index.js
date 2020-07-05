@@ -1,16 +1,14 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import "./style.css";
+import React from 'react';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
-function Cards(props) {
-  return (
+function ProductCard (props) {
+
+    return (
     <Card className="eachCard" style={{flex: 1}}>
       <Card.Img
         variant="top"
         className="cardImg"
-        data-id={props.id}
         alt={props.name}
         src={process.env.PUBLIC_URL + props.image}
       />
@@ -20,11 +18,13 @@ function Cards(props) {
         <Card.Text className="float-right">${props.price}</Card.Text>
       </Card.Body>
       <Card.Footer className="d-flex justify-content-center">
-        <Link to={`/product/${props.id}`}>
-          <Button className="btn btn-outline-secondary btn-sm bg-white">View Item</Button>
-        </Link>
+        
+          <Button className="btn btn-outline-secondary btn-sm bg-white">Add to Cart</Button>
+       
       </Card.Footer>
     </Card>
-  );
+
+    )
 }
-export default Cards;
+
+export default ProductCard;

@@ -12,6 +12,18 @@ const products={
         .catch(err=>{
             console.log(err)
         })
+    },
+
+    findOne: function(req, res) {
+        db.Products
+        .findById(req.params.ProductId)
+        .then(getOneProduct => {
+            // console.log("This is our one product: ", getOneProduct)
+            res.json(getOneProduct)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
     }
 };
 
