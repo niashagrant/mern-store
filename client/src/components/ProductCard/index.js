@@ -4,8 +4,6 @@ import Button from 'react-bootstrap/Button';
 
 function ProductCard (props) {
 
-
-
     return (
     <Card className="eachCard" style={{flex: 1}}>
       <Card.Img
@@ -13,7 +11,6 @@ function ProductCard (props) {
         className="cardImg"
         data-id={props.id}
         alt={props.name}
-        key
         src={process.env.PUBLIC_URL + props.image}
       />
       <Card.Body>

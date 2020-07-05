@@ -4,10 +4,10 @@ import Cards from '../components/Card';
 import axios from 'axios';
 
 
-function Home() {
+function Home(props) {
     let [products, renderProducts] = useState([]); //variable ref, variable function
     useEffect(() => {
-        console.log('useEffects')
+        // console.log('useEffects')
         axios.get('/allproducts')
         .then(dbproducts => {
             renderProducts(dbproducts.data)
@@ -20,7 +20,9 @@ function Home() {
         
         <Container className="productContainer col col-sm-1 col-md-9 col-centered pl-4" style={{height: "100vh"}}>
             {products.map(( element, index ) =>  
-                <Cards id={element._id} 
+                <Cards 
+                key={element._id}
+                id={element._id} 
                 name={element.name} 
                 image={element.mediaUrl} 
                 price={element.price} 

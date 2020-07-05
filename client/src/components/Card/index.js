@@ -6,13 +6,12 @@ import "./style.css";
 
 function Cards(props) {
   return (
-    <Card sm className="eachCard" style={{flex: 1}}>
+    <Card className="eachCard" style={{flex: 1}}>
       <Card.Img
         variant="top"
         className="cardImg"
         data-id={props.id}
         alt={props.name}
-        key
         src={process.env.PUBLIC_URL + props.image}
       />
       <Card.Body>
