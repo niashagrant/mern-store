@@ -4,10 +4,22 @@
     float: left;
     margin-bottom: 2vh;
     margin-right: 3%;
+    border-color: #A8AB8C !important;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
 
 .cardImg {
     margin: 0 auto;
     max-height: 200px;
     max-width: 150px;
+}
+
+.viewItem {
+    color: #A8AB8C !important;
+    border-color: #A8AB8C !important;
+    background-color: white !important;
+}
+
+.footer {
+    background-color: #A8AB8C !important;
 }

@@ -1,4 +1,5 @@
 .menubar {
     background-color: #A8AB8C !important;
     margin-bottom: 5vh;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
