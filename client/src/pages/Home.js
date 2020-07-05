@@ -5,12 +5,12 @@ import axios from 'axios';
 
 
 function Home(props) {
-    let [products, renderProducts] = useState([]); //variable ref, variable function
+    let [products, setProducts] = useState([]); //variable ref, variable function
     useEffect(() => {
         // console.log('useEffects')
         axios.get('/allproducts')
         .then(dbproducts => {
-            renderProducts(dbproducts.data)
+            setProducts(dbproducts.data)
             console.log('dbproducts', dbproducts.data)
         })
         .catch(error => console.log(error))

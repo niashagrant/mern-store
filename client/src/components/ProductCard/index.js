@@ -9,7 +9,6 @@ function ProductCard (props) {
       <Card.Img
         variant="top"
         className="cardImg"
-        data-id={props.id}
         alt={props.name}
         src={process.env.PUBLIC_URL + props.image}
       />

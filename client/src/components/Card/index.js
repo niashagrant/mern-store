@@ -20,8 +20,8 @@ function Cards(props) {
         <Card.Text className="float-right">${props.price}</Card.Text>
       </Card.Body>
       <Card.Footer className="d-flex justify-content-center">
-        <Link to={`/product/${props.productId}`}>
-          <Button  data-link={props.id} className="btn btn-outline-secondary btn-sm bg-white">View Item</Button>
+        <Link to={`/product/${props.id}`}>
+          <Button className="btn btn-outline-secondary btn-sm bg-white">View Item</Button>
         </Link>
       </Card.Footer>
     </Card>
