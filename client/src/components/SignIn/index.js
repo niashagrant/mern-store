@@ -28,7 +28,7 @@ function SignIn(props) {
       .post("/login", currentUser)
       .then(function (data) {
         console.log(data.data);
-        // props.setLogin(data.data);
+        props.setLogin(data.data);
         history.push("/");
       })
       .catch(function (err) {
