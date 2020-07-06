@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import axios from "axios";
 
-function SignUp() {
+function SignUp(props) {
   let firstName = useRef();
   let lastName = useRef();
   let email = useRef();
@@ -33,10 +33,12 @@ function SignUp() {
       .post("/signup", newUser)
       .then(function (data) {
         console.log(data.data);
+        props.setLogin(data.data);
+        history.push("/");
       })
       .catch(function (err) {
         console.log(err);
-        history.push("/");
+       
       });
   };
 

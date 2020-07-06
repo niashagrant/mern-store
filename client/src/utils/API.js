@@ -5,6 +5,9 @@ import axios from "axios";
      getOneProduct: function(productId){
          return axios.get("/product/" + productId)
          
+     },
+     privateRoute:function(){
+         return axios.get("/userlogged")
      }
  }
  

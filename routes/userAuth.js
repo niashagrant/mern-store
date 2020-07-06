@@ -29,7 +29,16 @@ router.post("/login", passport.authenticate("local"), function (req, res) {
 router.get("/logout", function (req, res) {
   console.log("logout!");
   req.logout();
-  res.redirect("/");
+  res.sendStatus(200)
 });
+
+// //protected routes
+// router.get("/userlogged", function (req,res){
+//   if(!req.user){
+//   res.redirect("/login")
+//   }else{
+//   res.json(req.user);
+//   }
+//   })
 
 module.exports = router;

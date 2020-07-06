@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import "./style.css"
+import axios from "axios";
 
-function MenuBar() {
+function MenuBar(props) {
+  console.log(props)
+  let history = useHistory();
 
-  // const user = true;
+  const logOut=()=>{
+    console.log("logging out")
+    axios.get("/logout")
+    .then(res=>{
+      props.setLogin(null)
+      history.push("/")
+    })
+  }
+  
 
 return (
 
@@ -18,15 +30,11 @@ return (
     <Nav>
       <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="/cart">Cart</Nav.Link>
-      {/* { user ? (<> */}
       <Nav.Link href="/account">Account</Nav.Link>
-      <Nav.Link href="/logout">Log-Out</Nav.Link>
-      {/* </>)
-      :
-      (<> */}
+      <Nav.Link onClick= {logOut} href="#">Log-Out</Nav.Link>
       <Nav.Link href="/login">Log-In</Nav.Link>
       <Nav.Link href="/signup">Sign-Up</Nav.Link>
-      {/* </>)} */}
+      
     </Nav>
   </Navbar.Collapse>
   </Container>

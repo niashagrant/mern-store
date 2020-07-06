@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import MenuBar from "./components/Menubar";
 import Marquee from "./components/Marquee";
 import Account from "./pages/Account";
@@ -11,25 +11,29 @@ import Product from "./pages/Product";
 
 
 
-class App extends Component {
-  render() {
+function App (props) {
+
+  const [user, setLogin]=useState({firstName: "Sara" })
+
+
+ 
     return (
       <Router>
       <Marquee/>
-      <MenuBar/>
+      <MenuBar setLogin={setLogin}/>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/account" component={Account}/>
-        <Route exact path="/cart" component={Cart}/>
+        <Route exact path="/cart" component={(user) ? Cart : ()=><Redirect to="/login"/> }/>
         <Route exact path="/product/:ProductId" component={Product}/>
-        <Route exact path="/login" component={Login}/>
-        <Route exact path="/signup" component={Signup}/>
+        <Route exact path={"/login"} render={(props)=><Login setLogin={setLogin} {...props}/>}/>
+        <Route exact path="/signup" component={()=><Signup />}/>
         <Route exact path="/logout"/>
       </Switch>
       </Router>
 
     );
-  }
+  
 }
 
 export default App;

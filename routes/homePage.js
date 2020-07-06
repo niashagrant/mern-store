@@ -1,5 +1,6 @@
 const router =require("express").Router()
-const productsController= require("../controllers/productsController.js")
+const productsController= require("../controllers/productsController.js");
+// const cartController= require("../controllers/cartController")
 
 //route to our homepage and a get to get all the products in the database using the controller
 
@@ -8,6 +9,9 @@ router.route("/allproducts")
 
 router.route("/product/:ProductId")
 .get(productsController.findOne);
+
+// router.route("/userCart")
+// .get(cartController)
 
 
 module.exports=router;
