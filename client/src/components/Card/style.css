@@ -20,6 +20,10 @@
     background-color: white !important;
 }
 
+.viewItem:hover {
+    color: #C3535F!important;
+}
+
 .footer {
     background-color: #A8AB8C !important;
 }

@@ -8,11 +8,23 @@
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
 
+.quantityInputField {
+    height: 70% !important;
+    border-radius: 3px !important;
+    margin-left: 47%;
+    font-size: .85rem !important;
+}
+
 .addToCart {
     color: #A8AB8C !important;
     border-color: #A8AB8C !important;
-    background-color: white !important;
+    height: 90%;
 }
+
+.addToCart:hover {
+    color: #C3535F!important;
+}
+
 
 .eachProductFooter {
     background-color: #A8AB8C !important;
