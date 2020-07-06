@@ -10,7 +10,7 @@
 
 .quantityInputField {
     height: 70% !important;
-    border-radius: 3px !important;
+    border-radius: 2px !important;
     margin-left: 47%;
     font-size: .85rem !important;
 }
@@ -23,6 +23,11 @@
 
 .addToCart:hover {
     color: #C3535F!important;
+}
+
+.userNote {
+    font-size: .75rem;
+    margin-right: -.75vw;
 }
 
 

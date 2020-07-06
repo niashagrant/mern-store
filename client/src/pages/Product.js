@@ -28,7 +28,7 @@ function Product(props) {
     }, []);
             
     return (
-        <Container className="m-auto">
+        <Container className="col col-md-9 col-centered pl-4">
             <ProductCard
             id={product._id} 
             name={product.name} 
