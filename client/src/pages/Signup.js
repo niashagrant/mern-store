@@ -1,8 +1,16 @@
+
 import React from "react";
 import SignUp from "../components/SignUp";
 
-function Signup() {
-  return <SignUp />;
-}
+import Container from "react-bootstrap/Container";
 
-export default Signup;
+export default function () {
+  return (
+    <>
+      <Container>
+        <SignUp />
+      </Container>
+    </>
+  );
+
+}

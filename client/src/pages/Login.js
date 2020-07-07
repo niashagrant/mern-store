@@ -1,10 +1,14 @@
+
 import React from "react";
 import SignIn from "../components/SignIn";
+import Container from "react-bootstrap/Container";
 
 function Login() {
   return (
     <>
-      <SignIn />
+      <Container>
+        <SignIn />
+      </Container>
     </>
   );
 }
