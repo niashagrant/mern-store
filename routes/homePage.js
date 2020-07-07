@@ -10,8 +10,8 @@ router.route("/allproducts")
 router.route("/product/:ProductId")
 .get(productsController.findOne);
 
-// router.route("/userCart")
-// .get(cartController)
+// router.route("/addToCart/:id")
+// .put(cartController.update)
 
 
 module.exports=router;

@@ -49,6 +49,8 @@ function Product(props) {
             image={product.mediaUrl} 
             price={product.price} 
             description={product.description}
+            productId={product.id}
+            user={user}
             handleButton={handleButton}
             />
         </Container>
