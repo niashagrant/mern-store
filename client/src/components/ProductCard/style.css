@@ -4,18 +4,18 @@
     float: left;
     margin-bottom: 2vh;
     margin-right: 3%;
-    border-color: #A8AB8C !important;
+    border-color: #482B20 !important;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
 
 .addToCart {
-    color: #A8AB8C !important;
-    border-color: #A8AB8C !important;
+    color: #482B20 !important;
+    border-color: #482B20 !important;
     background-color: white !important;
 }
 
 .eachProductFooter {
-    background-color: #A8AB8C !important;
+    background-color: #482B20 !important;
 }
 
 .quantityInputField {
