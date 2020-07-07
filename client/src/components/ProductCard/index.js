@@ -20,7 +20,7 @@ function ProductCard (props) {
       </Card.Body>
       <Card.Footer className="eachProductFooter">
       <Card.Text className="float-left text-white">${props.price}</Card.Text>
-          <Button className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart</Button>
+          <Button onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart</Button>
        
       </Card.Footer>
     </Card>

@@ -3,7 +3,8 @@ import Container from 'react-bootstrap/Container';
 import CartCard from '../components/CartCard';
 
 
-function Cart() {
+function Cart(props) {
+
 
     return (
         <Container className="col col-sm-1 col-md-9 col-centered">

@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from "react-router";
+import { useParams, useHistory } from "react-router";
 import Container from 'react-bootstrap/Container';
 import ProductCard from '../components/ProductCard';
 import API from "../utils/API";
 
 
-function Product(props) {
 
+function Product(props) {
+        console.log("this is my product props:",props);
+    const {user}=props; 
     const [product, setProduct] = useState({});
     const [error, setError] =useState(false);
     const { ProductId } = useParams();
+    let history =useHistory();
     // console.log("TEST WITH NOAH: ", ProductId) 
     const loadThisProduct = () =>{
         API.getOneProduct(ProductId)
@@ -22,10 +25,21 @@ function Product(props) {
             }
         })
     }
+    const handleButton =(e)=>{
+        console.log("button clicked");
+        e.preventDefault();
+        if (!user){
+            history.push("/login")
+        }else{
+            alert("product added to cart")
+        }
+    }
 
     useEffect((product) => {
         loadThisProduct(product)
     }, []);
+
+  
             
     return (
         <Container className="m-auto">
@@ -35,6 +49,7 @@ function Product(props) {
             image={product.mediaUrl} 
             price={product.price} 
             description={product.description}
+            handleButton={handleButton}
             />
         </Container>
     )

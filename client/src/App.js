@@ -13,10 +13,11 @@ import Product from "./pages/Product";
 
 function App (props) {
 
-  const [user, setLogin]=useState({firstName: "Sara" })
-
-
+  const [user, setLogin]=useState()
+ console.log(user);
  
+
+
     return (
       <Router>
       <Marquee/>
@@ -25,7 +26,7 @@ function App (props) {
         <Route exact path="/" component={Home}/>
         <Route exact path="/account" component={Account}/>
         <Route exact path="/cart" component={(user) ? Cart : ()=><Redirect to="/login"/> }/>
-        <Route exact path="/product/:ProductId" component={Product}/>
+        <Route exact path="/product/:ProductId" render={(props)=><Product user={user} {...props}/>}/>
         <Route exact path={"/login"} render={(props)=><SignIn setLogin={setLogin} {...props}/>}/>
         <Route exact path="/signup" component={()=><Signup />}/>
         <Route exact path="/logout"/>
