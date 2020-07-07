@@ -13,8 +13,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Marquee />
         <MenuBar />
+        <Marquee />
+
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/account" component={Account} />

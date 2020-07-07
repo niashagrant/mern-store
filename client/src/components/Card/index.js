@@ -3,21 +3,22 @@ import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 // import Button from "react-bootstrap/Button";
 // import { Link } from "react-router-dom";
-// import "./style.css";
+import "./style.css";
 import Col from "react-bootstrap/Col";
 
 function Cards(props) {
   return (
     <>
-      <Col sm={4}>
-        <CardGroup style={{ width: "21rem" }}>
-          <Card className="mt-5">
+      <Col lg={4} med={6} sm={6}>
+        <CardGroup>
+          <Card className="mt-5" style={{ width: "22rem" }}>
             <Card.Img
               data-id={props.id}
               alt={props.name}
               key
               src={process.env.PUBLIC_URL + props.image}
-              style={{ width: "20rem" }}
+              style={{ width: "16.5em", height: "16em" }}
+              className="ml-4"
             />
             <Card.Body className="text-center">
               <Card.Title> {props.name} </Card.Title>
