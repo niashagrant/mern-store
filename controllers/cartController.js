@@ -4,7 +4,7 @@ const cart={
 
     update: function(req,res){
         if (req.user) {
-        db.Cart.update({user:req.user._id},{$push:{products: {quantity: req.body.quantity, product: req.body.productid}}}, {upsert: true})
+        db.Cart.update({user:req.user._id},{$push:{products: {quantity: req.body.quantity, product: req.body.productid}}} ,{upsert: true})
                                              //   {products: {quantity: req.body.quantity, product: req.body.productid}} 
         .then( () => res.sendStatus(200))
         .catch( () => res.sendStatus(403))
@@ -20,7 +20,7 @@ const cart={
             db.Cart.find(req.query)
             .populate("products")  // >>>>>>>>>> NEW
             .then (cartdb => {
-                console.log(cartdb)
+                console.log("this is our cart db",cartdb)
                 res.json(cartdb)
             })
             .catch(error=> {

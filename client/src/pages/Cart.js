@@ -24,8 +24,8 @@ function Cart(props) {
             .then(cartItems => {
                 console.log("WORKING ON QUANTITY ISSUE: ", cartItems.data)
                 console.log("back:", cartItems.data[0].products)
-                setCart(cartItems.data[0].products[0].product)
-                setQuantity(cartItems.data[0].products[0].quantity)
+                setCart(cartItems.data[0].products)
+                // setQuantity(cartItems.data[0].products[0].quantity)
            //   setCart(cartItems.data)
             })
         }
@@ -38,12 +38,12 @@ function Cart(props) {
                 <CartCard
                 // key={element.mediaUrl}
                 id={element._id} 
-                name={element.name} 
+                name={element.product.name} 
                 image={element.mediaUrl} 
                 price={element.price} 
                 description={element.description}
                 value={element.quantity}
-                onChange={event => setQuantity(Number(event.target.value))}
+                // onChange={event => setQuantity(Number(event.target.value))}
                 />
             )}
         </Container>
