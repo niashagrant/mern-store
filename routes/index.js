@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const productRoutes = require("./homePage");
+const productRoutes = require("./appRoutes");
 const userAuth = require("./userAuth");
 
 router.use("/", productRoutes);

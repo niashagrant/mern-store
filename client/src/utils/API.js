@@ -9,6 +9,11 @@ import axios from "axios";
 
      addToCart: function(product){
          return axios.put("/addToCart", product);
+     },
+
+     renderCart: function() {
+         return axios.get("/userCart");
      }
+
  }
  

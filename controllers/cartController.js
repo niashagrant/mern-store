@@ -11,6 +11,23 @@ const cart={
             res.sendStatus(403);
             console.log("Line 11 of cartController: User is not logged in.");
         }
+    },
+
+    findAll: function(req, res) {
+        console.log("CONNECT THE CART ROUTE!")
+        if (req.user) {
+            db.Cart.find(req.query)
+            .then (cartdb => {
+                res.json(cartdb)
+                console.log(cartdb)
+            })
+            .catch(error=> {
+                console.log(error);
+            })
+        }   else {
+            res.sendStatus(403);
+            console.log("Line 28 of cartController: User is not logged in.");
+        }
     }
 }
 
