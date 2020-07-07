@@ -3,7 +3,9 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import "./style.css"
 
-function ProductCard (props) {
+
+
+function CartCard (props) {
 
     return (
     <Card className="eachProductCard" style={{flex: 1}}>
@@ -20,7 +22,7 @@ function ProductCard (props) {
       </Card.Body>
       <Card.Footer className="eachProductFooter">
       <Card.Text className="float-left text-white">${props.price}</Card.Text>
-          <Button  data-user={props.user} data-productId={props.id} onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart</Button>
+          <Button className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart</Button>
        
       </Card.Footer>
     </Card>
@@ -28,4 +30,4 @@ function ProductCard (props) {
     )
 }
 
-export default ProductCard;
+export default CartCard;

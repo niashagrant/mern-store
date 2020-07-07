@@ -1,13 +1,7 @@
 const mongoose = require("mongoose");
 
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mern-storedb";
-mongoose.connect(
- MONGODB_URI,
-  {
-    useCreateIndex: true,
-    useNewUrlParser: true
-  }
-);
+mongoose.connect( MONGODB_URI);
 
 const db=require("../models")
 
@@ -19,7 +13,7 @@ const products=[{
 
 },
 {
-    "name": "QWC Tote",
+    "name": "QWC Tot",
     "price": 18.50,
     "description": "You totes need this",
     "mediaUrl": "https://cdn-images.threadless.com/threadless-media/artist_shops/shops/mern/products/1504609/shirt-1592329653-6acd002459c22737c82f1931611813cf.png?v=3&d=eyJvbmx5X21ldGEiOiBmYWxzZSwgImZvcmNlIjogZmFsc2UsICJvcHMiOiBbWyJpZl8iLCBbeyJ0IjogImV4cHIiLCAidiI6IFsiaGFzX2FscGhhIiwgbnVsbCwgbnVsbF19LCB7InQiOiAiY29tcCIsICJ2IjogWyJ0aHJlYWRsZXNzLW1lZGlhL2FydGlzdF9zaG9wcy9zaG9wcy9tZXJuL3Byb2R1Y3RzLzE1MDQ2MDkvc2hpcnQtMTU5MjMyOTY1My02YWNkMDAyNDU5YzIyNzM3YzgyZjE5MzE2MTE4MTNjZi5wbmciLCBbWyJ0cmltIiwgW3RydWUsIGZhbHNlXSwge31dLCBbInJlc2l6ZSIsIFs0NjYuMDcxNDI4NTcxNDI4NTYsIDQ2Ni4wNzE0Mjg1NzE0Mjg1Nl0sIHsibWF4X3NjYWxlIjogMy4wfV0sIFsicGFkIiwgWzc3LjY3ODU3MTQyODU3MTQzLCA3Ny42Nzg1NzE0Mjg1NzE0MywgNzcuNjc4NTcxNDI4NTcxNDMsIDc3LjY3ODU3MTQyODU3MTQzXSwgeyJiYWNrZ3JvdW5kIjogImRhNGE1OSJ9XSwgWyJjYW52YXNfY2VudGVyZWQiLCBbNjIxLjQyODU3MTQyODU3MTQsIDYyMS40Mjg1NzE0Mjg1NzE0XSwgeyJiYWNrZ3JvdW5kIjogImRhNGE1OSJ9XV1dfSwgeyJ0IjogImNvbXAiLCAidiI6IFsidGhyZWFkbGVzcy1tZWRpYS9hcnRpc3Rfc2hvcHMvc2hvcHMvbWVybi9wcm9kdWN0cy8xNTA0NjA5L3NoaXJ0LTE1OTIzMjk2NTMtNmFjZDAwMjQ1OWMyMjczN2M4MmYxOTMxNjExODEzY2YucG5nIiwgW1sicmVzaXplIiwgWzYyMS40Mjg1NzE0Mjg1NzE0LCA2MjEuNDI4NTcxNDI4NTcxNF0sIHsibWF4X3NjYWxlIjogMy4wLCAic3R5bGUiOiAiQ1JPUCJ9XSwgWyJjYW52YXNfY2VudGVyZWQiLCBbNjIxLjQyODU3MTQyODU3MTQsIDYyMS40Mjg1NzE0Mjg1NzE0XSwgeyJiYWNrZ3JvdW5kIjogImZmZmZmZiJ9XV1dfV0sIHt9XSwgWyJlbmNvZGUiLCBbIi5wbmciXSwgeyJkcGkiOiAzMDB9XSwgWyJyZXNpemUiLCBbOTY4XSwge31dLCBbIm92ZXJsYXkiLCBbInRocmVhZGxlc3MtbWVkaWEvYXJ0aXN0X3Nob3BzL292ZXJsYXlzLzgxYjVjYmYxMDNlMTcwZGU5MTYwZjM2NGM2OGQ3NDdhL2Zyb250LTE0NzY0NjM0MzEtNmVkZGEzYzMwZDVhMmFmOTFiOTFkYzkwOTM2ODYyZDcucG5nIl0sIHsieSI6IDg1NSwgIngiOiA1MTAsICJiYWNrZ3JvdW5kIjogImRhNGE1OSJ9XSwgWyJyZXNpemUiLCBbMTUwXSwge31dLCBbImNhbnZhc19jZW50ZXJlZCIsIFsxNTAsIDE1MCwgIiNmZmZmZmYiXSwge31dLCBbImVuY29kZSIsIFsianBnIiwgODVdLCB7fV1dfQ=="
@@ -54,8 +48,9 @@ const products=[{
 
 ]
 
-db.Products.insertMany(products)
+db.Products.create(products)
 .then(res=>{
+    console.log("meow")
     console.log(res)
 })
 .catch(err=>{

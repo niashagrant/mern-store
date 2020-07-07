@@ -4,7 +4,9 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 
-function SignIn() {
+
+function SignIn(props) {
+  console.log("This is our props:", props);
   let email = useRef();
   let password = useRef();
   let history = useHistory();
@@ -26,6 +28,7 @@ function SignIn() {
       .post("/login", currentUser)
       .then(function (data) {
         console.log(data.data);
+        props.setLogin(data.data);
         history.push("/");
       })
       .catch(function (err) {
