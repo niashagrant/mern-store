@@ -1,13 +1,7 @@
 const mongoose = require("mongoose");
 
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mern-storedb";
-mongoose.connect(
- MONGODB_URI,
-  {
-    useCreateIndex: true,
-    useNewUrlParser: true
-  }
-);
+mongoose.connect( MONGODB_URI);
 
 const db=require("../models")
 
@@ -54,8 +48,9 @@ const products=[{
 
 ]
 
-db.Products.insertMany(products)
+db.Products.create(products)
 .then(res=>{
+    console.log("meow")
     console.log(res)
 })
 .catch(err=>{
