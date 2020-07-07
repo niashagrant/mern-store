@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import CartCard from '../components/CartCard';
+import API from "../utils/API";
 
 
 function Cart(props) {

@@ -6,8 +6,9 @@ import axios from "axios";
          return axios.get("/product/" + productId)
          
      },
-     privateRoute:function(){
-         return axios.get("/userlogged")
+
+     addToCart: function(product){
+         return axios.put("/addToCart", product);
      }
  }
  
