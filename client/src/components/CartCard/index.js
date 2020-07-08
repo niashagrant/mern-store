@@ -10,7 +10,7 @@ import "./style.css"
 function CartCard (props) {
 
     return (
-    <Card className="eachProductCard"  style={{flex: 1}}>
+    <Card className="eachProductCard"  key={props.mediaUrl} style={{flex: 1}}>
       <Card.Img
         variant="top"
         className="cardImg"
