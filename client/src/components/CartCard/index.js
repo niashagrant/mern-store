@@ -37,7 +37,7 @@ function CartCard (props) {
         />
         {/* <Button  data-user={props.user} data-productid={props.id} onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart {props.buttonText}</Button> */}
         <Row className="d-flex justify-content-end w-100">
-          <Button className="btn btn-sm bg-light text-dark delete mt-1">Delete</Button>
+          <Button data-id={props.productid} onClick={props.deleteProd} className="btn btn-sm bg-light text-dark delete mt-1">Delete</Button>
         </Row>
       </InputGroup>
        

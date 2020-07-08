@@ -8,6 +8,7 @@ function Cart(props) {
 
     const {user}=props;
     const [ cart, setCart ] = useState([]);
+    const [ removal, setRemoval]= useState();
     const [quantity, setQuantity] = useState(1);
 
     useEffect(() => {                           // added useEffect in which we call loadThisCart()
@@ -15,6 +16,7 @@ function Cart(props) {
         loadThisCart()
     }, []);
     
+    // function to get the request from the back with product information and quantity
     const loadThisCart = () => {
         console.log("loadcart")
         if (!user) {
@@ -24,12 +26,30 @@ function Cart(props) {
             .then(cartItems => {
                 console.log("WORKING ON QUANTITY ISSUE: ", cartItems.data)
                 console.log("back:", cartItems.data[0].products)
-                setCart(cartItems.data[0].products)
-                // setQuantity(cartItems.data[0].products[0].quantity)
-           //   setCart(cartItems.data)
+              setCart(cartItems.data[0].products)  
             })
         }
     }
+    //function to send information about what porduct we want to delete from database
+    const updateThisCart =()=>{
+        if (!user) {
+            alert("You must be signed in to add items to your cart.")
+        }
+        else{
+            console.log("ProductId:", cart)
+             const itemToRemove={quantity: quantity, productid: cart[0].product._id}
+            console.log(itemToRemove)
+            API.delFromCart(itemToRemove)
+            .then(deleted=>{
+                console.log("product was deleted", deleted);
+                setRemoval(deleted)
+                
+            }).catch(err=>{
+                console.log(err)
+            })
+        }
+    }
+
 
     return (
         <Container className="col col-sm-1 col-md-9 col-centered">
@@ -44,7 +64,9 @@ function Cart(props) {
                 price={element.product.price} 
                 description={element.product.description}
                 value={element.quantity}
+                productid={element.product._id}
                 // onChange={event => setQuantity(Number(event.target.value))}
+                deleteProd={updateThisCart}
                 />) }
             )}
         </Container>

@@ -13,6 +13,10 @@ import axios from "axios";
 
      renderCart: function() {
          return axios.get("/userCart");
+     },
+
+     delFromCart: function(product){
+         return axios.put("/delFromCart/", product);
      }
 
  }

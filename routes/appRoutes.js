@@ -16,5 +16,7 @@ router.route("/addToCart")
 router.route("/userCart")
 .get(cartController.findAll);
 
+router.route("/delFromCart")
+.put(cartController.findOneAndUpdate)
 
 module.exports=router;
