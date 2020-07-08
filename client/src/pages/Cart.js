@@ -33,7 +33,10 @@ function Cart(props) {
 
     return (
         <Container className="col col-sm-1 col-md-9 col-centered">
-            <h6>Cart Page</h6>
+            <h1 className="cartTitle">SHOPPING CART</h1>
+            <h6 className="font-italic my-4">You've got great taste!  Look at all these beautiful items you've chosen!</h6>
+            {/* <h6 className="font-italic my-4"> Oh no! Your shopping cart is EMPTY!  Go have a look at our product pages and add some gorgeous products!</h6> */}
+
             {cart.map(( element ) =>{
                 // console.log("this is our element:",element)
              return(  <CartCard

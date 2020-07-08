@@ -10,20 +10,22 @@ function ProductCard (props) {
 
     return (
     <Card className="eachProductCard" style={{flex: 1}}>
+      <Card.Body>
       <Card.Img
         variant="top"
-        className="cardImg"
+        className="productImg float-left"
         alt={props.name}
         src={process.env.PUBLIC_URL + props.image}
       />
-      <Card.Body>
-        <Card.Title> {props.name} </Card.Title>
-        <Card.Text>{props.description}</Card.Text>
 
+        <Card.Title className = "productTitle py-2 mt-4"> {props.name} </Card.Title>
+        <Card.Text className="font-italic">{props.description}</Card.Text>
       </Card.Body>
       <Card.Footer className="eachProductFooter">
+      <Row>
       <InputGroup className="inputGroup">
-      <Card.Text className="float-left text-white">${props.price}</Card.Text>
+      <Card.Text className="text-white ml-5 price">${props.price}</Card.Text>
+      <Card.Text className="text-white productQty">Quantity: </Card.Text>
       <FormControl
         className="quantityInputField float-right"
         type="number"
@@ -33,11 +35,13 @@ function ProductCard (props) {
         value={props.value}
         onChange={props.onChange}
         />
-        <Button  data-user={props.user} data-productid={props.id} onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart {props.buttonText}</Button>
-        <Row className="d-flex justify-content-end w-100">
-          <Card.Text className="text-light font-italic userNote">Sign-up to Add items to Cart</Card.Text>
+        <Button  data-user={props.user} data-productid={props.id} onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart">Add to Cart {props.buttonText}</Button>
+        </InputGroup>
         </Row>
-      </InputGroup>
+        <Row className="d-flex justify-content-end">
+        <Card.Text className="text-light font-italic userNote mr-2 pt-1 note">Sign-up to Add items to Cart</Card.Text>
+        </Row>
+
       </Card.Footer>
     </Card>
 

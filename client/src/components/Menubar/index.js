@@ -24,7 +24,7 @@ return (
 
 <Navbar expand="sm" variant="dark" className="menubar">
   <Container className="col col-centered">
-  <Navbar.Brand href="/">Queen St. Market</Navbar.Brand>
+  <Navbar.Brand href="/" className="marketTitle">Queen St. Market</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
     <Nav>
