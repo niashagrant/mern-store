@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import CartCard from '../components/CartCard';
 import API from "../utils/API";
 
+import CheckoutForm from '../components/CheckoutForm';
 
 
 function Cart(props) {
@@ -33,7 +34,8 @@ function Cart(props) {
     }
 
     return (
-        <Container className="col col-sm-1 col-md-9 col-centered">
+        <>
+        <Container className="col col-sm-1 col-md-10 col-centered">
             <h6>Cart Page</h6>
             {cart.map(( element ) =>{
                 // console.log("this is our element:",element)
@@ -49,6 +51,8 @@ function Cart(props) {
                 />) }
             )}
         </Container>
+        <CheckoutForm className="col col-sm-1 col-md-2 col-centered"/>
+        </>
     )
 
 }
