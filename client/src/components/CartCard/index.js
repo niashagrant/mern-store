@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 import "./style.css"
 
 
@@ -36,7 +37,7 @@ function CartCard (props) {
         />
         {/* <Button  data-user={props.user} data-productid={props.id} onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart {props.buttonText}</Button> */}
         <Row className="d-flex justify-content-end w-100">
-          <Card.Text className="text-light font-italic userNote">Sign-up to Add items to Cart</Card.Text>
+          <Button className="btn btn-sm bg-light text-dark delete mt-1">Delete</Button>
         </Row>
       </InputGroup>
        
