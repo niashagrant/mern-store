@@ -15,7 +15,7 @@ function Cards(props) {
         src={process.env.PUBLIC_URL + props.image}
       />
       <Card.Body>
-        <Card.Title> {props.name} </Card.Title>
+        <Card.Title className="productTitle py-3 text-center"> {props.name} </Card.Title>
         <Card.Text>{props.description}</Card.Text>
         
       </Card.Body>

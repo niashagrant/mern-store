@@ -35,7 +35,7 @@ function ProductCard (props) {
         />
         <Button  data-user={props.user} data-productid={props.id} onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart {props.buttonText}</Button>
         <Row className="d-flex justify-content-end w-100">
-          <Card.Text className="text-muted font-muted font-italic userNote">Sign-up to Add items to Cart</Card.Text>
+          <Card.Text className="text-light font-italic userNote">Sign-up to Add items to Cart</Card.Text>
         </Row>
       </InputGroup>
       </Card.Footer>

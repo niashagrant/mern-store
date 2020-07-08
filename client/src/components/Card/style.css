@@ -1,6 +1,6 @@
 .eachCard {
     width: 225px;
-    height: 350px;
+    height: 375px;
     float: left;
     margin-bottom: 2vh;
     margin-right: 3%;
@@ -15,11 +15,16 @@
 }
 
 .viewItem {
-    color: #A8AB8C !important;
-    border-color: #A8AB8C !important;
+    color: #482B20!important;
+    border-color: #482B20 !important;
     background-color: white !important;
 }
 
 .footer {
-    background-color: #A8AB8C !important;
+    background-color: #482B20 !important;
+}
+
+.productTitle {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
