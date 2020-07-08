@@ -8,7 +8,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements, CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import axios from "axios";
 
-const CheckoutForm = () => {
+const CheckoutForm = ({ success }) => {
     const stripe = useStripe();
     const elements = useElements();
 
@@ -24,8 +24,9 @@ const CheckoutForm = () => {
             const { id } = paymentMethod;
 
             try {
-                const response = await axios.post("/api/charge", {id, price})
+                const response = await axios.post("/api/charge", {id, amount: 1099})
                 console.log(data);
+                success();
             } catch (error){
                 console.log(error);
             }
@@ -37,8 +38,14 @@ const CheckoutForm = () => {
             onSubmit={handleSubmit}
             style={{maxWidth: "400px", margin: "0 auto"}}
         >
+            <h2> price: $10.99 USD </h2>
+            <img
+                src="https://i.etsystatic.com/7863296/r/il/bf7686/2411847453/il_1588xN.2411847453_trsm.jpg"
+                style={{ maxWidth: "50px" }}
+            />
+
             <CardElement/>
-            <button type="submit" disabled={!loadStripe}>
+            <button type="submit" disabled={!stripe}>
                 Pay
             </button>
         </form>
@@ -50,9 +57,22 @@ const stripePromise = loadStripe("pk_test_51Gu2XnBjpCoDu7KPlrPRWXlS3XmGbfSgZLmUy
 
 
 const Stripe = () => {
+    const [status, setStatus] = React.useState("ready");
+
+    if (status === "success") {
+        return 
+            <div>
+                Thank you for your purchase!
+            </div>
+    }
+
     return 
         <Elements stripe = {stripePromise }>
-            hello world!
+            <CheckoutForm
+                success={() => {
+                    setStatus("success");
+                }}
+            />
         </Elements>
 };
 
