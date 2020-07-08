@@ -7,7 +7,8 @@ router.post('/payment', async (req, res) => {
 
     // paymentIntent => track and handle all the states of the payment until it’s completed
     const paymentIntent = await stripe.paymentIntents.create({
-        amount: 5000, //NTS: add total products.price after working
+        amount: 5000, 
+        //NTS: add total products.price after working!!!!!!!!!!
         currency: 'usd',
         // // Verify your integration in this guide by including this parameter
         // metadata: {integration_check: 'accept_a_payment'},
