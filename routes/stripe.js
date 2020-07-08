@@ -1,27 +1,26 @@
-import Stripe from "stripe";
-const stripe = new Stripe("sk_test_51Gu2XnBjpCoDu7KPb4XckH8AL5NvQkZaz8hXjIi4ZdrfOPidj0AnUtlyg3vsMeVvjwH6PSaG94CE9IAEbUcS2FNz00fkfBnCdN")
-// NTS: hide secret Key!!!!! env var
+const router =require("express").Router()
+const stripe = require('stripe')('sk_test_51H2jAhF6rrHNM5sksNEwuiEJ346yjze8Gtcn5ZI5gRrFWzsUEkPRbF9PYnF6QxnUFwMKpIbvMWXLDEVZI3WmnosE00tbrNGpWo');
 
-export default async (req, res) => {
-    const {id, amount} = req.body;
 
-    try {
-        const payment = await stripe.paymentIntents.create({
-            amount,
-            currency: 'USD',
-            payment_method: id,
-            description: "hard coded test",
-            confirm: true,
-        });
 
-        console.log(payment);
+router.post('/payment', async (req, res) => {
 
-        return res.status(200).json({
-            confirm: "abc123"
-        });
-    } catch (error){
-    return res.status(400).json({
-        message: error.message
-        });
-    }
-};
+    // paymentIntent => track and handle all the states of the payment until it’s completed
+    const paymentIntent = await stripe.paymentIntents.create({
+        amount: 5000, //NTS: add total products.price after working
+        currency: 'usd',
+        // // Verify your integration in this guide by including this parameter
+        // metadata: {integration_check: 'accept_a_payment'},
+        // receipt_email: email,
+      });
+      console.log("payment working!", paymentIntent)
+
+      res.json({'client_secret': paymentIntent['client_secret']})
+      //   client secret => used on the client side to securely complete the 
+      //   payment process instead of passing the entire PaymentIntent object
+  });
+
+  module.exports = router
+
+
+
