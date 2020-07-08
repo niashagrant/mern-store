@@ -34,17 +34,18 @@ function Cart(props) {
     return (
         <Container className="col col-sm-1 col-md-9 col-centered">
             <h6>Cart Page</h6>
-            {cart.map(( element ) => 
-                <CartCard
+            {cart.map(( element ) =>{
+                console.log("this is our element:",element)
+             return(  <CartCard
                 // key={element.mediaUrl}
                 id={element._id} 
                 name={element.product.name} 
-                image={element.mediaUrl} 
-                price={element.price} 
-                description={element.description}
+                image={element.product.mediaUrl} 
+                price={element.product.price} 
+                description={element.product.description}
                 value={element.quantity}
                 // onChange={event => setQuantity(Number(event.target.value))}
-                />
+                />) }
             )}
         </Container>
     )

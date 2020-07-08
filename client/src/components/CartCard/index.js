@@ -10,7 +10,7 @@ import "./style.css"
 function CartCard (props) {
 
     return (
-    <Card className="eachProductCard" key={props.mediaUrl} style={{flex: 1}}>
+    <Card className="eachProductCard"  style={{flex: 1}}>
       <Card.Img
         variant="top"
         className="cardImg"
@@ -32,7 +32,7 @@ function CartCard (props) {
         max="9"
         placeholder="Qty"
         value={props.value}
-        onChange={props.onChange}
+        quantity={props.currentValue}
         />
         {/* <Button  data-user={props.user} data-productid={props.id} onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart {props.buttonText}</Button> */}
         <Row className="d-flex justify-content-end w-100">

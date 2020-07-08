@@ -18,7 +18,7 @@ const cart={
         console.log(req.user)
         if (req.user) {
             db.Cart.find(req.query)
-            .populate("products")  // >>>>>>>>>> NEW
+            .populate("products.product")  
             .then (cartdb => {
                 console.log("this is our cart db",cartdb)
                 res.json(cartdb)
