@@ -5,13 +5,26 @@ const cart={
     create: function(req,res){
         if (req.user) {
             console.log("this is our create rq.body",req.body)
-        db.Products.create(req.body,{$set:{buyer:true}} )
+            console.log("this is our req.body.name:", req.body.name);
+            
+        db.Products.create({
+            name: req.body.name,
+            price:req.body.price,
+            description:req.body.description,
+            mediaUrl:req.body.mediaUrl,
+            buyer: true
+
+        } )
                                             //   {products: {quantity: req.body.quantity, product: req.body.productid}} 
         .then( (userAdded) =>{
+            console.log("this is our .then response user Added:",userAdded)
             res.sendStatus(200)
-            return db.Cart.updateOne({user:req.user._id},{$push:{product:userAdded._id}}) 
+            console.log("do we have a user here?", req.user)
+            return db.Cart.updateOne({user:req.user._id},{$push:{product:userAdded._id}},{upsert:true}) 
         }) 
-        .catch( () => res.sendStatus(403))
+        .catch( (err) => {
+            console.log(err)
+            res.sendStatus(403)})
         }  else {
             res.sendStatus(403);
             console.log("cartController: User is not logged in.");
