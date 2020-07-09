@@ -36,12 +36,12 @@ function Product(props) {
         }else{
             // buttonText="Add to Cart"
 
-            console.log("QUANTITY: ", quantity)
-            console.log("PRODUCTID: ", product)
-            const newCartItem = {quantity: quantity, productid: product._id}
-            API.addToCart(newCartItem)
-            .then (() => alert("Product added to cart."))
-            .catch(() => alert("You must be logged in to add to your cart."))
+            console.log("QUANTITY from Product.js: ", quantity)
+            console.log("PRODUCTID from Product.js: ", product)
+            // const newCartItem = {quantity: quantity, productid: product._id}
+            // API.addToCart(newCartItem)
+            // .then (() => alert("Product added to cart."))
+            // .catch(() => alert("You must be logged in to add to your cart."))
         }
     }
 

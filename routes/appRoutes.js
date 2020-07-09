@@ -11,12 +11,12 @@ router.route("/product/:ProductId")
 .get(productsController.findOne);
 
 router.route("/addToCart")
-.put(cartController.update);
+.post(cartController.create);
 
-router.route("/userCart")
-.get(cartController.findAll);
+// router.route("/userCart")
+// .get(cartController.findAll);
 
-router.route("/delFromCart")
-.put(cartController.findOneAndUpdate)
+// router.route("/delFromCart")
+// .put(cartController.findOneAndUpdate)
 
 module.exports=router;

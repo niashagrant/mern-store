@@ -8,17 +8,11 @@ const CartSchema = new mongoose.Schema({
     type: ObjectId,
     ref: "User",
   },
-  products: [
-    {
-    quantity: {
-      type: Number,
-      default: 1,
-    },
     product: {
        type: Schema.Types.ObjectId, // >>>> was type: ObjectId (see below > line 31) || Also removed quantity (see below > line 26)
         ref: "Product",
       }
-    }]
+   
 });
 
 const Cart=mongoose.models.Cart || mongoose.model("Cart", CartSchema);

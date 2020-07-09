@@ -4,7 +4,7 @@ const products={
     findAll: function(req,res){
         // console.log('all product route being hit!')
         db.Products
-        .find(req.query)
+        .find(req.query,{buyer:false})
         .then(ProdDB=>{
             console.log(ProdDB)
             res.json(ProdDB)
@@ -16,7 +16,7 @@ const products={
 
     findOne: function(req, res) {
         db.Products
-        .findById(req.params.ProductId)
+        .findById(req.params.ProductId,{buyer:false})
         .then(getOneProduct => {
             // console.log("This is our one product: ", getOneProduct)
             res.json(getOneProduct)

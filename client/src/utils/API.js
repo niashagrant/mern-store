@@ -8,7 +8,7 @@ import axios from "axios";
      },
 
      addToCart: function(product){
-         return axios.put("/addToCart", product);
+         return axios.post("/addToCart", product);
      },
 
      renderCart: function() {

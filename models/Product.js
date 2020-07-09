@@ -11,10 +11,7 @@ const ProductSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  // sku: {
-  //   type: String,
-  //   unique: true,
-  // },
+  
   description: {
     type: String,
     required: true,
@@ -23,6 +20,18 @@ const ProductSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  orderQty:{
+    type:Number,
+    default:0
+  },
+  stockQty:{
+    type: Number,
+    default:5000
+  },
+  buyer:{
+    type:Boolean,
+    default:false
+  }
 });
 
 const Products=mongoose.models.Product || mongoose.model("Product", ProductSchema);
