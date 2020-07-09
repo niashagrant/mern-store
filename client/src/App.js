@@ -21,7 +21,7 @@ function App (props) {
     return (
       <Router>
       <Marquee/>
-      <MenuBar setLogin={setLogin}/>
+      <MenuBar setLogin={setLogin} user={user}{...props}/>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/account" component={Account}/>
