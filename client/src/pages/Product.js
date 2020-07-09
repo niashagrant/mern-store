@@ -10,7 +10,7 @@ function Product(props) {
     console.log("this is my product props:",props);
     const {user}=props;
     // let buttonText;
-    const [quantity, setQuantity] = useState(1);
+    // const [quantity, setQuantity] = useState(1);
     const [product, setProduct] = useState({});
     const [error, setError] =useState(false);
     const { ProductId } = useParams();
@@ -36,12 +36,15 @@ function Product(props) {
         }else{
             // buttonText="Add to Cart"
 
-            console.log("QUANTITY from Product.js: ", quantity)
+            // console.log("QUANTITY from Product.js: ", quantity)
             console.log("PRODUCTID from Product.js: ", product)
-            // const newCartItem = {quantity: quantity, productid: product._id}
-            // API.addToCart(newCartItem)
-            // .then (() => alert("Product added to cart."))
-            // .catch(() => alert("You must be logged in to add to your cart."))
+            const newCartItem = product
+            API.addToCart(newCartItem)
+            .then (() =>{
+                alert("Product added to cart.")
+                console.log("was item added?")
+            } )
+            .catch(() => alert("You must be logged in to add to your cart."))
         }
     }
 
@@ -61,10 +64,10 @@ function Product(props) {
             description={product.description}
             productId={product.id}
             user={user}
-            value={quantity}
+            value={product.orderQty}
             // buttonText={handleButton}
             handleButton={handleButton}
-            onChange={event => setQuantity(Number(event.target.value))}
+            // onChange={event => setQuantity(Number(event.target.value))}
             />
         </Container>
     )

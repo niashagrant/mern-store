@@ -4,7 +4,8 @@ const cart={
 
     create: function(req,res){
         if (req.user) {
-        db.Product.create(req.body,{$set:{buyer:true}} )
+            console.log("this is our create rq.body",req.body)
+        db.Products.create(req.body,{$set:{buyer:true}} )
                                             //   {products: {quantity: req.body.quantity, product: req.body.productid}} 
         .then( (userAdded) =>{
             res.sendStatus(200)
@@ -21,7 +22,7 @@ const cart={
     //     console.log(req.user)
     //     if (req.user) {
     //         db.Cart.find(req.query)
-    //         .populate("products.product")  
+    //         .populate("products")  
     //         .then (cartdb => {
     //             console.log("this is our cart db",cartdb)
     //             res.json(cartdb)

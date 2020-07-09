@@ -22,7 +22,7 @@ const ProductSchema = new mongoose.Schema({
   },
   orderQty:{
     type:Number,
-    default:0
+    default:1
   },
   stockQty:{
     type: Number,
