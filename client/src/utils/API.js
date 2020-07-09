@@ -1,23 +1,20 @@
 import axios from "axios";
 
+export default {
+  getOneProduct: function (productId) {
+    return axios.get("/product/" + productId);
+  },
 
- export default {
-     getOneProduct: function(productId){
-         return axios.get("/product/" + productId)
-         
-     },
+  addToCart: function (product) {
+    console.log("API add to cart");
+    return axios.post("/addToCart", product);
+  },
 
-     addToCart: function(product){
-         return axios.post("/addToCart", product);
-     },
+  renderCart: function () {
+    return axios.get("/userCart");
+  },
 
-     renderCart: function() {
-         return axios.get("/userCart");
-     },
-
-     delFromCart: function(product){
-         return axios.put("/delFromCart/", product);
-     }
-
- }
- 
+  delFromCart: function (product) {
+    return axios.put("/delFromCart/", product);
+  },
+};
