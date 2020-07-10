@@ -1,12 +1,6 @@
-const cors = require("cors");
-
-// const express = require('express');
-const router =require("express").Router()
-
+const router = require("express").Router()
 const stripe = require('stripe')('STRIPE_SECRET_KEY');
-const uuid = require("uuid/v4")
 
-app.use(cors())
 
 router.get("/", (req, res) => {
     res.send("test for stripe")
@@ -56,7 +50,6 @@ router.post("/payment", (req, res) => {
 //     },
 //   })
 // );
-
 
 
 // app.get('/payment', (req, res) => {
