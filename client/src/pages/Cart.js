@@ -3,13 +3,7 @@ import Container from 'react-bootstrap/Container';
 import CartCard from '../components/CartCard';
 import API from "../utils/API";
 
-// import CheckoutForm from '../components/CheckoutForm';
-// import ReactDOM from 'react-dom';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-// import Checkout from '../components/Checkout';
-// import Success from '../components/Success';
-// import Canceled from '../components/Canceled';
 import StripeCheckout from "react-stripe-checkout"
 
 function Cart(props) {
