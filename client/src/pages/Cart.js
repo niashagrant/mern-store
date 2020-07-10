@@ -12,8 +12,8 @@ function Cart(props) {
     const [quantity, setQuantity] = useState(1);
 
     useEffect(() => {                           // added useEffect in which we call loadThisCart()
-        console.log("user:", props)
-        loadThisCart()
+        console.log("user:", props);
+        loadThisCart();
     }, []);
     
     // function to get the request from the back with product information and quantity
@@ -30,7 +30,7 @@ function Cart(props) {
         }
     }
     //function to send information about what porduct we want to delete from database
-    useEffect(()=>{
+
         const updateThisCart =(event)=>{
             if (!user) {
                 alert("You must be signed in to add items to your cart.")
@@ -42,16 +42,13 @@ function Cart(props) {
                 API.delFromCart(itemToRemove)
                 .then(deleted=>{
                     console.log("product was deleted", deleted);
-                    setRemoval(deleted)
-                    
+                    setRemoval(deleted);
+                    window.location.reload();
                 }).catch(err=>{
                     console.log(err)
                 })
             }
         }
-    },[removal])
-   
-            
 
     return (
         <Container className="col col-sm-1 col-md-9 col-centered">
@@ -73,7 +70,6 @@ function Cart(props) {
             )}
         </Container>
     )
-
 }
 
 
