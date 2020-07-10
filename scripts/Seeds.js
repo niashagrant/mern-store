@@ -26,7 +26,8 @@ const products=[{
     "description": "Graphic T-Shirt",
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594349431/Screen_Shot_2020-07-09_at_7.42.39_PM_wew6k7.png"
-
+},
+{
     "name": "QWC Phone Case",
     "price": 24.00,
     "description": "iPhone 11 Version",
