@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 import axios from "axios";
+import "./style.css"
 
 
 function SignIn(props) {
@@ -37,6 +40,7 @@ function SignIn(props) {
   };
 
   return (
+    <Container>
     <Form onSubmit={submitHandler}>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -51,10 +55,12 @@ function SignIn(props) {
         <Form.Control type="password" placeholder="Password" ref={password} />
       </Form.Group>
 
-      <Button variant="primary" type="submit">
+      <Button className="login" variant="primary" type="submit">
         Submit
       </Button>
     </Form>
+    <Row className="p-3">Don't have an Account? <Link className="ml-2" to ={"/signup"} >Sign-Up Now!</Link></Row>
+    </Container>
   );
 }
 

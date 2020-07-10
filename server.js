@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+var cors = require('cors')
 const routes = require("./routes");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
@@ -14,6 +15,7 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+app.use(cors())
 
 app.use(
   session({ secret: "keyboard cat", resave: true, saveUninitialized: true })

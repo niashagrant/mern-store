@@ -9,7 +9,7 @@ import axios from "axios";
 function MenuBar(props) {
   console.log(props)
   let history = useHistory();
-
+  const {user}=props
   const logOut=()=>{
     console.log("logging out")
     axios.get("/logout")
@@ -28,13 +28,16 @@ return (
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
     <Nav>
+    
       <Nav.Link  onClick={()=>{history.push("/")}}>Home</Nav.Link>
       <Nav.Link  onClick={()=>{history.push("/cart")}}>Cart</Nav.Link>
-      <Nav.Link  onClick={()=>{history.push("/account")}}>Account</Nav.Link>
+      {/* <Nav.Link  onClick={()=>{history.push("/account")}}>Account</Nav.Link> */}
+      {user ? (<>
       <Nav.Link onClick= {logOut} href="#">Log-Out</Nav.Link>
+      </>):(<>
       <Nav.Link  onClick={()=>{history.push("/login")}}>Log-In</Nav.Link>
-      <Nav.Link  onClick={()=>{history.push("/signup")}}>Sign-Up</Nav.Link>
-      
+      {/* <Nav.Link  onClick={()=>{history.push("/signup")}}>Sign-Up</Nav.Link> */}
+     </> )}
     </Nav>
   </Navbar.Collapse>
   </Container>
