@@ -1,19 +1,27 @@
 import axios from "axios";
 
+export default {
+  getOneProduct: function (productId) {
+    return axios.get("/product/" + productId);
+  },
 
- export default {
-     getOneProduct: function(productId){
-         return axios.get("/product/" + productId)
-         
-     },
+  addToCart: function (product) {
+    console.log("API add to cart");
+    return axios.post("/addToCart", product);
+  },
 
-     addToCart: function(product){
-         return axios.put("/addToCart", product);
-     },
+  renderCart: function (id) {
+    return axios.get("/userCart/"+ id);
+  },
 
-     renderCart: function() {
-         return axios.get("/userCart");
-     }
-
- }
- 
+  delFromCart: function (id) {
+    console.log("axios parameter passing to delete from cart:", id)
+    return axios.delete("/delFromCart/"+ id);
+  },
+  updateCartQty:function(qty){
+    console.log("this is what we are sending to the back to update Qty:",qty);
+    return axios.put("/updateCartQty", qty)
+    
+  }
+  
+};

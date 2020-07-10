@@ -6,7 +6,8 @@ mongoose.connect( MONGODB_URI);
 const db=require("../models")
 
 const products=[{
-    "id": 1,
+
+ 
     "name": "FBC Men's T-Shirt",
     "price": 2400,
     "category1": "clothing",
@@ -17,7 +18,7 @@ const products=[{
 
 },
 {
-    "id": 2,
+   
     "name": "FBC Women's T-Shirt",
     "price": 2400,
     "category1": "clothing",
@@ -26,9 +27,20 @@ const products=[{
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594349431/Screen_Shot_2020-07-09_at_7.42.39_PM_wew6k7.png"
 
+    "name": "QWC Phone Case",
+    "price": 24.00,
+    "description": "iPhone 11 Version",
+    "mediaUrl": "https://cdn-images.threadless.com/threadless-media/artist_shops/shops/mern/products/1504609/shirt-1592329653-6acd002459c22737c82f1931611813cf.png?v=3&d=eyJvbmx5X21ldGEiOiBmYWxzZSwgImZvcmNlIjogZmFsc2UsICJvcHMiOiBbWyJpZl8iLCBbeyJ0IjogImV4cHIiLCAidiI6IFsiaGFzX2FscGhhIiwgbnVsbCwgbnVsbF19LCB7InQiOiAiY29tcCIsICJ2IjogWyJ0aHJlYWRsZXNzLW1lZGlhL2FydGlzdF9zaG9wcy9zaG9wcy9tZXJuL3Byb2R1Y3RzLzE1MDQ2MDkvc2hpcnQtMTU5MjMyOTY1My02YWNkMDAyNDU5YzIyNzM3YzgyZjE5MzE2MTE4MTNjZi5wbmciLCBbWyJ0cmltIiwgW3RydWUsIGZhbHNlXSwge31dLCBbInJlc2l6ZSIsIFs2ODQuMDAwMDAwMDAwMDAwMSwgOTE3Ljk5OTk5OTk5OTk5OTldLCB7Im1heF9zY2FsZSI6IDIuMH1dLCBbInBhZCIsIFs2MTIuMCwgMjY0LjAsIDUxMC4wLCAyNTIuMF0sIHsiYmFja2dyb3VuZCI6ICJkYTRhNTkifV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzEyMDAuMCwgMjA0MC4wXSwgeyJiYWNrZ3JvdW5kIjogImRhNGE1OSJ9XV1dfSwgeyJ0IjogImNvbXAiLCAidiI6IFsidGhyZWFkbGVzcy1tZWRpYS9hcnRpc3Rfc2hvcHMvc2hvcHMvbWVybi9wcm9kdWN0cy8xNTA0NjA5L3NoaXJ0LTE1OTIzMjk2NTMtNmFjZDAwMjQ1OWMyMjczN2M4MmYxOTMxNjExODEzY2YucG5nIiwgW1sicmVzaXplIiwgWzEyMDAuMCwgMjA0MC4wXSwgeyJtYXhfc2NhbGUiOiAyLjAsICJzdHlsZSI6ICJDUk9QIn1dLCBbImNhbnZhc19jZW50ZXJlZCIsIFsxMjAwLjAsIDIwNDAuMF0sIHsiYmFja2dyb3VuZCI6ICJmZmZmZmYifV1dXX1dLCB7fV0sIFsiZW5jb2RlIiwgWyIucG5nIl0sIHsiZHBpIjogMzAwfV0sIFsicmVzaXplIiwgWzExNjBdLCB7fV0sIFsib3ZlcmxheSIsIFsidGhyZWFkbGVzcy1tZWRpYS9hcnRpc3Rfc2hvcHMvb3ZlcmxheXMvN2EzMDE3MGIwM2VjMzYzN2Y4ODg4MTAxNTVhYTBjYzgvZnJvbnQtMTU2ODkxMTMxMS0xYjIyZWNhMzNkOTMxNTlmNDAwZWEyMjI5M2Q1Mzk1OC5wbmciXSwgeyJ5IjogMTEsICJ4IjogNDIwLCAiYmFja2dyb3VuZCI6ICJkYTRhNTkifV0sIFsicmVzaXplIiwgWzE1MF0sIHt9XSwgWyJjYW52YXNfY2VudGVyZWQiLCBbMTUwLCAxNTAsICIjZmZmZmZmIl0sIHt9XSwgWyJlbmNvZGUiLCBbImpwZyIsIDg1XSwge31dXX0="
+    
 },
 {
-    "id": 3,
+    "name": "QWC Tote",
+    "price": 18.50,
+    "description": "You totes need this",
+
+},
+{
+   
     "name": "FBC Coffee Mug",
     "price": 1800,
     "category1": "accessories",
@@ -39,7 +51,7 @@ const products=[{
 
 },
 {
-    "id": 4,
+    
     "name": "FBC Tote",
     "price": 2500,
     "category1": "accessories",
@@ -50,7 +62,7 @@ const products=[{
 
 },
 {
-    "id": 5,
+   
     "name": "FBC Spiral Notebook",
     "price": 900,
     "category1": "accessories",
@@ -61,7 +73,7 @@ const products=[{
 
 },
 {
-    "id": 6,
+   
     "name": "FBC Zip Pouch",
     "price": 1400,
     "category1": "accessories",
