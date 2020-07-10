@@ -4,6 +4,8 @@ import CartCard from '../components/CartCard';
 import API from "../utils/API";
 
 
+import StripeCheckout from "react-stripe-checkout"
+
 function Cart(props) {
 
     const {user}=props;
@@ -11,9 +13,39 @@ function Cart(props) {
     const [ removal, setRemoval]= useState();
    
 
+    // TO DO: update with product in store vs hard coded!!!
+    const [product, setProduct] = useState ({
+        name: "FBC Women's T-Shirt",
+        price: 24,
+        productBy: "Queen St. Market"
+    })
+
+    const makePayment = token => {
+        const body = {
+            token,
+            product
+        }
+        const headers = {
+            "Content-Type": "application/json"
+        }
+
+        return fetch(`/payment`, {
+            method: "POST",
+            headers,
+            body: JSON.stringify(body)
+        })
+        .then(response => {
+            console.log("RESPONSE", response)
+            const {status} = response;
+            console.log("STATUS", status)
+        })
+        .catch(error => console.log(error))
+    }
+
+  
     useEffect(() => {                           // added useEffect in which we call loadThisCart()
         console.log("user:", props);
-        loadThisCart();
+        loadThisCart(); 
     }, []);
     
     // function to get the request from the back with product information and quantity
@@ -66,7 +98,8 @@ function Cart(props) {
         }
 
     return (
-        <Container className="col col-sm-1 col-md-9 col-centered">
+        <>
+        <Container className="col col-sm-1 col-md-8 col-centered">
             <h6>Cart Page</h6>
             {cart.map(( element ) =>{
                 // console.log("this is our element:",element)
@@ -85,6 +118,23 @@ function Cart(props) {
                 />) }
             )}
         </Container>
+      
+       
+        <StripeCheckout className="col col-sm-1 col-md-4 col-centered"
+                stripeKey="pk_test_51H2jAhF6rrHNM5skrWeDa7Ug2AjxFHAhKeuw8Dv1m2OGNI7WEWf1zebIu8zW5MLhYYygTV7WcfG5L7TOSCtwpfWX00nxZ8LW4t"
+                token={makePayment}
+                name= "Queen St. Market"
+                amount={product.price * 100}
+                shippingAddress
+                billingAddress
+                image="https://res.cloudinary.com/lindseytummond/image/upload/v1594364031/FBC_this_could_ilsybo.png"
+        >
+             <button variant="primary" size="lg" block>
+                Purchase Total: ${product.price}
+                {/* comes from state on line 23 */}
+            </button>
+        </StripeCheckout>
+        </>
     )
 }
 

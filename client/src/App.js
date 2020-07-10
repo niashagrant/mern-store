@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+
 import MenuBar from "./components/Menubar";
 import Marquee from "./components/Marquee";
 import Account from "./pages/Account";
@@ -10,6 +12,7 @@ import Home from "./pages/Home";
 import Product from "./pages/Product";
 
 
+// const stripePromise = loadStripe("pk_test_51H2jAhF6rrHNM5skrWeDa7Ug2AjxFHAhKeuw8Dv1m2OGNI7WEWf1zebIu8zW5MLhYYygTV7WcfG5L7TOSCtwpfWX00nxZ8LW4t");
 
 function App (props) {
 
@@ -19,6 +22,7 @@ function App (props) {
 
 
     return (
+      // <Elements stripe={stripePromise}>
       <Router>
       <Marquee/>
       <MenuBar setLogin={setLogin} user={user}{...props}/>
@@ -34,6 +38,7 @@ function App (props) {
         <Route exact path="/addToCart"/>
       </Switch>
       </Router>
+      // </Elements>
 
     );
   
