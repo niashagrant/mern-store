@@ -1,85 +1,48 @@
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').load()
-  }
-
-const stripePublicKey = process.env.STRIPE_PUBLIC_KEY
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY
-
-const router =require("express").Router()
-const fs = require('fs')
-const stripe = require('stripe')(stripeSecretKey)
-
-
-app.get('/store', function(req, res) {
-    fs.readFile('items.json', function(error, data) {
-      if (error) {
-        res.status(500).end()
-      } else {
-        res.render('store.ejs', {
-          stripePublicKey: stripePublicKey,
-          items: JSON.parse(data)
-        })
-      }
-    })
-  })
-  
-  app.post('/purchase', function(req, res) {
-    fs.readFile('items.json', function(error, data) {
-      if (error) {
-        res.status(500).end()
-      } else {
-        const itemsJson = JSON.parse(data)
-        const itemsArray = itemsJson.music.concat(itemsJson.merch)
-        let total = 0
-        req.body.items.forEach(function(item) {
-          const itemJson = itemsArray.find(function(i) {
-            return i.id == item.id
-          })
-          total = total + itemJson.price * item.quantity
-        })
-  
-        stripe.charges.create({
-          amount: total,
-          source: req.body.stripeTokenId,
-          currency: 'usd'
-        }).then(function() {
-          console.log('Charge Successful')
-          res.json({ message: 'Successfully purchased items' })
-        }).catch(function() {
-          console.log('Charge Fail')
-          res.status(500).end()
-        })
-      }
-    })
-  })
-
+const cors = require("cors");
 
 // const express = require('express');
-// const app = express();
-// const { resolve } = require('path');
-
 const router =require("express").Router()
-const stripe = require('stripe')('sk_test_51H2jAhF6rrHNM5sksNEwuiEJ346yjze8Gtcn5ZI5gRrFWzsUEkPRbF9PYnF6QxnUFwMKpIbvMWXLDEVZI3WmnosE00tbrNGpWo');
+
+const stripe = require('stripe')('STRIPE_SECRET_KEY');
+const uuid = require("uuid/v4")
+
+app.use(cors())
+
+router.get("/", (req, res) => {
+    res.send("test for stripe")
+})
+
+router.post("/payment", (req, res) => {
+    const {product, token} = req.body;
+    console.log("PRODUCT FOR STRIPE", product)
+    console.log("RICE FOR STRIPE", product.price)
+    const idempontencyKey = uuid()
+    // makes sure customer is only charged once
+
+    return stripe.customers.create({
+        email: token.email,
+        source: token.id
+    }) .then (customer => {
+        stripe.charges.create({
+            amount: product.price * 100,
+            currency: 'usd',
+            customer: customer.id,
+            receipt_email: token.email,
+            description: product.name,
+            shipping: {
+                name: token.card.name,
+                address: {
+                    country: token.card.address_country
+                }
+            }
+        }, {idempontencyKey})
+    })
+    .then(result => res.status(200).json(result))
+    .catch(err => console.log(err))
+})
 
 
 
-router.post('/payment', async (req, res) => {
-
-    // paymentIntent => track and handle all the states of the payment until it’s completed
-    const paymentIntent = await stripe.paymentIntents.create({
-        amount: 5000, 
-        //NTS: add total products.price after working!!!!!!!!!!
-        currency: 'usd',
-        // // Verify your integration in this guide by including this parameter
-        // metadata: {integration_check: 'accept_a_payment'},
-        // receipt_email: email,
-      });
-      console.log("payment working!", paymentIntent)
-
-      res.json({'client_secret': paymentIntent['client_secret']})
-      //   client secret => used on the client side to securely complete the 
-      //   payment process instead of passing the entire PaymentIntent object
-  });
 
 // app.use(express.static(process.env.STATIC_DIR));
 // app.use(
@@ -93,6 +56,8 @@ router.post('/payment', async (req, res) => {
 //     },
 //   })
 // );
+
+
 
 // app.get('/payment', (req, res) => {
 //   const path = resolve(process.env.STATIC_DIR + '/index.html');
