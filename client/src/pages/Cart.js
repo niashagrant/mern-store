@@ -30,25 +30,28 @@ function Cart(props) {
         }
     }
     //function to send information about what porduct we want to delete from database
-    const updateThisCart =(event)=>{
-        if (!user) {
-            alert("You must be signed in to add items to your cart.")
+    useEffect(()=>{
+        const updateThisCart =(event)=>{
+            if (!user) {
+                alert("You must be signed in to add items to your cart.")
+            }
+            else{
+                console.log("ProductId:", cart)
+                 const itemToRemove= event.target.getAttribute("data-id")
+                console.log(itemToRemove)
+                API.delFromCart(itemToRemove)
+                .then(deleted=>{
+                    console.log("product was deleted", deleted);
+                    setRemoval(deleted)
+                    
+                }).catch(err=>{
+                    console.log(err)
+                })
+            }
         }
-        else{
-            console.log("ProductId:", cart)
-             const itemToRemove= event.target.getAttribute("data-id")
-            console.log(itemToRemove)
-            API.delFromCart(itemToRemove)
-            .then(deleted=>{
-                console.log("product was deleted", deleted);
-                setRemoval(deleted)
-                
-            }).catch(err=>{
-                console.log(err)
-            })
-        }
-    }
-
+    },[removal])
+   
+            
 
     return (
         <Container className="col col-sm-1 col-md-9 col-centered">
@@ -62,7 +65,7 @@ function Cart(props) {
                 image={element.product.mediaUrl} 
                 price={element.product.price} 
                 description={element.product.description}
-                value={element.quantity}
+                value={element.orderQty}
                 productid={element._id}
                 // onChange={event => setQuantity(Number(event.target.value))}
                 deleteProd={updateThisCart}
