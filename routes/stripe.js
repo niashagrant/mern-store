@@ -11,7 +11,7 @@ router.post("/payment", (req, res) => {
     console.log("PRODUCT FOR STRIPE", product)
     console.log("RICE FOR STRIPE", product.price)
     const idempontencyKey = uuid()
-    // makes sure customer is only charged once
+    // idempontencyKey => makes sure customer is only charged once
 
     return stripe.customers.create({
         email: token.email,

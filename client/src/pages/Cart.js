@@ -3,14 +3,14 @@ import Container from 'react-bootstrap/Container';
 import CartCard from '../components/CartCard';
 import API from "../utils/API";
 
-import CheckoutForm from '../components/CheckoutForm';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import CheckoutForm from '../components/CheckoutForm';
+// import ReactDOM from 'react-dom';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Checkout from '../components/Checkout';
-import Success from '../components/Success';
-import Canceled from '../components/Canceled';
-
+// import Checkout from '../components/Checkout';
+// import Success from '../components/Success';
+// import Canceled from '../components/Canceled';
+import StripeCheckout from "react-stripe-checkout"
 
 function Cart(props) {
 
@@ -18,7 +18,14 @@ function Cart(props) {
     const [ cart, setCart ] = useState([]);
     const [quantity, setQuantity] = useState(1);
 
-    useEffect(() => {                           // added useEffect in which we call loadThisCart()
+    // TO DO: update with product in store vs hard coded!!!
+    const [product, setProduct] = useState ({
+        name: "FBC Women's T-Shirt",
+        price: 24,
+        productBy: "Queen St. Market"
+    })
+
+    useEffect(() => { // added useEffect in which we call loadThisCart()
         console.log("user:", props)
         loadThisCart()
     }, []);
@@ -41,7 +48,7 @@ function Cart(props) {
 
     return (
         <>
-        <Container className="col col-sm-1 col-md-10 col-centered">
+        <Container className="col col-sm-1 col-md-8 col-centered">
             <h6>Cart Page</h6>
             {cart.map(( element ) =>{
                 // console.log("this is our element:",element)
@@ -58,23 +65,16 @@ function Cart(props) {
             )}
         </Container>
       
-        <Router className="col col-sm-1 col-md-2 col-centered">
-                <Switch>
-                    <Route path="/success.html">
-                        <Success />
-                    </Route>
-
-                    <Route path="/canceled.html">
-                        <Canceled />
-                    </Route>
-
-                    <Route path="/">
-                        <Checkout />
-                    </Route>
-                </Switch>
-                <br/><br/>
-                <CheckoutForm/>
-        </Router>
+       
+        <StripeCheckout className="col col-sm-1 col-md-4 col-centered"
+                stripeKey=""
+                token=""
+                name= "Queen St. Market">
+             <button variant="primary" size="lg" block>
+                Purchase Total: ${product.price}
+                {/* comes from state on line 23 */}
+            </button>
+        </StripeCheckout>
         </>
     )
 
