@@ -67,9 +67,11 @@ const cart = {
   },
 
   findOneAndDelete: function(req,res){
+      console.log("this is the req from delete", req)
       if(req.user){
-          console.log("this is what we want to delete", {product:req.params.id})
-          db.Cart.findOneAndDelete({user:req.user._id},{$pull:{product:req.params.id}})
+          console.log("this is what we want to delete", req.params.id)
+          const itemToRemove= req.params.id
+          db.Cart.findByIdAndDelete(itemToRemove)
           .then(cartdb =>{
               console.log(" was this item was deleted?", cartdb);
               res.json(cartdb)

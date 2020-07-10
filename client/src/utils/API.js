@@ -14,7 +14,8 @@ export default {
     return axios.get("/userCart/"+ id);
   },
 
-  delFromCart: function (product) {
-    return axios.delete("/delFromCart", product);
+  delFromCart: function (id) {
+    console.log("axios parameter passing to delete from cart:", id)
+    return axios.delete("/delFromCart/"+ id);
   },
 };

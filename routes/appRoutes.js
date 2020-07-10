@@ -14,7 +14,7 @@ router.route("/addToCart").post(cartController.create);
 router.route("/userCart/:id")
 .get(cartController.findAll);
 
-router.route("/delFromCart")
+router.route("/delFromCart/:id")
 .delete(cartController.findOneAndDelete)
 
 module.exports = router;

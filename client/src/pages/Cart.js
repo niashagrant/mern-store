@@ -30,13 +30,13 @@ function Cart(props) {
         }
     }
     //function to send information about what porduct we want to delete from database
-    const updateThisCart =()=>{
+    const updateThisCart =(event)=>{
         if (!user) {
             alert("You must be signed in to add items to your cart.")
         }
         else{
             console.log("ProductId:", cart)
-             const itemToRemove= cart[0].product
+             const itemToRemove= event.target.getAttribute("data-id")
             console.log(itemToRemove)
             API.delFromCart(itemToRemove)
             .then(deleted=>{
@@ -63,7 +63,7 @@ function Cart(props) {
                 price={element.product.price} 
                 description={element.product.description}
                 value={element.quantity}
-                productid={element.product._id}
+                productid={element._id}
                 // onChange={event => setQuantity(Number(event.target.value))}
                 deleteProd={updateThisCart}
                 />) }
