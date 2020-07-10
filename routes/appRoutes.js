@@ -19,7 +19,7 @@ router.route("/delFromCart/:id")
 
 
 //Work in progress - trying to update quantity
-router.route("/updateCartQty/:id")
-.put(cartController.findByIdAndUpdate)
+router.route("/updateCartQty")
+.put(cartController.findOneAndUpdate)
 
 module.exports = router;

@@ -9,7 +9,7 @@ function Cart(props) {
     const {user}=props;
     const [ cart, setCart ] = useState([]);
     const [ removal, setRemoval]= useState();
-    const [quantity, setQuantity] = useState(1);
+   
 
     useEffect(() => {                           // added useEffect in which we call loadThisCart()
         console.log("user:", props);
@@ -49,6 +49,21 @@ function Cart(props) {
                 })
             }
         }
+        const updateQty =(id,qty)=>{
+            console.log("button clicked")
+            // console.log(event.target);
+            console.log("value from Child:",id,qty)
+            const qtyUpdate={id,qty}
+           API.updateCartQty(qtyUpdate)
+           .then(updated=>{
+               console.log(updated);
+               
+           }).catch(err=>{
+               console.log(err);
+               
+           })
+            
+        }
 
     return (
         <Container className="col col-sm-1 col-md-9 col-centered">
@@ -64,6 +79,7 @@ function Cart(props) {
                 description={element.product.description}
                 value={element.orderQty}
                 productid={element._id}
+                updateQty={updateQty}
                 // onChange={event => setQuantity(Number(event.target.value))}
                 deleteProd={updateThisCart}
                 />) }

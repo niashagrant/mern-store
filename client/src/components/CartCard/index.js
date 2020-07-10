@@ -43,10 +43,10 @@ function CartCard (props) {
         {/* <Button  data-user={props.user} data-productid={props.id} onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart {props.buttonText}</Button> */}
         <Row className="d-flex justify-content-end w-100">
           {/* To update Qty - maybe add a update button here?  Or can we handle with window location reload?  */}
-          <Button data-id={props.productid} onClick={props.updateQty} className="btn btn-sm bg-light text-dark delete mt-1 mr-1">
+          <Button data-id={props.productid} onClick={()=>props.updateQty(props.id,quantity)} className="btn btn-sm bg-light text-dark delete mt-1 mr-1">
             Update Qty
           </Button>
-          <Button data-id={props.productid} onClick={props.deleteProd} className="btn btn-sm bg-light text-dark delete mt-1">
+          <Button  data-id={props.productid} onClick={props.deleteProd} className="btn btn-sm bg-light text-dark delete mt-1">
             Delete
           </Button>
         </Row>

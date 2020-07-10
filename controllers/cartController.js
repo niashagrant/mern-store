@@ -65,11 +65,16 @@ const cart = {
   },
 
   // Work in progress - trying to update quantity...
-  findByIdAndUpdate: function ( req, res) {
-    console.log ("This is the req for our update Qty: ", req)
+  findOneAndUpdate: function ( req, res) {
+    console.log ("This is the req for our update Qty: ", req.body)
     if(req.user){
-      db.Cart.findOneAndUpdate()
-      .then()
+      db.Cart.findOneAndUpdate({_id:req.body.id},{orderQty:req.body.qty})
+      .then(()=>{
+        sendStatus(200)
+      }).catch(err=>{
+        console.log(err);
+        
+      })
     }
   }
 };

@@ -18,4 +18,10 @@ export default {
     console.log("axios parameter passing to delete from cart:", id)
     return axios.delete("/delFromCart/"+ id);
   },
+  updateCartQty:function(qty){
+    console.log("this is what we are sending to the back to update Qty:",qty);
+    return axios.put("/updateCartQty", qty)
+    
+  }
+  
 };
