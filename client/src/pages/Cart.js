@@ -25,6 +25,28 @@ function Cart(props) {
         productBy: "Queen St. Market"
     })
 
+    const makePayment = token => {
+        const body = {
+            token,
+            product
+        }
+        const headers = {
+            "Content-Type": "application/json"
+        }
+
+        return fetch(`/payment`, {
+            method: "POST",
+            headers,
+            body: JSON.stringify(body)
+        })
+        .then(response => {
+            console.log("RESPONSE", response)
+            const {status} = response;
+            console.log("STATUS", status)
+        })
+        .catch(error => console.log(error))
+    }
+
     useEffect(() => { // added useEffect in which we call loadThisCart()
         console.log("user:", props)
         loadThisCart()
@@ -67,9 +89,14 @@ function Cart(props) {
       
        
         <StripeCheckout className="col col-sm-1 col-md-4 col-centered"
-                stripeKey=""
-                token=""
-                name= "Queen St. Market">
+                stripeKey="pk_test_51H2jAhF6rrHNM5skrWeDa7Ug2AjxFHAhKeuw8Dv1m2OGNI7WEWf1zebIu8zW5MLhYYygTV7WcfG5L7TOSCtwpfWX00nxZ8LW4t"
+                token={makePayment}
+                name= "Queen St. Market"
+                amount={product.price * 100}
+                shippingAddress
+                billingAddress
+                image="https://res.cloudinary.com/lindseytummond/image/upload/v1594364031/FBC_this_could_ilsybo.png"
+        >
              <button variant="primary" size="lg" block>
                 Purchase Total: ${product.price}
                 {/* comes from state on line 23 */}
