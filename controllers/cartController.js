@@ -48,23 +48,23 @@ const cart = {
     }
   },
 
-  // findAll: function(req, res) {
-  //     console.log(req.user)
-  //     if (req.user) {
-  //         db.Cart.find(req.query)
-  //         .populate("products")
-  //         .then (cartdb => {
-  //             console.log("this is our cart db",cartdb)
-  //             res.json(cartdb)
-  //         })
-  //         .catch(error=> {
-  //             console.log(error);
-  //         })
-  //     }   else {
-  //         res.sendStatus(403);
-  //         console.log("cartController: User is not logged in.");
-  //     }
-  // },
+  findAll: function(req, res) {
+      console.log("this is what we want",req.user._id)
+      if (req.user) {
+          db.Cart.find({user:req.user._id})
+          .populate("product")
+          .then (cartdb => {
+              console.log("this is our cart db",cartdb)
+              res.json(cartdb)
+          })
+          .catch(error=> {
+              console.log(error);
+          })
+      }   else {
+          res.sendStatus(403);
+          console.log("cartController: User is not logged in.");
+      }
+  },
 
   // findOneAndUpdate: function(req,res){
   //     if(req.user){

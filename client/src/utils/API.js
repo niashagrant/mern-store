@@ -10,8 +10,8 @@ export default {
     return axios.post("/addToCart", product);
   },
 
-  renderCart: function () {
-    return axios.get("/userCart");
+  renderCart: function (id) {
+    return axios.get("/userCart/"+ id);
   },
 
   delFromCart: function (product) {

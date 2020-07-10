@@ -22,11 +22,10 @@ function Cart(props) {
         if (!user) {
             alert("You must be signed in to add items to your cart.")
         } else {
-            API.renderCart()
+            API.renderCart(user)
             .then(cartItems => {
-                console.log("WORKING ON QUANTITY ISSUE: ", cartItems.data)
-                console.log("back:", cartItems.data[0].products)
-              setCart(cartItems.data[0].products)  
+                console.log("back:", cartItems.data)
+              setCart(cartItems.data)  
             })
         }
     }

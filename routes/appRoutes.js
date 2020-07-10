@@ -11,8 +11,8 @@ router.route("/product/:ProductId").get(productsController.findOne);
 
 router.route("/addToCart").post(cartController.create);
 
-// router.route("/userCart")
-// .get(cartController.findAll);
+router.route("/userCart/:id")
+.get(cartController.findAll);
 
 // router.route("/delFromCart")
 // .put(cartController.findOneAndUpdate)
