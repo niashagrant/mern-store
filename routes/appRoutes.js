@@ -17,4 +17,9 @@ router.route("/userCart/:id")
 router.route("/delFromCart/:id")
 .delete(cartController.findOneAndDelete)
 
+
+//Work in progress - trying to update quantity
+router.route("/updateCartQty/:id")
+.put(cartController.findByIdAndUpdate)
+
 module.exports = router;
