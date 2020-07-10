@@ -15,6 +15,6 @@ export default {
   },
 
   delFromCart: function (product) {
-    return axios.put("/delFromCart/", product);
+    return axios.delete("/delFromCart", product);
   },
 };

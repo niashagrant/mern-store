@@ -66,23 +66,24 @@ const cart = {
       }
   },
 
-  // findOneAndUpdate: function(req,res){
-  //     if(req.user){
-  //         db.Cart.findOneAndUpdate({user:req.user._id},{$pull:{products: {quantity: req.body.quantity, product: req.body.productid}}})
-  //         .then(cartdb =>{
-  //             console.log("this item was deleted", cartdb);
-  //             res.json(cartdb)
-  //         })
-  //         .catch(error=> {
-  //             console.log(error);
-  //          })
-  //      }
-  //      else {
-  //         res.sendStatus(403);
-  //         console.log("cartController: User is not logged in.");
-  //     }
+  findOneAndDelete: function(req,res){
+      if(req.user){
+          console.log("this is what we want to delete", {product:req.params.id})
+          db.Cart.findOneAndDelete({user:req.user._id},{$pull:{product:req.params.id}})
+          .then(cartdb =>{
+              console.log(" was this item was deleted?", cartdb);
+              res.json(cartdb)
+          })
+          .catch(error=> {
+              console.log(error);
+           })
+       }
+       else {
+          res.sendStatus(403);
+          console.log("cartController: User is not logged in.");
+      }
 
-  // }
+  }
 };
 
 module.exports = cart;

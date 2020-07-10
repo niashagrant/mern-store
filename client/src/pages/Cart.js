@@ -36,7 +36,7 @@ function Cart(props) {
         }
         else{
             console.log("ProductId:", cart)
-             const itemToRemove={quantity: quantity, productid: cart[0].product._id}
+             const itemToRemove= cart[0].product
             console.log(itemToRemove)
             API.delFromCart(itemToRemove)
             .then(deleted=>{
