@@ -48,7 +48,9 @@ function Product(props) {
           console.log(x.data);
           // console.log("was item added?");
         })
-        .catch(() => alert("Error - Line 46 of Product.js page."));
+        .catch((error) => {
+          console.log("Product.js line 51 error: ", error)
+        });
     }
   };
 

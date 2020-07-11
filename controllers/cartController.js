@@ -8,7 +8,10 @@ const cart = {
 
     if (req.user) {
       console.log("this is our create rq.body", req.body);
-
+      console.log("THIS IS OUR PRODUCTSEARCH: ", req.body.productId)
+      const productSearch = db.Cart.findOne(req.body.productId)
+      console.log(productSearch);
+      if(!productSearch) {
       db.Cart.create({
         user: req.user._id,
         product: req.body.productId,
@@ -19,7 +22,16 @@ const cart = {
         })
         .catch(() => {
           res.sendStatus(403);
-        });
+        })
+      } else {
+        db.Cart.findByIdAndUpdate({_id:req.body.productId},{orderQty:req.body.quantity})
+        .then(() => {
+          res.sendStatus(200);
+        })
+        .catch(() => {
+          res.sendStatus(404);
+        })
+      }
     } else {
       res.sendStatus(403);
       console.log("cartController: User is not logged in.");

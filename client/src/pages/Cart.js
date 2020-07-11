@@ -49,17 +49,17 @@ function Cart(props) {
     useEffect(() => {                           // added useEffect in which we call loadThisCart()
         console.log("user:", props);
         loadThisCart(); 
-    }, [cart]);
+    }, []);
     
     // function to get the request from the back with product information and quantity
     const loadThisCart = () => {
-        console.log("loadcart")
+        // console.log("loadcart")
         if (!user) {
             alert("You must be signed in to add items to your cart.")
         } else {
             API.renderCart(user)
             .then(cartItems => {
-                console.log("back:", cartItems.data)
+                // console.log("back:", cartItems.data)
               setCart(cartItems.data)  
             })
         }
