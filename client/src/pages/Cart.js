@@ -89,7 +89,7 @@ function Cart(props) {
                 amount={product.price * 100}
                 shippingAddress
                 billingAddress
-                image="https://res.cloudinary.com/lindseytummond/image/upload/v1594364031/FBC_this_could_ilsybo.png"
+                image="https://res.cloudinary.com/lindseytummond/image/upload/v1594480229/crown_only_wsj9yt.png"
         >
              <button variant="primary" size="lg" block>
                 Purchase Total: ${product.price}
