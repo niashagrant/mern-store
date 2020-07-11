@@ -444,7 +444,7 @@ const products=[
     "category3": "Sugar",
     "description": "Graphic T-Shirt",
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-    "mediaUrl": " "
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502359/Screen_Shot_2020-07-11_at_2.14.31_PM_izoptz.png"
 
 },
 {
@@ -455,7 +455,7 @@ const products=[
     "category3": "Sugar",
     "description": "Sweatshirt",
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
-    "mediaUrl": " "
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502360/Screen_Shot_2020-07-11_at_2.14.56_PM_atokvc.png"
 
 },
 {
@@ -466,7 +466,7 @@ const products=[
     "category3": "Sugar",
     "description": "Graphic T-Shirt",
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-    "mediaUrl": " "
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502363/Screen_Shot_2020-07-11_at_2.15.20_PM_qcawpv.png"
 },
 {
     "name": "Sugar Women's Tank",
@@ -476,7 +476,7 @@ const products=[
     "category3": "Sugar",
     "description": "Graphic Tank",
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-    "mediaUrl": " "
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502362/Screen_Shot_2020-07-11_at_2.15.52_PM_qafgu8.png"
 },
 {
     "name": "Sugar Coffee Mug",
@@ -486,7 +486,7 @@ const products=[
     "category3": "Sugar",
     "description": "It could be...",
     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
-    "mediaUrl": " "
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502363/Screen_Shot_2020-07-11_at_2.16.24_PM_zwbdby.png"
 
 },
 { 
@@ -497,7 +497,7 @@ const products=[
     "category3": "Sugar",
     "description": "The bag could be filled with...",
     "description2": "This tote is sleek, stylish, and classic.",
-    "mediaUrl": " "
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502361/Screen_Shot_2020-07-11_at_2.16.48_PM_gvaqxx.png"
 
 },
 {
@@ -508,7 +508,7 @@ const products=[
     "category3": "Sugar",
     "description": "Let your dreams run wild",
     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
-    "mediaUrl": " "
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502363/Screen_Shot_2020-07-11_at_2.17.12_PM_zy7rbw.png"
 
 },
 {
@@ -519,97 +519,445 @@ const products=[
     "category3": "Sugar",
     "description": "To hold all your little things",
     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
-    "mediaUrl": " "
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502363/Screen_Shot_2020-07-11_at_2.17.38_PM_disjch.png"
 
 },
 
 
-{
-    "name": "No Sleep Men's T-Shirt",
-    "price": 24.00,
-    "category1": "clothing",
-    "category2": "men",
-    "category3": "No Sleep",
-    "description": "Graphic T-Shirt",
-    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-    "mediaUrl": " "
+// {
+//     "name": "No Sleep Men's T-Shirt",
+//     "price": 24.00,
+//     "category1": "clothing",
+//     "category2": "men",
+//     "category3": "No Sleep",
+//     "description": "Graphic T-Shirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
 
-},
-{
-    "name": "No Sleep Men's Sweatshirt",
-    "price": 45.00,
-    "category1": "clothing",
-    "category2": "men",
-    "category3": "No Sleep",
-    "description": "Sweatshirt",
-    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
-    "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Men's Sweatshirt",
+//     "price": 45.00,
+//     "category1": "clothing",
+//     "category2": "men",
+//     "category3": "No Sleep",
+//     "description": "Sweatshirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
+//     "mediaUrl": " "
 
-},
-{
-    "name": "No Sleep Women's T-Shirt",
-    "price": 24.00,
-    "category1": "clothing",
-    "category2": "women",
-    "category3": "No Sleep",
-    "description": "Graphic T-Shirt",
-    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-    "mediaUrl": " "
-},
-{
-    "name": "No Sleep Women's Tank",
-    "price": 18.00,
-    "category1": "clothing",
-    "category2": "women",
-    "category3": "No Sleep",
-    "description": "Graphic Tank",
-    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-    "mediaUrl": " "
-},
-{
-    "name": "No Sleep Coffee Mug",
-    "price": 18.00,
-    "category1": "accessories",
-    "category2": "mug",
-    "category3": "No Sleep",
-    "description": "It could be...",
-    "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
-    "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Women's T-Shirt",
+//     "price": 24.00,
+//     "category1": "clothing",
+//     "category2": "women",
+//     "category3": "No Sleep",
+//     "description": "Graphic T-Shirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Women's Tank",
+//     "price": 18.00,
+//     "category1": "clothing",
+//     "category2": "women",
+//     "category3": "No Sleep",
+//     "description": "Graphic Tank",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Coffee Mug",
+//     "price": 18.00,
+//     "category1": "accessories",
+//     "category2": "mug",
+//     "category3": "No Sleep",
+//     "description": "It could be...",
+//     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+//     "mediaUrl": " "
 
-},
-{ 
-    "name": "No Sleep Tote",
-    "price": 25.00,
-    "category1": "accessories",
-    "category2": "bag",
-    "category3": "No Sleep",
-    "description": "The bag could be filled with...",
-    "description2": "This tote is sleek, stylish, and classic.",
-    "mediaUrl": " "
+// },
+// { 
+//     "name": "No Sleep Tote",
+//     "price": 25.00,
+//     "category1": "accessories",
+//     "category2": "bag",
+//     "category3": "No Sleep",
+//     "description": "The bag could be filled with...",
+//     "description2": "This tote is sleek, stylish, and classic.",
+//     "mediaUrl": " "
 
-},
-{
-    "name": "No Sleep Spiral Notebook",
-    "price": 9.00,
-    "category1": "accessories",
-    "category2": "notebook",
-    "category3": "No Sleep",
-    "description": "Let your dreams run wild",
-    "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
-    "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Spiral Notebook",
+//     "price": 9.00,
+//     "category1": "accessories",
+//     "category2": "notebook",
+//     "category3": "No Sleep",
+//     "description": "Let your dreams run wild",
+//     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+//     "mediaUrl": " "
 
-},
-{
-    "name": "No Sleep Zip Pouch",
-    "price": 14.00,
-    "category1": "accessories",
-    "category2": "zip pouch",
-    "category3": "No Sleep",
-    "description": "To hold all your little things",
-    "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
-    "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Zip Pouch",
+//     "price": 14.00,
+//     "category1": "accessories",
+//     "category2": "zip pouch",
+//     "category3": "No Sleep",
+//     "description": "To hold all your little things",
+//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+//     "mediaUrl": " "
 
-},
+// },
+
+// {
+//     "name": "No Sleep Men's T-Shirt",
+//     "price": 24.00,
+//     "category1": "clothing",
+//     "category2": "men",
+//     "category3": "No Sleep",
+//     "description": "Graphic T-Shirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Men's Sweatshirt",
+//     "price": 45.00,
+//     "category1": "clothing",
+//     "category2": "men",
+//     "category3": "No Sleep",
+//     "description": "Sweatshirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Women's T-Shirt",
+//     "price": 24.00,
+//     "category1": "clothing",
+//     "category2": "women",
+//     "category3": "No Sleep",
+//     "description": "Graphic T-Shirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Women's Tank",
+//     "price": 18.00,
+//     "category1": "clothing",
+//     "category2": "women",
+//     "category3": "No Sleep",
+//     "description": "Graphic Tank",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Coffee Mug",
+//     "price": 18.00,
+//     "category1": "accessories",
+//     "category2": "mug",
+//     "category3": "No Sleep",
+//     "description": "It could be...",
+//     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+//     "mediaUrl": " "
+
+// },
+// { 
+//     "name": "No Sleep Tote",
+//     "price": 25.00,
+//     "category1": "accessories",
+//     "category2": "bag",
+//     "category3": "No Sleep",
+//     "description": "The bag could be filled with...",
+//     "description2": "This tote is sleek, stylish, and classic.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Spiral Notebook",
+//     "price": 9.00,
+//     "category1": "accessories",
+//     "category2": "notebook",
+//     "category3": "No Sleep",
+//     "description": "Let your dreams run wild",
+//     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Zip Pouch",
+//     "price": 14.00,
+//     "category1": "accessories",
+//     "category2": "zip pouch",
+//     "category3": "No Sleep",
+//     "description": "To hold all your little things",
+//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+//     "mediaUrl": " "
+
+// },
+
+// {
+//     "name": "No Sleep Men's T-Shirt",
+//     "price": 24.00,
+//     "category1": "clothing",
+//     "category2": "men",
+//     "category3": "No Sleep",
+//     "description": "Graphic T-Shirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Men's Sweatshirt",
+//     "price": 45.00,
+//     "category1": "clothing",
+//     "category2": "men",
+//     "category3": "No Sleep",
+//     "description": "Sweatshirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Women's T-Shirt",
+//     "price": 24.00,
+//     "category1": "clothing",
+//     "category2": "women",
+//     "category3": "No Sleep",
+//     "description": "Graphic T-Shirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Women's Tank",
+//     "price": 18.00,
+//     "category1": "clothing",
+//     "category2": "women",
+//     "category3": "No Sleep",
+//     "description": "Graphic Tank",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Coffee Mug",
+//     "price": 18.00,
+//     "category1": "accessories",
+//     "category2": "mug",
+//     "category3": "No Sleep",
+//     "description": "It could be...",
+//     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+//     "mediaUrl": " "
+
+// },
+// { 
+//     "name": "No Sleep Tote",
+//     "price": 25.00,
+//     "category1": "accessories",
+//     "category2": "bag",
+//     "category3": "No Sleep",
+//     "description": "The bag could be filled with...",
+//     "description2": "This tote is sleek, stylish, and classic.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Spiral Notebook",
+//     "price": 9.00,
+//     "category1": "accessories",
+//     "category2": "notebook",
+//     "category3": "No Sleep",
+//     "description": "Let your dreams run wild",
+//     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Zip Pouch",
+//     "price": 14.00,
+//     "category1": "accessories",
+//     "category2": "zip pouch",
+//     "category3": "No Sleep",
+//     "description": "To hold all your little things",
+//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+//     "mediaUrl": " "
+
+// },
+
+// {
+//     "name": "No Sleep Men's T-Shirt",
+//     "price": 24.00,
+//     "category1": "clothing",
+//     "category2": "men",
+//     "category3": "No Sleep",
+//     "description": "Graphic T-Shirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Men's Sweatshirt",
+//     "price": 45.00,
+//     "category1": "clothing",
+//     "category2": "men",
+//     "category3": "No Sleep",
+//     "description": "Sweatshirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Women's T-Shirt",
+//     "price": 24.00,
+//     "category1": "clothing",
+//     "category2": "women",
+//     "category3": "No Sleep",
+//     "description": "Graphic T-Shirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Women's Tank",
+//     "price": 18.00,
+//     "category1": "clothing",
+//     "category2": "women",
+//     "category3": "No Sleep",
+//     "description": "Graphic Tank",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Coffee Mug",
+//     "price": 18.00,
+//     "category1": "accessories",
+//     "category2": "mug",
+//     "category3": "No Sleep",
+//     "description": "It could be...",
+//     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+//     "mediaUrl": " "
+
+// },
+// { 
+//     "name": "No Sleep Tote",
+//     "price": 25.00,
+//     "category1": "accessories",
+//     "category2": "bag",
+//     "category3": "No Sleep",
+//     "description": "The bag could be filled with...",
+//     "description2": "This tote is sleek, stylish, and classic.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Spiral Notebook",
+//     "price": 9.00,
+//     "category1": "accessories",
+//     "category2": "notebook",
+//     "category3": "No Sleep",
+//     "description": "Let your dreams run wild",
+//     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Zip Pouch",
+//     "price": 14.00,
+//     "category1": "accessories",
+//     "category2": "zip pouch",
+//     "category3": "No Sleep",
+//     "description": "To hold all your little things",
+//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+//     "mediaUrl": " "
+
+// },
+
+// {
+//     "name": "No Sleep Men's T-Shirt",
+//     "price": 24.00,
+//     "category1": "clothing",
+//     "category2": "men",
+//     "category3": "No Sleep",
+//     "description": "Graphic T-Shirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Men's Sweatshirt",
+//     "price": 45.00,
+//     "category1": "clothing",
+//     "category2": "men",
+//     "category3": "No Sleep",
+//     "description": "Sweatshirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Women's T-Shirt",
+//     "price": 24.00,
+//     "category1": "clothing",
+//     "category2": "women",
+//     "category3": "No Sleep",
+//     "description": "Graphic T-Shirt",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Women's Tank",
+//     "price": 18.00,
+//     "category1": "clothing",
+//     "category2": "women",
+//     "category3": "No Sleep",
+//     "description": "Graphic Tank",
+//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+//     "mediaUrl": " "
+// },
+// {
+//     "name": "No Sleep Coffee Mug",
+//     "price": 18.00,
+//     "category1": "accessories",
+//     "category2": "mug",
+//     "category3": "No Sleep",
+//     "description": "It could be...",
+//     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+//     "mediaUrl": " "
+
+// },
+// { 
+//     "name": "No Sleep Tote",
+//     "price": 25.00,
+//     "category1": "accessories",
+//     "category2": "bag",
+//     "category3": "No Sleep",
+//     "description": "The bag could be filled with...",
+//     "description2": "This tote is sleek, stylish, and classic.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Spiral Notebook",
+//     "price": 9.00,
+//     "category1": "accessories",
+//     "category2": "notebook",
+//     "category3": "No Sleep",
+//     "description": "Let your dreams run wild",
+//     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+//     "mediaUrl": " "
+
+// },
+// {
+//     "name": "No Sleep Zip Pouch",
+//     "price": 14.00,
+//     "category1": "accessories",
+//     "category2": "zip pouch",
+//     "category3": "No Sleep",
+//     "description": "To hold all your little things",
+//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+//     "mediaUrl": " "
+
+// },
 
 
 
