@@ -78,7 +78,6 @@ function Cart(props) {
                 .then(deleted=>{
                     console.log("product was deleted", deleted);
                     setRemoval(deleted);
-                    window.location.reload();
                 }).catch(err=>{
                     console.log(err)
                 })

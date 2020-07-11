@@ -6,8 +6,8 @@ import MenuBar from "./components/Menubar";
 import Marquee from "./components/Marquee";
 import Account from "./pages/Account";
 import Cart from "./pages/Cart";
-import SignIn from "./components/SignIn/index"
-import Signup from "./pages/Signup";
+import SignIn from "./components/SignIn/index";
+import SignUp from "./components/SignUp";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 
@@ -32,7 +32,7 @@ function App (props) {
         <Route exact path="/cart" render={(props)=><Cart user={user} {...props}/>}/>
         <Route exact path="/product/:ProductId" render={(props)=><Product user={user} {...props}/>}/>
         <Route exact path={"/login"} render={(props)=><SignIn setLogin={setLogin} {...props}/>}/>
-        <Route exact path="/signup" component={()=><Signup />}/>
+        <Route exact path="/signup" component={()=><SignUp />}/>
         <Route exact path="/logout"/>
         <Route exact path="/addToCart"/>
       </Switch>
