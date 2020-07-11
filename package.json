@@ -31,6 +31,7 @@
     "mongoose": "^5.9.20",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "react-stripe-checkout": "^2.6.3",
     "stripe": "^8.69.0",
     "uuid": "^8.2.0"
   }

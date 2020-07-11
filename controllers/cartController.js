@@ -70,7 +70,7 @@ const cart = {
     if(req.user){
       db.Cart.findOneAndUpdate({_id:req.body.id},{orderQty:req.body.qty})
       .then(()=>{
-        sendStatus(200)
+        res.sendStatus(200)
       }).catch(err=>{
         console.log(err);
         
