@@ -11,12 +11,17 @@ function Product(props) {
   const [quantity, setQuantity] = useState(1);
   const [product, setProduct] = useState({});
   const [error, setError] = useState(false);
-  const [hideModal, setHideModal] = useState({showModal: false});
+  const [hideModal, setHideModal] = useState(false);
   const [showModal, setShowModal]=useState(false);
   const { ProductId } = useParams();
   const history = useHistory();
- 
 
+ 
+  const closeModal = () => {
+    console.log("******button clicked********")
+    setHideModal(true);
+    setShowModal(false);
+  }
 
   const loadThisProduct = () => {
     API.getOneProduct(ProductId).then((OneProduct) => {
@@ -67,7 +72,7 @@ function Product(props) {
         handleButton={handleButton}
         onChange={(event) => setQuantity(Number(event.target.value))}
       />
-    <AddedModal status={showModal} hideModal={hideModal} image={product.mediaUrl}/>
+    <AddedModal status={showModal} hideModal={closeModal} image={product.mediaUrl}/>
     </Container>
     </>
   );

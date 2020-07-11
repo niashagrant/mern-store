@@ -29,8 +29,7 @@ function App (props) {
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/account" component={Account}/>
-        <Route exact path="/cart" render={(user)=><Cart user={user}/>}/> {/*}>>>>> NEW */}
-    {/* <Route exact path="/cart" component={(user) ? Cart : ()=><Redirect to="/login"/> }/>  */}
+        <Route exact path="/cart" render={(props)=><Cart user={user} {...props}/>}/>
         <Route exact path="/product/:ProductId" render={(props)=><Product user={user} {...props}/>}/>
         <Route exact path={"/login"} render={(props)=><SignIn setLogin={setLogin} {...props}/>}/>
         <Route exact path="/signup" component={()=><Signup />}/>
