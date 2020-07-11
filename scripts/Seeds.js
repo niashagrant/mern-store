@@ -522,181 +522,179 @@ const products=[
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502363/Screen_Shot_2020-07-11_at_2.17.38_PM_disjch.png"
 
 },
+{
+    "name": "Virt 2020 Men's T-Shirt",
+    "price": 24.00,
+    "category1": "clothing",
+    "category2": "men",
+    "category3": "Virt 2020",
+    "description": "Graphic T-Shirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504014/Screen_Shot_2020-07-11_at_2.42.46_PM_yawmqn.png"
 
+},
+{
+    "name": "Virt 2020 Men's Sweatshirt",
+    "price": 45.00,
+    "category1": "clothing",
+    "category2": "men",
+    "category3": "Virt 2020",
+    "description": "Sweatshirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504012/Screen_Shot_2020-07-11_at_2.43.10_PM_zruo39.png"
 
-// {
-//     "name": "No Sleep Men's T-Shirt",
-//     "price": 24.00,
-//     "category1": "clothing",
-//     "category2": "men",
-//     "category3": "No Sleep",
-//     "description": "Graphic T-Shirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
+},
+{
+    "name": "Virt 2020 Women's T-Shirt",
+    "price": 24.00,
+    "category1": "clothing",
+    "category2": "women",
+    "category3": "Virt 2020",
+    "description": "Graphic T-Shirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504011/Screen_Shot_2020-07-11_at_2.43.36_PM_auahkh.png"
+},
+{
+    "name": "Virt 2020 Women's Tank",
+    "price": 18.00,
+    "category1": "clothing",
+    "category2": "women",
+    "category3": "Virt 2020",
+    "description": "Graphic Tank",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504011/Screen_Shot_2020-07-11_at_2.44.02_PM_bm7ftk.png"
+},
+{
+    "name": "Virt 2020 Coffee Mug",
+    "price": 18.00,
+    "category1": "accessories",
+    "category2": "mug",
+    "category3": "Virt 2020",
+    "description": "It could be...",
+    "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504014/Screen_Shot_2020-07-11_at_2.45.14_PM_b2pa5p.png"
 
-// },
-// {
-//     "name": "No Sleep Men's Sweatshirt",
-//     "price": 45.00,
-//     "category1": "clothing",
-//     "category2": "men",
-//     "category3": "No Sleep",
-//     "description": "Sweatshirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
-//     "mediaUrl": " "
+},
+{ 
+    "name": "Virt 2020 Tote",
+    "price": 25.00,
+    "category1": "accessories",
+    "category2": "bag",
+    "category3": "Virt 2020",
+    "description": "The bag could be filled with...",
+    "description2": "This tote is sleek, stylish, and classic.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504013/Screen_Shot_2020-07-11_at_2.45.32_PM_vasqra.png"
 
-// },
-// {
-//     "name": "No Sleep Women's T-Shirt",
-//     "price": 24.00,
-//     "category1": "clothing",
-//     "category2": "women",
-//     "category3": "No Sleep",
-//     "description": "Graphic T-Shirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
-// },
-// {
-//     "name": "No Sleep Women's Tank",
-//     "price": 18.00,
-//     "category1": "clothing",
-//     "category2": "women",
-//     "category3": "No Sleep",
-//     "description": "Graphic Tank",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
-// },
-// {
-//     "name": "No Sleep Coffee Mug",
-//     "price": 18.00,
-//     "category1": "accessories",
-//     "category2": "mug",
-//     "category3": "No Sleep",
-//     "description": "It could be...",
-//     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
-//     "mediaUrl": " "
+},
+{
+    "name": "Virt 2020 Spiral Notebook",
+    "price": 9.00,
+    "category1": "accessories",
+    "category2": "notebook",
+    "category3": "Virt 2020",
+    "description": "Let your dreams run wild",
+    "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504012/Screen_Shot_2020-07-11_at_2.45.55_PM_egcnyq.png"
 
-// },
-// { 
-//     "name": "No Sleep Tote",
-//     "price": 25.00,
-//     "category1": "accessories",
-//     "category2": "bag",
-//     "category3": "No Sleep",
-//     "description": "The bag could be filled with...",
-//     "description2": "This tote is sleek, stylish, and classic.",
-//     "mediaUrl": " "
+},
+{
+    "name": "Virt 2020 Zip Pouch",
+    "price": 14.00,
+    "category1": "accessories",
+    "category2": "zip pouch",
+    "category3": "Virt 2020",
+    "description": "To hold all your little things",
+    "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504014/Screen_Shot_2020-07-11_at_2.46.19_PM_ur77nu.png"
 
-// },
-// {
-//     "name": "No Sleep Spiral Notebook",
-//     "price": 9.00,
-//     "category1": "accessories",
-//     "category2": "notebook",
-//     "category3": "No Sleep",
-//     "description": "Let your dreams run wild",
-//     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
-//     "mediaUrl": " "
+},
 
-// },
-// {
-//     "name": "No Sleep Zip Pouch",
-//     "price": 14.00,
-//     "category1": "accessories",
-//     "category2": "zip pouch",
-//     "category3": "No Sleep",
-//     "description": "To hold all your little things",
-//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
-//     "mediaUrl": " "
+{
+    "name": "Coffee Break Men's T-Shirt",
+    "price": 24.00,
+    "category1": "clothing",
+    "category2": "men",
+    "category3": "Coffee Break",
+    "description": "Graphic T-Shirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504852/Screen_Shot_2020-07-11_at_2.55.46_PM_j7rwuf.png"
 
-// },
+},
+{
+    "name": "Coffee Break Men's Sweatshirt",
+    "price": 45.00,
+    "category1": "clothing",
+    "category2": "men",
+    "category3": "Coffee Break",
+    "description": "Sweatshirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504857/Screen_Shot_2020-07-11_at_2.56.09_PM_jvrele.png"
 
-// {
-//     "name": "No Sleep Men's T-Shirt",
-//     "price": 24.00,
-//     "category1": "clothing",
-//     "category2": "men",
-//     "category3": "No Sleep",
-//     "description": "Graphic T-Shirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
+},
+{
+    "name": "Coffee Break Women's T-Shirt",
+    "price": 24.00,
+    "category1": "clothing",
+    "category2": "women",
+    "category3": "Coffee Break",
+    "description": "Graphic T-Shirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504850/Screen_Shot_2020-07-11_at_2.56.48_PM_ixdicd.png"
+},
+{
+    "name": "Coffee Break Women's Tank",
+    "price": 18.00,
+    "category1": "clothing",
+    "category2": "women",
+    "category3": "Coffee Break",
+    "description": "Graphic Tank",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504852/Screen_Shot_2020-07-11_at_2.57.18_PM_zynrjh.png"
+},
+{
+    "name": "Coffee Break Coffee Mug",
+    "price": 18.00,
+    "category1": "accessories",
+    "category2": "mug",
+    "category3": "Coffee Break",
+    "description": "It could be...",
+    "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504855/Screen_Shot_2020-07-11_at_2.59.06_PM_jjyn8c.png"
 
-// },
-// {
-//     "name": "No Sleep Men's Sweatshirt",
-//     "price": 45.00,
-//     "category1": "clothing",
-//     "category2": "men",
-//     "category3": "No Sleep",
-//     "description": "Sweatshirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
-//     "mediaUrl": " "
+},
+{ 
+    "name": "Coffee Break Tote",
+    "price": 25.00,
+    "category1": "accessories",
+    "category2": "bag",
+    "category3": "Coffee Break",
+    "description": "The bag could be filled with...",
+    "description2": "This tote is sleek, stylish, and classic.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504853/Screen_Shot_2020-07-11_at_2.59.31_PM_na7kbp.png"
 
-// },
-// {
-//     "name": "No Sleep Women's T-Shirt",
-//     "price": 24.00,
-//     "category1": "clothing",
-//     "category2": "women",
-//     "category3": "No Sleep",
-//     "description": "Graphic T-Shirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
-// },
-// {
-//     "name": "No Sleep Women's Tank",
-//     "price": 18.00,
-//     "category1": "clothing",
-//     "category2": "women",
-//     "category3": "No Sleep",
-//     "description": "Graphic Tank",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
-// },
-// {
-//     "name": "No Sleep Coffee Mug",
-//     "price": 18.00,
-//     "category1": "accessories",
-//     "category2": "mug",
-//     "category3": "No Sleep",
-//     "description": "It could be...",
-//     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
-//     "mediaUrl": " "
+},
+{
+    "name": "Coffee Break Spiral Notebook",
+    "price": 9.00,
+    "category1": "accessories",
+    "category2": "notebook",
+    "category3": "Coffee Break",
+    "description": "Let your dreams run wild",
+    "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504853/Screen_Shot_2020-07-11_at_3.00.01_PM_xo1xgc.png"
 
-// },
-// { 
-//     "name": "No Sleep Tote",
-//     "price": 25.00,
-//     "category1": "accessories",
-//     "category2": "bag",
-//     "category3": "No Sleep",
-//     "description": "The bag could be filled with...",
-//     "description2": "This tote is sleek, stylish, and classic.",
-//     "mediaUrl": " "
+},
+{
+    "name": "Coffee Break Zip Pouch",
+    "price": 14.00,
+    "category1": "accessories",
+    "category2": "zip pouch",
+    "category3": "Coffee Break",
+    "description": "To hold all your little things",
+    "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504856/Screen_Shot_2020-07-11_at_3.00.26_PM_fiwhfc.png"
 
-// },
-// {
-//     "name": "No Sleep Spiral Notebook",
-//     "price": 9.00,
-//     "category1": "accessories",
-//     "category2": "notebook",
-//     "category3": "No Sleep",
-//     "description": "Let your dreams run wild",
-//     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
-//     "mediaUrl": " "
-
-// },
-// {
-//     "name": "No Sleep Zip Pouch",
-//     "price": 14.00,
-//     "category1": "accessories",
-//     "category2": "zip pouch",
-//     "category3": "No Sleep",
-//     "description": "To hold all your little things",
-//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
-//     "mediaUrl": " "
-
-// },
+},
 
 // {
 //     "name": "No Sleep Men's T-Shirt",
