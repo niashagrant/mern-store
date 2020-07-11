@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; // imported useEffect
+import React, { useState, useEffect, useReducer } from 'react'; // imported useEffect
 import Container from 'react-bootstrap/Container';
 import CartCard from '../components/CartCard';
 import API from "../utils/API";
@@ -49,7 +49,7 @@ function Cart(props) {
     useEffect(() => {                           // added useEffect in which we call loadThisCart()
         console.log("user:", props);
         loadThisCart(); 
-    }, []);
+    }, [cart]);
     
     // function to get the request from the back with product information and quantity
     const loadThisCart = () => {
@@ -72,17 +72,23 @@ function Cart(props) {
             }
             else{
                 console.log("ProductId:", cart)
-                 const itemToRemove= event.target.getAttribute("data-id")
+                const itemToRemove= event.target.getAttribute("data-id")
                 console.log(itemToRemove)
+                const newCartArray = [...cart];
+                const filterCart = newCartArray.filter(cart => cart !== itemToRemove);
                 API.delFromCart(itemToRemove)
                 .then(deleted=>{
+                    event.preventDefault();
                     console.log("product was deleted", deleted);
                     setRemoval(deleted);
+                    setCart(filterCart);
+
                 }).catch(err=>{
                     console.log(err)
                 })
             }
         }
+
         const updateQty =(id,qty)=>{
             console.log("button clicked")
             // console.log(event.target);
@@ -102,7 +108,10 @@ function Cart(props) {
     return (
         <>
         <Container className="col col-sm-1 col-md-8 col-centered">
-            <h6>Cart Page</h6>
+            { !user? (<> 
+            <h6>Cart page not logged-in</h6>
+            </>) : (<>
+            <h6 className="text-center"> YES.  You need all of this!</h6>
             {cart.map(( element ) =>{
                 // console.log("this is our element:",element)
              return(  <CartCard
@@ -116,9 +125,10 @@ function Cart(props) {
                 productid={element._id}
                 updateQty={updateQty}
                 // onChange={event => setQuantity(Number(event.target.value))}
-                deleteProd={updateThisCart}
+                updateThisCart={updateThisCart}
                 />) }
             )}
+            </>)}
         </Container>
       
        
