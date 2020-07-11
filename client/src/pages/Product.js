@@ -2,21 +2,30 @@ import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router";
 import Container from "react-bootstrap/Container";
 import ProductCard from "../components/ProductCard";
+import AddedModal from "../components/Modals";
 import API from "../utils/API";
 
 function Product(props) {
-  console.log("this is my product props:", props);
+  // console.log("this is my product props:", props);
   const { user } = props;
-  // let buttonText;
   const [quantity, setQuantity] = useState(1);
   const [product, setProduct] = useState({});
   const [error, setError] = useState(false);
+  const [hideModal, setHideModal] = useState(false);
+  const [showModal, setShowModal]=useState(false);
   const { ProductId } = useParams();
-  let history = useHistory();
+  const history = useHistory();
+
+ 
+  const closeModal = () => {
+    console.log("******button clicked********")
+    setHideModal(true);
+    setShowModal(false);
+  }
 
   const loadThisProduct = () => {
     API.getOneProduct(ProductId).then((OneProduct) => {
-      console.log("THIS IS OUR ONE PRODUCT: ", OneProduct);
+      // console.log("THIS IS OUR ONE PRODUCT: ", OneProduct);
       if (error) {
         setError(OneProduct.error);
       } else {
@@ -26,25 +35,20 @@ function Product(props) {
   };
 
   const handleButton = (e) => {
-    console.log("button clicked");
+    // console.log("button clicked");
     e.preventDefault();
     if (!user) {
       // buttonText="Log In"
-      history.push("/login");
+      history.push("/login"); 
     } else {
-      // buttonText="Add to Cart"
-
-      // console.log("QUANTITY from Product.js: ", quantity)
-      console.log("PRODUCTID from Product.js: ", product);
-      console.log(quantity);
       const newCartItem = { productId: product._id, quantity: quantity };
       API.addToCart(newCartItem)
         .then((x) => {
-          alert("Product added to cart.");
+          setShowModal(true);
           console.log(x.data);
-          console.log("was item added?");
+          // console.log("was item added?");
         })
-        .catch(() => alert("You must be logged in to add to your cart."));
+        .catch(() => alert("Error - Line 46 of Product.js page."));
     }
   };
 
@@ -53,6 +57,7 @@ function Product(props) {
   }, []);
 
   return (
+    <>
     <Container className="m-auto">
       <ProductCard
         id={product._id}
@@ -67,7 +72,9 @@ function Product(props) {
         handleButton={handleButton}
         onChange={(event) => setQuantity(Number(event.target.value))}
       />
+    <AddedModal status={showModal} hideModal={closeModal} image={product.mediaUrl}/>
     </Container>
+    </>
   );
 }
 

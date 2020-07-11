@@ -36,6 +36,7 @@ const products=[
     "category3": "QWC",
     "description": "Graphic T-Shirt",
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+<<<<<<< HEAD
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485953/Screen_Shot_2020-07-11_at_9.37.11_AM_wvvvgd.png"
 },
 {
@@ -48,6 +49,11 @@ const products=[
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485962/Screen_Shot_2020-07-11_at_9.38.49_AM_gn7btv.png"
 },
+=======
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594349431/Screen_Shot_2020-07-09_at_7.42.39_PM_wew6k7.png"
+},
+
+>>>>>>> 448f1057facd0a292db455ec30eca3587dedeba9
 {
     "name": "QWC Coffee Mug",
     "price": 1800,

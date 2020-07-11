@@ -21,6 +21,10 @@ function Cart(props) {
     })
 
     const makePayment = token => {
+        if (!user) {
+            alert("Replace this shit with a modal");
+        }
+        else {
         const body = {
             token,
             product
@@ -40,9 +44,8 @@ function Cart(props) {
             console.log("STATUS", status)
         })
         .catch(error => console.log(error))
-    }
+    }}
 
-  
     useEffect(() => {                           // added useEffect in which we call loadThisCart()
         console.log("user:", props);
         loadThisCart(); 
@@ -128,13 +131,16 @@ function Cart(props) {
                 shippingAddress
                 billingAddress
                 image="https://res.cloudinary.com/lindseytummond/image/upload/v1594364031/FBC_this_could_ilsybo.png"
-        >
+        > { user ? ( <>
              <button variant="primary" size="lg" block>
                 Purchase Total: ${product.price}
                 {/* comes from state on line 23 */}
             </button>
-        </StripeCheckout>
+        </>) : (<>
         </>
+        )}
+        </StripeCheckout>
+    </>
     )
 }
 

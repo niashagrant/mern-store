@@ -1,0 +1,19 @@
+
+
+.addModalClose {
+
+    border: none!important;
+    color: darkslategrey !important;
+    background-color: transparent !important;
+    font-weight: bold;
+
+}
+
+.modalPic {
+    width: 60%;
+}
+
+.greatTaste {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
