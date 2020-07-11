@@ -93,17 +93,6 @@ const products=[
 
 },
 {
-    "name": "QWC Sticker",
-    "price": 400,
-    "category1": "accessories",
-    "category2": "sticker",
-    "category3": "QWC",
-    "description": "To hold all your little things",
-    "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
-    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485960/Screen_Shot_2020-07-11_at_9.39.44_AM_e8m5ay.png"
-
-},
-{
     "name": "Big Ass Arrow Men's T-Shirt",
     "price": 2400,
     "category1": "clothing",
@@ -153,7 +142,7 @@ const products=[
     "category3": "Big Ass Arrow",
     "description": "It could be...",
     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
-    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485954/Screen_Shot_2020-07-11_at_9.41.16_AM_uronry.png"
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497008/Screen_Shot_2020-07-11_at_12.47.48_PM_qylvlz.png"
 
 },
 { 
@@ -164,7 +153,7 @@ const products=[
     "category3": "QWC",
     "description": "The bag could be filled with...",
     "description2": "This tote is sleek, stylish, and classic.",
-    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497008/Screen_Shot_2020-07-11_at_12.47.48_PM_qylvlz.png"
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497007/Screen_Shot_2020-07-11_at_12.48.10_PM_b1urhy.png"
 
 },
 {
@@ -189,17 +178,7 @@ const products=[
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497011/Screen_Shot_2020-07-11_at_12.49.00_PM_n93nri.png"
 
 },
-{
-    "name": "Big Ass Arrow Sticker",
-    "price": 400,
-    "category1": "accessories",
-    "category2": "sticker",
-    "category3": "Big Ass Arrow",
-    "description": "To hold all your little things",
-    "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
-    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497013/Screen_Shot_2020-07-11_at_12.49.41_PM_dtcrjh.png"
 
-},
 
 ]
 
