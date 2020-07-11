@@ -41,11 +41,11 @@ function ProductCard(props) {
           >
             Add to Cart {props.buttonText}
           </Button>
-          <Row className="d-flex justify-content-end w-100">
+          {/* <Row className="d-flex justify-content-end w-100">
             <Card.Text className="text-light font-italic userNote">
               Sign-up to Add items to Cart
             </Card.Text>
-          </Row>
+          </Row> */}
         </InputGroup>
       </Card.Footer>
     </Card>

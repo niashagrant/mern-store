@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router";
 import Container from "react-bootstrap/Container";
 import ProductCard from "../components/ProductCard";
-import AddedToCartModal from "../components/Modals";
+import AddedModal from "../components/Modals";
 import API from "../utils/API";
 
 function Product(props) {
@@ -11,10 +11,11 @@ function Product(props) {
   const [quantity, setQuantity] = useState(1);
   const [product, setProduct] = useState({});
   const [error, setError] = useState(false);
-  const [hideModal, setHideModal] = useState(true);
-  const [showAddModal, setshowAddModal]=useState(false)
+  const [hideModal, setHideModal] = useState({showModal: false});
+  const [showModal, setShowModal]=useState(false);
   const { ProductId } = useParams();
   const history = useHistory();
+ 
 
 
   const loadThisProduct = () => {
@@ -33,21 +34,16 @@ function Product(props) {
     e.preventDefault();
     if (!user) {
       // buttonText="Log In"
-      history.push("/login");
+      history.push("/login"); 
     } else {
-      // buttonText="Add to Cart"
-
-      // console.log("QUANTITY from Product.js: ", quantity)
-      // console.log("PRODUCTID from Product.js: ", product);
-      // console.log(quantity);
       const newCartItem = { productId: product._id, quantity: quantity };
       API.addToCart(newCartItem)
         .then((x) => {
-          showAddModal(true);
+          setShowModal(true);
           console.log(x.data);
-          console.log("was item added?");
+          // console.log("was item added?");
         })
-        .catch(() => alert("You must be logged in to add to your cart."));
+        .catch(() => alert("Error - Line 46 of Product.js page."));
     }
   };
 
@@ -55,8 +51,8 @@ function Product(props) {
     loadThisProduct(product);
   }, []);
 
-  console.log("WHAT IS THIS>>>: ", this);
   return (
+    <>
     <Container className="m-auto">
       <ProductCard
         id={product._id}
@@ -71,8 +67,9 @@ function Product(props) {
         handleButton={handleButton}
         onChange={(event) => setQuantity(Number(event.target.value))}
       />
-      <AddedToCartModal status={this.state.showAddModal} hideModal={this.hideModal}/>
+    <AddedModal status={showModal} hideModal={hideModal} image={product.mediaUrl}/>
     </Container>
+    </>
   );
 }
 

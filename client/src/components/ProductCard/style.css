@@ -1,5 +1,5 @@
 .eachProductCard {
-    width: 50%;
+    width: 75%;
     height: 350px;
     float: left;
     margin-bottom: 2vh;
@@ -19,5 +19,5 @@
 }
 
 .quantityInputField {
-    margin-left: 37%;
+    margin-left: 65%;
 }
