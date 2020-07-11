@@ -16,7 +16,7 @@ import Product from "./pages/Product";
 
 function App (props) {
 
-  const [user, setLogin]=useState()
+const [user, setLogin]=useState()
  console.log(user);
  
 
