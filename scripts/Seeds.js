@@ -82,7 +82,7 @@ const products=[
 
 },
 {
-    "name": "FBC Zip Pouch",
+    "name": "QWC Zip Pouch",
     "price": 1400,
     "category1": "accessories",
     "category2": "zip pouch",
@@ -90,6 +90,17 @@ const products=[
     "description": "To hold all your little things",
     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485961/Screen_Shot_2020-07-11_at_9.42.55_AM_pf2fpt.png"
+
+},
+{
+    "name": "QWC Sticker",
+    "price": 400,
+    "category1": "accessories",
+    "category2": "sticker",
+    "category3": "QWC",
+    "description": "To hold all your little things",
+    "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485960/Screen_Shot_2020-07-11_at_9.39.44_AM_e8m5ay.png"
 
 },
 
