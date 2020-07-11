@@ -2,21 +2,24 @@ import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router";
 import Container from "react-bootstrap/Container";
 import ProductCard from "../components/ProductCard";
+import AddedToCartModal from "../components/Modals";
 import API from "../utils/API";
 
 function Product(props) {
-  console.log("this is my product props:", props);
+  // console.log("this is my product props:", props);
   const { user } = props;
-  // let buttonText;
   const [quantity, setQuantity] = useState(1);
   const [product, setProduct] = useState({});
   const [error, setError] = useState(false);
+  const [hideModal, setHideModal] = useState(true);
+  const [showAddModal, setshowAddModal]=useState(false)
   const { ProductId } = useParams();
-  let history = useHistory();
+  const history = useHistory();
+
 
   const loadThisProduct = () => {
     API.getOneProduct(ProductId).then((OneProduct) => {
-      console.log("THIS IS OUR ONE PRODUCT: ", OneProduct);
+      // console.log("THIS IS OUR ONE PRODUCT: ", OneProduct);
       if (error) {
         setError(OneProduct.error);
       } else {
@@ -26,7 +29,7 @@ function Product(props) {
   };
 
   const handleButton = (e) => {
-    console.log("button clicked");
+    // console.log("button clicked");
     e.preventDefault();
     if (!user) {
       // buttonText="Log In"
@@ -35,12 +38,12 @@ function Product(props) {
       // buttonText="Add to Cart"
 
       // console.log("QUANTITY from Product.js: ", quantity)
-      console.log("PRODUCTID from Product.js: ", product);
-      console.log(quantity);
+      // console.log("PRODUCTID from Product.js: ", product);
+      // console.log(quantity);
       const newCartItem = { productId: product._id, quantity: quantity };
       API.addToCart(newCartItem)
         .then((x) => {
-          alert("Product added to cart.");
+          showAddModal(true);
           console.log(x.data);
           console.log("was item added?");
         })
@@ -52,6 +55,7 @@ function Product(props) {
     loadThisProduct(product);
   }, []);
 
+  console.log("WHAT IS THIS>>>: ", this);
   return (
     <Container className="m-auto">
       <ProductCard
@@ -67,6 +71,7 @@ function Product(props) {
         handleButton={handleButton}
         onChange={(event) => setQuantity(Number(event.target.value))}
       />
+      <AddedToCartModal status={this.state.showAddModal} hideModal={this.hideModal}/>
     </Container>
   );
 }

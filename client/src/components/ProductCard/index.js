@@ -29,7 +29,7 @@ function ProductCard(props) {
             type="number"
             min="1"
             max="9"
-            placeholder="Qty"
+            // placeholder="Qty"
             // value={props.value}
             onChange={props.onChange}
           />
