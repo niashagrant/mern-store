@@ -89,7 +89,7 @@ const products=[
     "category3": "Who Code",
     "description": "The bag could be filled with...",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
-    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514546/Screen_Shot_2020-07-11_at_5.41.24_PM_osni81.pngg"
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514546/Screen_Shot_2020-07-11_at_5.41.24_PM_osni81.png"
 
 },
 {
@@ -780,7 +780,7 @@ const products=[
     "category3": "FBC",
     "description": "Graphic Tank",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
-    "mediaUrl": " "
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512321/Screen_Shot_2020-07-11_at_5.03.09_PM_tjckyi.png"
 },
 {
     "name": "FBC Coffee Mug",
@@ -790,7 +790,7 @@ const products=[
     "category3": "FBC",
     "description": "It could be...",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
-    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512321/Screen_Shot_2020-07-11_at_5.03.09_PM_tjckyi.png"
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512317/Screen_Shot_2020-07-11_at_5.03.40_PM_sv9bu5.png"
 
 },
 { 
