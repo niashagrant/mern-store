@@ -9,6 +9,7 @@ import SignIn from "./components/SignIn/index";
 import SignUp from "./components/SignUp";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
+import NoComment from "./pages/DesignFolder/NoCommnet";
 
 // const stripePromise = loadStripe("pk_test_51H2jAhF6rrHNM5skrWeDa7Ug2AjxFHAhKeuw8Dv1m2OGNI7WEWf1zebIu8zW5MLhYYygTV7WcfG5L7TOSCtwpfWX00nxZ8LW4t");
 
@@ -34,7 +35,12 @@ function App(props) {
           path="/product/:ProductId"
           render={(props) => <Product user={user} {...props} />}
         />
-        <Route exact path="/noComment" />
+        <Route
+          exact
+          path="/product/:category"
+          component={NoComment}
+          render={(props) => <Product user={user} {...props} />}
+        />
         <Route
           exact
           path={"/login"}

@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import Cards from "../components/Card";
+import Cards from "../../components/Card";
 import axios from "axios";
 
-function Home(props) {
+function Design(props) {
   let [products, setProducts] = useState([]); //variable ref, variable function
   useEffect(() => {
     // console.log('useEffects')
     axios
       .get("/allproducts")
       .then((dbproducts) => {
-        setProducts(dbproducts.data);
+        setProducts(dbproducts.data[0]);
         console.log("dbproducts", dbproducts.data);
         console.log("CATERGORIES", dbproducts.data[0].category3);
       })
@@ -37,4 +37,4 @@ function Home(props) {
   );
 }
 
-export default Home;
+export default Design;
