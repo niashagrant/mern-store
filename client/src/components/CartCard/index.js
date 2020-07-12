@@ -27,7 +27,7 @@ function CartCard (props) {
       </Card.Body>
       <Card.Footer className="eachProductFooter">
       <InputGroup className="inputGroup">
-      <Card.Text className="float-left text-white">${props.price}</Card.Text>
+      <Card.Text className="float-left">${props.price}</Card.Text>
 
       {/* need to make changes below so that user can change/update qty  */}
       <FormControl
@@ -43,10 +43,11 @@ function CartCard (props) {
         {/* <Button  data-user={props.user} data-productid={props.id} onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart {props.buttonText}</Button> */}
         <Row className="d-flex justify-content-end w-100">
           {/* To update Qty - maybe add a update button here?  Or can we handle with window location reload?  */}
-          <Button data-id={props.productid} onClick={()=>props.updateQty(props.id,quantity)} className="btn btn-sm bg-light text-dark delete mt-1 mr-1">
+          <Button data-id={props.productid} onClick={()=>props.updateQty(props.id,quantity)} className="btn btn-sm bg-light text-dark delete mt-1 mr-1 updateQty">
             Update Qty
           </Button>
-          <Button  data-id={props.productid} onClick={props.updateThisCart} className="btn btn-sm bg-light text-dark delete mt-1 mr-2">
+          <h6 className="mt-2 mr-1">||</h6>
+          <Button  data-id={props.productid} onClick={props.updateThisCart} className="btn btn-sm bg-light text-dark delete mt-1 mr-2 deleteFromCart">
             Delete
           </Button>
         </Row>

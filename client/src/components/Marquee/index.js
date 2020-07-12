@@ -4,8 +4,8 @@ import "./style.css"
 
 function Marquee() {
   return (
-    <Jumbotron className="jumbotron" fluid>
-      <img className="mastheadImage" src="../images/masthead.jpg" alt="Queen St. Market"/>
+    <Jumbotron className="jumbotron mb-5" fluid>
+      <img className="mastheadImage" src="../images/queenstmarket.jpg" alt="Queen St. Market"/>
     </Jumbotron>
   );
 }

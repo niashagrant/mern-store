@@ -59,7 +59,7 @@ function SignIn(props) {
         Submit
       </Button>
     </Form>
-    <Row className="p-3">Don't have an Account? <Link className="ml-2" to ={"/signup"} >Sign-Up Now!</Link></Row>
+    <Row className="p-3">Don't have an Account? <Link className="ml-2 signUp" to ={"/signup"} >Sign-Up Now!</Link></Row>
     </Container>
   );
 }

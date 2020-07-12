@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
-import Row from "react-bootstrap/Row";
+
 import "./style.css";
 
 function ProductCard(props) {
@@ -21,7 +21,7 @@ function ProductCard(props) {
       </Card.Body>
       <Card.Footer className="eachProductFooter">
         <InputGroup className="inputGroup">
-          <Card.Text className="float-left text-white">
+          <Card.Text className="float-left">
             ${props.price}
           </Card.Text>
           <FormControl
@@ -37,7 +37,7 @@ function ProductCard(props) {
             data-user={props.user}
             data-productid={props.id}
             onClick={props.handleButton}
-            className="btn btn-outline-secondary btn-sm bg-white addToCart float-right"
+            className="btn btn-outline-secondary btn-sm bg-white addToCart ml-2 float-right"
           >
             Add to Cart {props.buttonText}
           </Button>

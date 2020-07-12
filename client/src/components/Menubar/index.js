@@ -22,9 +22,9 @@ function MenuBar(props) {
 
 return (
 
-<Navbar expand="sm" variant="dark" className="menubar">
+<Navbar expand="sm" variant="light" fixed="top" className="menubar">
   <Container className="col col-centered">
-  <Navbar.Brand href="/">Queen St. Market</Navbar.Brand>
+  <Navbar.Brand className="navTitle" href="/">Queen St. Market</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
     <Nav>

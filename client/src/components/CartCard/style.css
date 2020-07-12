@@ -1,19 +1,20 @@
-.eachProductCard {
+.eachCartCard {
     width: 50%;
     height: 350px;
     float: left;
     margin-bottom: 2vh;
     margin-right: 3%;
-    border-color: #482B20 !important;
+    border-color: darkslategrey !important;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
 
-.addToCart {
-    color: #482B20 !important;
-    border-color: #482B20 !important;
-    background-color: white !important;
+
+.updateQty {
+    border-style: none !important;
+    text-decoration: underline;
 }
 
-.eachProductFooter {
-    background-color: #482B20 !important;
+.deleteFromCart {
+    border-style: none !important;
+    text-decoration: underline;
 }

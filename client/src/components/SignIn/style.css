@@ -1,4 +1,9 @@
 .login{
-    background-color: #482B20 !important;
-    border-color: #482B20 !important;
+    color: white !important;
+    border-color: darkslategrey !important;
+    background-color: darkslategrey !important;
+}
+
+.signUp {
+    text-decoration: underline;
 }
