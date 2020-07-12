@@ -7,25 +7,25 @@ const db=require("../models")
 
 const products=[
 {
-    "name": "QWC Men's T-Shirt",
+    "name": "Real Men Code Men's T-Shirt",
     "price": 24.00,
     "category1": "clothing",
     "category2": "men",
-    "category3": "QWC",
+    "category3": "Who Code",
     "description": "Graphic T-Shirt",
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485953/Screen_Shot_2020-07-11_at_9.31.54_AM_qssase.png"
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514548/Screen_Shot_2020-07-11_at_5.40.07_PM_aammvs.png"
 
 },
 {
-    "name": "QWC Men's Sweatshirt",
+    "name": "Real Men Code Men's Sweatshirt",
     "price": 45.00,
     "category1": "clothing",
     "category2": "men",
-    "category3": "QWC",
+    "category3": "Who Code",
     "description": "Sweatshirt",
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
-    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485960/Screen_Shot_2020-07-11_at_9.34.28_AM_vxknfv.png"
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514551/Screen_Shot_2020-07-11_at_5.40.26_PM_ijlahm.png"
 
 },
 {
@@ -33,7 +33,7 @@ const products=[
     "price": 24.00,
     "category1": "clothing",
     "category2": "women",
-    "category3": "QWC",
+    "category3": "Who Code",
     "description": "Graphic T-Shirt",
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485953/Screen_Shot_2020-07-11_at_9.37.11_AM_wvvvgd.png"
@@ -43,7 +43,7 @@ const products=[
     "price": 18.00,
     "category1": "clothing",
     "category2": "women",
-    "category3": "QWC",
+    "category3": "Who Code",
     "description": "Graphic Tank",
     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485962/Screen_Shot_2020-07-11_at_9.38.49_AM_gn7btv.png"
@@ -53,10 +53,21 @@ const products=[
     "price": 18.00,
     "category1": "accessories",
     "category2": "mug",
-    "category3": "QWC",
+    "category3": "Who Code",
     "description": "It could be...",
     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485954/Screen_Shot_2020-07-11_at_9.41.16_AM_uronry.png"
+
+},
+{
+    "name": "Real Men Code Coffee Mug",
+    "price": 18.00,
+    "category1": "accessories",
+    "category2": "mug",
+    "category3": "Who Code",
+    "description": "It could be...",
+    "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514548/Screen_Shot_2020-07-11_at_5.40.58_PM_gqpevt.png"
 
 },
 { 
@@ -64,10 +75,21 @@ const products=[
     "price": 25.00,
     "category1": "accessories",
     "category2": "bag",
-    "category3": "QWC",
+    "category3": "Who Code",
     "description": "The bag could be filled with...",
     "description2": "This tote is sleek, stylish, and classic.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485957/Screen_Shot_2020-07-11_at_9.41.42_AM_fttqpw.png"
+
+},
+{ 
+    "name": "Real Men Code Tote",
+    "price": 25.00,
+    "category1": "accessories",
+    "category2": "bag",
+    "category3": "Who Code",
+    "description": "The bag could be filled with...",
+    "description2": "This tote is sleek, stylish, and classic.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514546/Screen_Shot_2020-07-11_at_5.41.24_PM_osni81.pngg"
 
 },
 {
@@ -75,10 +97,21 @@ const products=[
     "price": 9.00,
     "category1": "accessories",
     "category2": "notebook",
-    "category3": "QWC",
+    "category3": "Who Code",
     "description": "Let your dreams run wild",
     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485957/Screen_Shot_2020-07-11_at_9.42.17_AM_diuuut.png"
+
+},
+{
+    "name": "Real Men Code Spiral Notebook",
+    "price": 9.00,
+    "category1": "accessories",
+    "category2": "notebook",
+    "category3": "Who Code",
+    "description": "Let your dreams run wild",
+    "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514548/Screen_Shot_2020-07-11_at_5.41.46_PM_lyylbw.png"
 
 },
 {
@@ -86,10 +119,21 @@ const products=[
     "price": 14.00,
     "category1": "accessories",
     "category2": "zip pouch",
-    "category3": "QWC",
+    "category3": "Who Code",
     "description": "To hold all your little things",
     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485961/Screen_Shot_2020-07-11_at_9.42.55_AM_pf2fpt.png"
+
+},
+{
+    "name": "Real Men Code Zip Pouch",
+    "price": 14.00,
+    "category1": "accessories",
+    "category2": "zip pouch",
+    "category3": "Who Code",
+    "description": "To hold all your little things",
+    "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514549/Screen_Shot_2020-07-11_at_5.42.02_PM_cvzegf.png"
 
 },
 {
@@ -1043,20 +1087,6 @@ const products=[
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513975/Screen_Shot_2020-07-11_at_5.32.20_PM_wapuwn.png"
 
 },
-
-// {
-//     "name": "No Sleep Zip Pouch",
-//     "price": 14.00,
-//     "category1": "accessories",
-//     "category2": "zip pouch",
-//     "category3": "No Sleep",
-//     "description": "To hold all your little things",
-//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
-//     "mediaUrl": " "
-
-// },
-
-
 
 ]
 
