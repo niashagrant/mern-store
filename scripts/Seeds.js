@@ -12,7 +12,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "Who Code",
-    "description": "Graphic T-Shirt",
+    "description": "Real men wear pink...I mean code.",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all. featuring a text graphic across the chest and finished with a banded crew neck.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514548/Screen_Shot_2020-07-11_at_5.40.07_PM_aammvs.png"
 
@@ -23,7 +23,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "Who Code",
-    "description": "Sweatshirt",
+    "description": "Real men wear pink...I mean code.",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514551/Screen_Shot_2020-07-11_at_5.40.26_PM_ijlahm.png"
 
@@ -34,7 +34,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "Who Code",
-    "description": "Graphic T-Shirt",
+    "description": "Hey girl, fork my heart because I am ready to commit.",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485953/Screen_Shot_2020-07-11_at_9.37.11_AM_wvvvgd.png"
 },
@@ -44,7 +44,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "Who Code",
-    "description": "Graphic Tank",
+    "description": "Hey girl, fork my heart because I am ready to commit.",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485962/Screen_Shot_2020-07-11_at_9.38.49_AM_gn7btv.png"
 },
@@ -54,7 +54,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "Who Code",
-    "description": "It could be...",
+    "description": "Hey girl, fork my heart because I am ready to commit.",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485954/Screen_Shot_2020-07-11_at_9.41.16_AM_uronry.png"
 
@@ -65,7 +65,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "Who Code",
-    "description": "It could be...",
+    "description": "Real men wear pink...I mean code.",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514548/Screen_Shot_2020-07-11_at_5.40.58_PM_gqpevt.png"
 
@@ -76,7 +76,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "Who Code",
-    "description": "The bag could be filled with...",
+    "description": "Hey girl, fork my heart because I am ready to commit.",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485957/Screen_Shot_2020-07-11_at_9.41.42_AM_fttqpw.png"
 
@@ -87,7 +87,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "Who Code",
-    "description": "The bag could be filled with...",
+    "description": "Real men wear pink...I mean code.",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514546/Screen_Shot_2020-07-11_at_5.41.24_PM_osni81.png"
 
@@ -98,7 +98,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "Who Code",
-    "description": "Let your dreams run wild",
+    "description": "Hey girl, fork my heart because I am ready to commit.",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485957/Screen_Shot_2020-07-11_at_9.42.17_AM_diuuut.png"
 
@@ -109,7 +109,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "Who Code",
-    "description": "Let your dreams run wild",
+    "description": "Real men wear pink...I mean code.",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514548/Screen_Shot_2020-07-11_at_5.41.46_PM_lyylbw.png"
 
@@ -120,7 +120,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "Who Code",
-    "description": "To hold all your little things",
+    "description": "Hey girl, fork my heart because I am ready to commit.",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594485961/Screen_Shot_2020-07-11_at_9.42.55_AM_pf2fpt.png"
 
@@ -131,7 +131,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "Who Code",
-    "description": "To hold all your little things",
+    "description": "Real men wear pink...I mean code.",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594514549/Screen_Shot_2020-07-11_at_5.42.02_PM_cvzegf.png"
 
@@ -142,7 +142,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "Big Ass Arrow",
-    "description": "Graphic T-Shirt",
+    "description": "What if I told you you can pass a function to a function?!",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all..",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497007/Screen_Shot_2020-07-11_at_12.46.11_PM_birhxe.png"
 
@@ -153,7 +153,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "Big Ass Arrow",
-    "description": "Sweatshirt",
+    "description": "What if I told you you can pass a function to a function?!",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497011/Screen_Shot_2020-07-11_at_12.45.01_PM_hzilze.png"
 
@@ -164,7 +164,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "Big Ass Arrow",
-    "description": "Graphic T-Shirt",
+    "description": "What if I told you you can pass a function to a function?!",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497006/Screen_Shot_2020-07-11_at_12.44.36_PM_ccchox.png"
 },
@@ -174,7 +174,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "Big Ass Arrow",
-    "description": "Graphic Tank",
+    "description": "What if I told you you can pass a function to a function?!",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497010/Screen_Shot_2020-07-11_at_12.46.56_PM_hvfkw6.png"
 },
@@ -184,7 +184,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "Big Ass Arrow",
-    "description": "It could be...",
+    "description": "What if I told you you can pass a function to a function?!",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497008/Screen_Shot_2020-07-11_at_12.47.48_PM_qylvlz.png"
 
@@ -195,7 +195,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "Big Ass Arrow",
-    "description": "The bag could be filled with...",
+    "description": "What if I told you you can pass a function to a function?!",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497007/Screen_Shot_2020-07-11_at_12.48.10_PM_b1urhy.png"
 
@@ -206,7 +206,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "Big Ass Arrow",
-    "description": "Let your dreams run wild",
+    "description": "What if I told you you can pass a function to a function?!",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497010/Screen_Shot_2020-07-11_at_12.48.34_PM_varzqo.png"
 
@@ -217,7 +217,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "Big Ass Arrow",
-    "description": "To hold all your little things",
+    "description": "What if I told you you can pass a function to a function?!",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594497011/Screen_Shot_2020-07-11_at_12.49.00_PM_n93nri.png"
 
@@ -228,7 +228,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "No Comment",
-    "description": "Graphic T-Shirt",
+    "description": "Want to hear a joke?",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all..",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594499123/Screen_Shot_2020-07-11_at_1.23.11_PM_ubwwor.png"
 
@@ -239,7 +239,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "No Comment",
-    "description": "Sweatshirt",
+    "description": "Want to hear a joke?",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594499129/Screen_Shot_2020-07-11_at_1.23.41_PM_bmzyqi.png"
 
@@ -250,7 +250,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "No Comment",
-    "description": "Graphic T-Shirt",
+    "description": "Want to hear a joke?",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594499124/Screen_Shot_2020-07-11_at_1.19.11_PM_nnsguu.png"
 },
@@ -260,7 +260,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "No Comment",
-    "description": "Graphic Tank",
+    "description": "Want to hear a joke?",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594499127/Screen_Shot_2020-07-11_at_1.20.45_PM_zhgkd6.png"
 },
@@ -270,7 +270,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "No Comment",
-    "description": "It could be...",
+    "description": "Want to hear a joke?",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594499129/Screen_Shot_2020-07-11_at_1.21.17_PM_qynmhy.png"
 
@@ -281,7 +281,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "No Comment",
-    "description": "The bag could be filled with...",
+    "description": "Want to hear a joke?",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594499127/Screen_Shot_2020-07-11_at_1.21.40_PM_iw34ke.png"
 
@@ -292,7 +292,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "No Comment",
-    "description": "Let your dreams run wild",
+    "description": "Want to hear a joke?",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594499127/Screen_Shot_2020-07-11_at_1.22.05_PM_lnctxa.png"
 
@@ -303,7 +303,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "No Comment",
-    "description": "To hold all your little things",
+    "description": "Want to hear a joke?",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594499128/Screen_Shot_2020-07-11_at_1.22.29_PM_zkxlgx.png"
 
@@ -314,7 +314,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "No Sleep",
-    "description": "Graphic T-Shirt",
+    "description": "Here’s cooodding!",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all..",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594500679/Screen_Shot_2020-07-11_at_1.50.07_PM_am0em6.png"
 
@@ -325,7 +325,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "No Sleep",
-    "description": "Sweatshirt",
+    "description": "Here’s cooodding!",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594500680/Screen_Shot_2020-07-11_at_1.50.49_PM_nkuyvu.png"
 
@@ -336,7 +336,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "No Sleep",
-    "description": "Graphic T-Shirt",
+    "description": "Here’s cooodding!",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594500677/Screen_Shot_2020-07-11_at_1.46.15_PM_nxjrax.png"
 },
@@ -346,7 +346,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "No Sleep",
-    "description": "Graphic Tank",
+    "description": "Here’s cooodding!",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594500675/Screen_Shot_2020-07-11_at_1.47.07_PM_qhopaw.png"
 },
@@ -356,7 +356,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "No Sleep",
-    "description": "It could be...",
+    "description": "Here’s cooodding!",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594500679/Screen_Shot_2020-07-11_at_1.47.37_PM_qhuxps.png"
 
@@ -367,7 +367,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "No Sleep",
-    "description": "The bag could be filled with...",
+    "description": "Here’s cooodding!",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594500678/Screen_Shot_2020-07-11_at_1.48.04_PM_box7ee.png"
 
@@ -378,7 +378,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "No Sleep",
-    "description": "Let your dreams run wild",
+    "description": "Here’s cooodding!",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594500679/Screen_Shot_2020-07-11_at_1.48.36_PM_qdghtp.png"
 
@@ -389,7 +389,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "No Sleep",
-    "description": "To hold all your little things",
+    "description": "Here’s cooodding!",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594500677/Screen_Shot_2020-07-11_at_1.49.13_PM_uigvmj.png"
 
@@ -400,7 +400,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "This That",
-    "description": "Graphic T-Shirt",
+    "description": "I can’t choose so I pick this && that.",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all..",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501512/Screen_Shot_2020-07-11_at_1.58.48_PM_afgro9.png"
 
@@ -411,7 +411,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "This That",
-    "description": "Sweatshirt",
+    "description": "I can’t choose so I pick this && that.",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501511/Screen_Shot_2020-07-11_at_1.59.20_PM_qyixl1.png"
 
@@ -422,7 +422,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "This That",
-    "description": "Graphic T-Shirt",
+    "description": "I can’t choose so I pick this && that.",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501510/Screen_Shot_2020-07-11_at_1.59.55_PM_f4tdij.png"
 },
@@ -432,7 +432,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "This That",
-    "description": "Graphic Tank",
+    "description": "I can’t choose so I pick this && that.",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501509/Screen_Shot_2020-07-11_at_2.02.12_PM_h2xes0.png"
 },
@@ -442,7 +442,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "This That",
-    "description": "It could be...",
+    "description": "I can’t choose so I pick this && that.",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501512/Screen_Shot_2020-07-11_at_2.02.49_PM_wnyfo8.png"
 
@@ -453,7 +453,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "This That",
-    "description": "The bag could be filled with...",
+    "description": "I can’t choose so I pick this && that.",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501512/Screen_Shot_2020-07-11_at_2.02.49_PM_wnyfo8.png"
 
@@ -464,7 +464,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "This That",
-    "description": "Let your dreams run wild",
+    "description": "I can’t choose so I pick this && that.",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501512/Screen_Shot_2020-07-11_at_2.03.31_PM_hoxfrp.png"
 
@@ -475,7 +475,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "This That",
-    "description": "To hold all your little things",
+    "description": "I can’t choose so I pick this && that.",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501513/Screen_Shot_2020-07-11_at_2.04.42_PM_zuijal.png"
 
@@ -486,7 +486,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "Sugar",
-    "description": "Graphic T-Shirt",
+    "description": "Code so sweet and easy I can taste it.",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all..",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502359/Screen_Shot_2020-07-11_at_2.14.31_PM_izoptz.png"
 
@@ -497,7 +497,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "Sugar",
-    "description": "Sweatshirt",
+    "description": "Code so sweet and easy I can taste it.",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502360/Screen_Shot_2020-07-11_at_2.14.56_PM_atokvc.png"
 
@@ -508,7 +508,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "Sugar",
-    "description": "Graphic T-Shirt",
+    "description": "Code so sweet and easy I can taste it.",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502363/Screen_Shot_2020-07-11_at_2.15.20_PM_qcawpv.png"
 },
@@ -518,7 +518,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "Sugar",
-    "description": "Graphic Tank",
+    "description": "Code so sweet and easy I can taste it.",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502362/Screen_Shot_2020-07-11_at_2.15.52_PM_qafgu8.png"
 },
@@ -528,7 +528,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "Sugar",
-    "description": "It could be...",
+    "description": "Code so sweet and easy I can taste it.",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502363/Screen_Shot_2020-07-11_at_2.16.24_PM_zwbdby.png"
 
@@ -539,7 +539,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "Sugar",
-    "description": "The bag could be filled with...",
+    "description": "Code so sweet and easy I can taste it.",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502361/Screen_Shot_2020-07-11_at_2.16.48_PM_gvaqxx.png"
 
@@ -550,7 +550,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "Sugar",
-    "description": "Let your dreams run wild",
+    "description": "Code so sweet and easy I can taste it.",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502363/Screen_Shot_2020-07-11_at_2.17.12_PM_zy7rbw.png"
 
@@ -561,7 +561,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "Sugar",
-    "description": "To hold all your little things",
+    "description": "Code so sweet and easy I can taste it.",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594502363/Screen_Shot_2020-07-11_at_2.17.38_PM_disjch.png"
 
@@ -572,7 +572,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "Virt 2020",
-    "description": "Graphic T-Shirt",
+    "description": "I can’t believe I survived, but all I learned was how to transform caffeine into code.",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all..",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504014/Screen_Shot_2020-07-11_at_2.42.46_PM_yawmqn.png"
 
@@ -583,7 +583,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "Virt 2020",
-    "description": "Sweatshirt",
+    "description": "I can’t believe I survived, but all I learned was how to transform caffeine into code.",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504012/Screen_Shot_2020-07-11_at_2.43.10_PM_zruo39.png"
 
@@ -594,7 +594,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "Virt 2020",
-    "description": "Graphic T-Shirt",
+    "description": "I can’t believe I survived, but all I learned was how to transform caffeine into code.",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504011/Screen_Shot_2020-07-11_at_2.43.36_PM_auahkh.png"
 },
@@ -604,7 +604,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "Virt 2020",
-    "description": "Graphic Tank",
+    "description": "I can’t believe I survived, but all I learned was how to transform caffeine into code.",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504011/Screen_Shot_2020-07-11_at_2.44.02_PM_bm7ftk.png"
 },
@@ -614,7 +614,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "Virt 2020",
-    "description": "It could be...",
+    "description": "I can’t believe I survived, but all I learned was how to transform caffeine into code.",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504014/Screen_Shot_2020-07-11_at_2.45.14_PM_b2pa5p.png"
 
@@ -625,7 +625,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "Virt 2020",
-    "description": "The bag could be filled with...",
+    "description": "I can’t believe I survived, but all I learned was how to transform caffeine into code.",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504013/Screen_Shot_2020-07-11_at_2.45.32_PM_vasqra.png"
 
@@ -636,7 +636,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "Virt 2020",
-    "description": "Let your dreams run wild",
+    "description": "I can’t believe I survived, but all I learned was how to transform caffeine into code.",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504012/Screen_Shot_2020-07-11_at_2.45.55_PM_egcnyq.png"
 
@@ -647,7 +647,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "Virt 2020",
-    "description": "To hold all your little things",
+    "description": "I can’t believe I survived, but all I learned was how to transform caffeine into code.",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504014/Screen_Shot_2020-07-11_at_2.46.19_PM_ur77nu.png"
 
@@ -659,7 +659,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "Coffee Break",
-    "description": "Graphic T-Shirt",
+    "description": "My java lets me espresso myself!",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all..",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504852/Screen_Shot_2020-07-11_at_2.55.46_PM_j7rwuf.png"
 
@@ -670,7 +670,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "Coffee Break",
-    "description": "Sweatshirt",
+    "description": "My java lets me espresso myself!",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504857/Screen_Shot_2020-07-11_at_2.56.09_PM_jvrele.png"
 
@@ -681,7 +681,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "Coffee Break",
-    "description": "Graphic T-Shirt",
+    "description": "My java lets me espresso myself!",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504850/Screen_Shot_2020-07-11_at_2.56.48_PM_ixdicd.png"
 },
@@ -691,7 +691,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "Coffee Break",
-    "description": "Graphic Tank",
+    "description": "My java lets me espresso myself!",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504852/Screen_Shot_2020-07-11_at_2.57.18_PM_zynrjh.png"
 },
@@ -701,7 +701,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "Coffee Break",
-    "description": "It could be...",
+    "description": "My java lets me espresso myself!",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504855/Screen_Shot_2020-07-11_at_2.59.06_PM_jjyn8c.png"
 
@@ -712,7 +712,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "Coffee Break",
-    "description": "The bag could be filled with...",
+    "description": "My java lets me espresso myself!",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504853/Screen_Shot_2020-07-11_at_2.59.31_PM_na7kbp.png"
 
@@ -723,7 +723,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "Coffee Break",
-    "description": "Let your dreams run wild",
+    "description": "My java lets me espresso myself!",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504853/Screen_Shot_2020-07-11_at_3.00.01_PM_xo1xgc.png"
 
@@ -734,7 +734,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "Coffee Break",
-    "description": "To hold all your little things",
+    "description": "My java lets me espresso myself!",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594504856/Screen_Shot_2020-07-11_at_3.00.26_PM_fiwhfc.png"
 
@@ -746,7 +746,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "FBC",
-    "description": "Graphic T-Shirt",
+    "description": "The great debate is what to name my functions and variables.",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all..",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512313/Screen_Shot_2020-07-11_at_5.01.23_PM_urw1hq.png"
 
@@ -757,7 +757,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "FBC",
-    "description": "Sweatshirt",
+    "description": "The great debate is what to name my functions and variables.",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512321/Screen_Shot_2020-07-11_at_5.01.52_PM_po4ml6.png"
 
@@ -768,7 +768,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "FBC",
-    "description": "Graphic T-Shirt",
+    "description": "The great debate is what to name my functions and variables.",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512313/Screen_Shot_2020-07-11_at_5.02.38_PM_k0ckyu.png"
 },
@@ -778,7 +778,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "FBC",
-    "description": "Graphic Tank",
+    "description": "The great debate is what to name my functions and variables.",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512321/Screen_Shot_2020-07-11_at_5.03.09_PM_tjckyi.png"
 },
@@ -788,7 +788,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "FBC",
-    "description": "It could be...",
+    "description": "The great debate is what to name my functions and variables.",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512317/Screen_Shot_2020-07-11_at_5.03.40_PM_sv9bu5.png"
 
@@ -799,7 +799,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "FBC",
-    "description": "The bag could be filled with...",
+    "description": "The great debate is what to name my functions and variables.",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512316/Screen_Shot_2020-07-11_at_5.03.59_PM_tqldnr.png"
 
@@ -810,7 +810,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "FBC",
-    "description": "Let your dreams run wild",
+    "description": "The great debate is what to name my functions and variables.",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512316/Screen_Shot_2020-07-11_at_5.04.23_PM_kcuxnt.png"
 
@@ -821,7 +821,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "FBC",
-    "description": "To hold all your little things",
+    "description": "The great debate is what to name my functions and variables.",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512315/Screen_Shot_2020-07-11_at_5.04.42_PM_gcwq19.png"
 
@@ -844,7 +844,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "24/7",
-    "description": "Sweatshirt",
+    "description": "Talk is cheap, show me your code.",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512821/Screen_Shot_2020-07-11_at_5.10.57_PM_yaq3rl.png"
 
@@ -855,7 +855,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "24/7",
-    "description": "Graphic T-Shirt",
+    "description": "Talk is cheap, show me your code.",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512816/Screen_Shot_2020-07-11_at_5.11.23_PM_dsgkjk.png"
 },
@@ -865,7 +865,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "24/7",
-    "description": "Graphic Tank",
+    "description": "Talk is cheap, show me your code.",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512820/Screen_Shot_2020-07-11_at_5.11.49_PM_xhmyvl.png"
 },
@@ -875,7 +875,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "24/7",
-    "description": "It could be...",
+    "description": "Talk is cheap, show me your code.",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512823/Screen_Shot_2020-07-11_at_5.12.17_PM_gsrgrc.png"
 
@@ -886,7 +886,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "24/7",
-    "description": "The bag could be filled with...",
+    "description": "Talk is cheap, show me your code.",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512822/Screen_Shot_2020-07-11_at_5.12.36_PM_xz1igr.png"
 
@@ -897,7 +897,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "24/7",
-    "description": "Let your dreams run wild",
+    "description": "Talk is cheap, show me your code.",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512820/Screen_Shot_2020-07-11_at_5.12.57_PM_skdwsm.png"
 
@@ -908,7 +908,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "24/7",
-    "description": "To hold all your little things",
+    "description": "Talk is cheap, show me your code.",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512818/Screen_Shot_2020-07-11_at_5.13.16_PM_q0cay5.png"
 
@@ -920,7 +920,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "CSS",
-    "description": "Graphic T-Shirt",
+    "description": "Link me up and let’s see what we get!",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all..",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513315/Screen_Shot_2020-07-11_at_5.18.24_PM_cyc3mk.png"
 
@@ -931,7 +931,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "CSS",
-    "description": "Sweatshirt",
+    "description": "Link me up and let’s see what we get!",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513317/Screen_Shot_2020-07-11_at_5.18.55_PM_uxbatp.png"
 
@@ -942,7 +942,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "CSS",
-    "description": "Graphic T-Shirt",
+    "description": "Link me up and let’s see what we get!",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513315/Screen_Shot_2020-07-11_at_5.19.16_PM_dv8qk8.png"
 },
@@ -952,7 +952,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "CSS",
-    "description": "Graphic Tank",
+    "description": "Link me up and let’s see what we get!",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513313/Screen_Shot_2020-07-11_at_5.19.44_PM_kw7iww.png"
 },
@@ -962,7 +962,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "CSS",
-    "description": "It could be...",
+    "description": "Link me up and let’s see what we get!",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513317/Screen_Shot_2020-07-11_at_5.20.35_PM_gexol7.png"
 
@@ -973,7 +973,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "CSS",
-    "description": "The bag could be filled with...",
+    "description": "Link me up and let’s see what we get!",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513316/Screen_Shot_2020-07-11_at_5.20.56_PM_wyybp5.png"
 
@@ -984,7 +984,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "CSS",
-    "description": "Let your dreams run wild",
+    "description": "Link me up and let’s see what we get!",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513317/Screen_Shot_2020-07-11_at_5.21.17_PM_fd3eow.png"
 
@@ -995,7 +995,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "CSS",
-    "description": "To hold all your little things",
+    "description": "Link me up and let’s see what we get!",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513318/Screen_Shot_2020-07-11_at_5.21.31_PM_edbtsm.png"
 
@@ -1007,7 +1007,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "CODE",
-    "description": "Graphic T-Shirt",
+    "description": "Link me up and let’s see what we get!",
     "description2": "A t-shirt for any day of the year that is comfortable and casual, surely to become a quick favorite. Made from 100% cotton for breathability in any climate. This soon to be classic in your wardrobe has double-needle stitched sleeves for that extra support you hope for and want. Fashionable crew neck design in either white or black. One size fits all..",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513974/Screen_Shot_2020-07-11_at_5.30.24_PM_id8xfo.png"
 
@@ -1018,7 +1018,7 @@ const products=[
     "category1": "clothing",
     "category2": "men",
     "category3": "CODE",
-    "description": "Sweatshirt",
+    "description": "Got a new error...Progress!",
     "description2": "Perfect for all of your sweater weather needs. A fleece sweatshirt comfortable and dependable for any outdoor/indoor activity. This will become the next fall wardrobe staple for the years to come. Made from a blend of 90% Airlume combined and ring-spun cotton/ 10% polyester fleece. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513973/Screen_Shot_2020-07-11_at_5.28.19_PM_irhazo.png"
 
@@ -1029,7 +1029,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "CODE",
-    "description": "Graphic T-Shirt",
+    "description": "Got a new error...Progress!",
     "description2": "Going back to the fundamentals, this crew neck t-shirt was made for comfortable and casual everyday use. Just like the little black dress, it is always nice to have a dependable t-shirt to wear. This breathable shirt is made from 100% cotton, with a nice structured fit and a soft and buttery feel. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513976/Screen_Shot_2020-07-11_at_5.30.57_PM_r67eoh.png"
 },
@@ -1039,7 +1039,7 @@ const products=[
     "category1": "clothing",
     "category2": "women",
     "category3": "CODE",
-    "description": "Graphic Tank",
+    "description": "Got a new error...Progress!",
     "description2": "For the hot days or if you are one of those who get hot in the winter. A classic cotton racerback tank top for the softest most comfortable feel. A signature look that is must-have in all wardrobes. One size fits all.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513974/Screen_Shot_2020-07-11_at_5.29.05_PM_cpiqna.png"
 },
@@ -1049,7 +1049,7 @@ const products=[
     "category1": "accessories",
     "category2": "mug",
     "category3": "CODE",
-    "description": "It could be...",
+    "description": "Got a new error...Progress!",
     "description2": "We have a cup for your tea. This latte mug is the polished version of your standard coffee mug. Made from ceramic this 12 oz mug has head to toe color and a single-side is printed with a sleek finish. Dishwasher and microwave safe. Just don’t drop it because it will break!",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513976/Screen_Shot_2020-07-11_at_5.31.39_PM_xqjy3p.png"
 
@@ -1060,7 +1060,7 @@ const products=[
     "category1": "accessories",
     "category2": "bag",
     "category3": "CODE",
-    "description": "The bag could be filled with...",
+    "description": "Got a new error...Progress!",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513976/Screen_Shot_2020-07-11_at_5.29.35_PM_uclafl.png"
 
@@ -1071,7 +1071,7 @@ const products=[
     "category1": "accessories",
     "category2": "notebook",
     "category3": "CODE",
-    "description": "Let your dreams run wild",
+    "description": "Got a new error...Progress!",
     "description2": "“Write a wise saying and your name will live forever” - unknown author. A notebook there for when you break through your writer's block or to keep your darkest secrets. A 6” x 8” spiral notebook with a pocket on the back cover to save documents. This uniquely designed notebook covers flexible yet secure material houses 120 pages of ruled paper stock inside.",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513977/Screen_Shot_2020-07-11_at_5.32.07_PM_fo3k38.png"
 
@@ -1082,7 +1082,7 @@ const products=[
     "category1": "accessories",
     "category2": "zip pouch",
     "category3": "CODE",
-    "description": "To hold all your little things",
+    "description": "Got a new error...Progress!",
     "description2": "Keep your knick-knacks in this knick-knack! No matter how small this pouch will keep your stuff safe. Can be used for makeup, pens/pencils, snacks, or money. Made from 100% spun polyester with non-woven laminate inside with zip closure. Our design is printed on both sides of the bag. Machine washable. ",
     "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513975/Screen_Shot_2020-07-11_at_5.32.20_PM_wapuwn.png"
 
