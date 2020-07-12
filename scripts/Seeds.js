@@ -783,92 +783,92 @@ const products=[
 
 },
 
-// {
-//     "name": "No Sleep Men's T-Shirt",
-//     "price": 24.00,
-//     "category1": "clothing",
-//     "category2": "men",
-//     "category3": "No Sleep",
-//     "description": "Graphic T-Shirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
+{
+    "name": "24/7 Men's T-Shirt",
+    "price": 24.00,
+    "category1": "clothing",
+    "category2": "men",
+    "category3": "24/7",
+    "description": "Graphic T-Shirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512821/Screen_Shot_2020-07-11_at_5.10.17_PM_fkuwfb.png"
 
-// },
-// {
-//     "name": "No Sleep Men's Sweatshirt",
-//     "price": 45.00,
-//     "category1": "clothing",
-//     "category2": "men",
-//     "category3": "No Sleep",
-//     "description": "Sweatshirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
-//     "mediaUrl": " "
+},
+{
+    "name": "24/7 Men's Sweatshirt",
+    "price": 45.00,
+    "category1": "clothing",
+    "category2": "men",
+    "category3": "24/7",
+    "description": "Sweatshirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512821/Screen_Shot_2020-07-11_at_5.10.57_PM_yaq3rl.png"
 
-// },
-// {
-//     "name": "No Sleep Women's T-Shirt",
-//     "price": 24.00,
-//     "category1": "clothing",
-//     "category2": "women",
-//     "category3": "No Sleep",
-//     "description": "Graphic T-Shirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
-// },
-// {
-//     "name": "No Sleep Women's Tank",
-//     "price": 18.00,
-//     "category1": "clothing",
-//     "category2": "women",
-//     "category3": "No Sleep",
-//     "description": "Graphic Tank",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
-// },
-// {
-//     "name": "No Sleep Coffee Mug",
-//     "price": 18.00,
-//     "category1": "accessories",
-//     "category2": "mug",
-//     "category3": "No Sleep",
-//     "description": "It could be...",
-//     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
-//     "mediaUrl": " "
+},
+{
+    "name": "24/7 Women's T-Shirt",
+    "price": 24.00,
+    "category1": "clothing",
+    "category2": "women",
+    "category3": "24/7",
+    "description": "Graphic T-Shirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512816/Screen_Shot_2020-07-11_at_5.11.23_PM_dsgkjk.png"
+},
+{
+    "name": "24/7 Women's Tank",
+    "price": 18.00,
+    "category1": "clothing",
+    "category2": "women",
+    "category3": "24/7",
+    "description": "Graphic Tank",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512820/Screen_Shot_2020-07-11_at_5.11.49_PM_xhmyvl.png"
+},
+{
+    "name": "24/7 Coffee Mug",
+    "price": 18.00,
+    "category1": "accessories",
+    "category2": "mug",
+    "category3": "24/7",
+    "description": "It could be...",
+    "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512823/Screen_Shot_2020-07-11_at_5.12.17_PM_gsrgrc.png"
 
-// },
-// { 
-//     "name": "No Sleep Tote",
-//     "price": 25.00,
-//     "category1": "accessories",
-//     "category2": "bag",
-//     "category3": "No Sleep",
-//     "description": "The bag could be filled with...",
-//     "description2": "This tote is sleek, stylish, and classic.",
-//     "mediaUrl": " "
+},
+{ 
+    "name": "24/7 Tote",
+    "price": 25.00,
+    "category1": "accessories",
+    "category2": "bag",
+    "category3": "24/7",
+    "description": "The bag could be filled with...",
+    "description2": "This tote is sleek, stylish, and classic.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512822/Screen_Shot_2020-07-11_at_5.12.36_PM_xz1igr.png"
 
-// },
-// {
-//     "name": "No Sleep Spiral Notebook",
-//     "price": 9.00,
-//     "category1": "accessories",
-//     "category2": "notebook",
-//     "category3": "No Sleep",
-//     "description": "Let your dreams run wild",
-//     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
-//     "mediaUrl": " "
+},
+{
+    "name": "24/7 Spiral Notebook",
+    "price": 9.00,
+    "category1": "accessories",
+    "category2": "notebook",
+    "category3": "24/7",
+    "description": "Let your dreams run wild",
+    "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512820/Screen_Shot_2020-07-11_at_5.12.57_PM_skdwsm.png"
 
-// },
-// {
-//     "name": "No Sleep Zip Pouch",
-//     "price": 14.00,
-//     "category1": "accessories",
-//     "category2": "zip pouch",
-//     "category3": "No Sleep",
-//     "description": "To hold all your little things",
-//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
-//     "mediaUrl": " "
+},
+{
+    "name": "24/7 Zip Pouch",
+    "price": 14.00,
+    "category1": "accessories",
+    "category2": "zip pouch",
+    "category3": "24/7",
+    "description": "To hold all your little things",
+    "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512818/Screen_Shot_2020-07-11_at_5.13.16_PM_q0cay5.png"
 
-// },
+},
 
 // {
 //     "name": "No Sleep Men's T-Shirt",
