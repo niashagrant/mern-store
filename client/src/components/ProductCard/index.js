@@ -18,6 +18,7 @@ function ProductCard(props) {
       <Card.Body>
         <Card.Title> {props.name} </Card.Title>
         <Card.Text>{props.description}</Card.Text>
+        {/* <Card.Text>{props.description2}</Card.Text> */}
       </Card.Body>
       <Card.Footer className="eachProductFooter">
         <InputGroup className="inputGroup">
