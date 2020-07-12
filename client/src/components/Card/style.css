@@ -1,30 +1,30 @@
 .eachCard {
-    width: 225px;
-    height: 375px;
-    float: left;
-    margin-bottom: 2vh;
-    margin-right: 3%;
-    border-color: #A8AB8C !important;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  width: 225px;
+  height: 400px;
+  float: left;
+  margin-bottom: 2vh;
+  margin-right: 3%;
+  border-color: #a8ab8c !important;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
 
 .cardImg {
-    margin: 0 auto;
-    max-height: 200px;
-    max-width: 150px;
+  margin: 0 auto;
+  max-height: 200px;
+  max-width: 150px;
 }
 
 .viewItem {
-    color: #482B20!important;
-    border-color: #482B20 !important;
-    background-color: white !important;
+  color: #482b20 !important;
+  border-color: #482b20 !important;
+  background-color: white !important;
 }
 
 .footer {
-    background-color: #482B20 !important;
+  background-color: #482b20 !important;
 }
 
 .productTitle {
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }

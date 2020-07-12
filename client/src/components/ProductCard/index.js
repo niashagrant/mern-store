@@ -11,7 +11,7 @@ function ProductCard(props) {
     <Card className="eachProductCard" style={{ flex: 1 }}>
       <Card.Img
         variant="top"
-        className="cardImg"
+        className="cardImg zoom"
         alt={props.name}
         src={process.env.PUBLIC_URL + props.image}
       />
