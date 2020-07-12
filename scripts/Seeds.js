@@ -870,6 +870,93 @@ const products=[
 
 },
 
+{
+    "name": "CSS Men's T-Shirt",
+    "price": 24.00,
+    "category1": "clothing",
+    "category2": "men",
+    "category3": "CSS",
+    "description": "Graphic T-Shirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513315/Screen_Shot_2020-07-11_at_5.18.24_PM_cyc3mk.png"
+
+},
+{
+    "name": "CSS Men's Sweatshirt",
+    "price": 45.00,
+    "category1": "clothing",
+    "category2": "men",
+    "category3": "CSS",
+    "description": "Sweatshirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513317/Screen_Shot_2020-07-11_at_5.18.55_PM_uxbatp.png"
+
+},
+{
+    "name": "CSS Women's T-Shirt",
+    "price": 24.00,
+    "category1": "clothing",
+    "category2": "women",
+    "category3": "CSS",
+    "description": "Graphic T-Shirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513315/Screen_Shot_2020-07-11_at_5.19.16_PM_dv8qk8.png"
+},
+{
+    "name": "CSS Women's Tank",
+    "price": 18.00,
+    "category1": "clothing",
+    "category2": "women",
+    "category3": "CSS",
+    "description": "Graphic Tank",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513313/Screen_Shot_2020-07-11_at_5.19.44_PM_kw7iww.png"
+},
+{
+    "name": "CSS Coffee Mug",
+    "price": 18.00,
+    "category1": "accessories",
+    "category2": "mug",
+    "category3": "CSS",
+    "description": "It could be...",
+    "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513317/Screen_Shot_2020-07-11_at_5.20.35_PM_gexol7.png"
+
+},
+{ 
+    "name": "CSS Tote",
+    "price": 25.00,
+    "category1": "accessories",
+    "category2": "bag",
+    "category3": "CSS",
+    "description": "The bag could be filled with...",
+    "description2": "This tote is sleek, stylish, and classic.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513316/Screen_Shot_2020-07-11_at_5.20.56_PM_wyybp5.png"
+
+},
+{
+    "name": "CSS Spiral Notebook",
+    "price": 9.00,
+    "category1": "accessories",
+    "category2": "notebook",
+    "category3": "CSS",
+    "description": "Let your dreams run wild",
+    "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513317/Screen_Shot_2020-07-11_at_5.21.17_PM_fd3eow.png"
+
+},
+{
+    "name": "CSS Zip Pouch",
+    "price": 14.00,
+    "category1": "accessories",
+    "category2": "zip pouch",
+    "category3": "CSS",
+    "description": "To hold all your little things",
+    "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594513318/Screen_Shot_2020-07-11_at_5.21.31_PM_edbtsm.png"
+
+},
+
 // {
 //     "name": "No Sleep Men's T-Shirt",
 //     "price": 24.00,
@@ -945,6 +1032,18 @@ const products=[
 //     "mediaUrl": " "
 
 // },
+// {
+//     "name": "No Sleep Zip Pouch",
+//     "price": 14.00,
+//     "category1": "accessories",
+//     "category2": "zip pouch",
+//     "category3": "No Sleep",
+//     "description": "To hold all your little things",
+//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+//     "mediaUrl": " "
+
+// },
+
 // {
 //     "name": "No Sleep Zip Pouch",
 //     "price": 14.00,
