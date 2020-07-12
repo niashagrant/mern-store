@@ -65,6 +65,7 @@ function Product(props) {
         image={product.mediaUrl}
         price={product.price}
         description={product.description}
+        // description2={product.description2}
         productId={product.id}
         user={user}
         // value={product.orderQty}
