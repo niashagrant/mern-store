@@ -400,7 +400,7 @@ const products=[
     "category3": "This That",
     "description": "It could be...",
     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
-    "mediaUrl": " "
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501512/Screen_Shot_2020-07-11_at_2.02.49_PM_wnyfo8.png"
 
 },
 { 
@@ -696,92 +696,92 @@ const products=[
 
 },
 
-// {
-//     "name": "No Sleep Men's T-Shirt",
-//     "price": 24.00,
-//     "category1": "clothing",
-//     "category2": "men",
-//     "category3": "No Sleep",
-//     "description": "Graphic T-Shirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
+{
+    "name": "FBC Men's T-Shirt",
+    "price": 24.00,
+    "category1": "clothing",
+    "category2": "men",
+    "category3": "FBC",
+    "description": "Graphic T-Shirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512313/Screen_Shot_2020-07-11_at_5.01.23_PM_urw1hq.png"
 
-// },
-// {
-//     "name": "No Sleep Men's Sweatshirt",
-//     "price": 45.00,
-//     "category1": "clothing",
-//     "category2": "men",
-//     "category3": "No Sleep",
-//     "description": "Sweatshirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
-//     "mediaUrl": " "
+},
+{
+    "name": "FBC Men's Sweatshirt",
+    "price": 45.00,
+    "category1": "clothing",
+    "category2": "men",
+    "category3": "FBC",
+    "description": "Sweatshirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512321/Screen_Shot_2020-07-11_at_5.01.52_PM_po4ml6.png"
 
-// },
-// {
-//     "name": "No Sleep Women's T-Shirt",
-//     "price": 24.00,
-//     "category1": "clothing",
-//     "category2": "women",
-//     "category3": "No Sleep",
-//     "description": "Graphic T-Shirt",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
-// },
-// {
-//     "name": "No Sleep Women's Tank",
-//     "price": 18.00,
-//     "category1": "clothing",
-//     "category2": "women",
-//     "category3": "No Sleep",
-//     "description": "Graphic Tank",
-//     "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
-//     "mediaUrl": " "
-// },
-// {
-//     "name": "No Sleep Coffee Mug",
-//     "price": 18.00,
-//     "category1": "accessories",
-//     "category2": "mug",
-//     "category3": "No Sleep",
-//     "description": "It could be...",
-//     "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
-//     "mediaUrl": " "
+},
+{
+    "name": "FBC Women's T-Shirt",
+    "price": 24.00,
+    "category1": "clothing",
+    "category2": "women",
+    "category3": "FBC",
+    "description": "Graphic T-Shirt",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512313/Screen_Shot_2020-07-11_at_5.02.38_PM_k0ckyu.png"
+},
+{
+    "name": "FBC Women's Tank",
+    "price": 18.00,
+    "category1": "clothing",
+    "category2": "women",
+    "category3": "FBC",
+    "description": "Graphic Tank",
+    "description2": "Heavyweight cotton is cut in a standard fit featuring a text graphic across the chest and finished with a banded crew neck.",
+    "mediaUrl": " "
+},
+{
+    "name": "FBC Coffee Mug",
+    "price": 18.00,
+    "category1": "accessories",
+    "category2": "mug",
+    "category3": "FBC",
+    "description": "It could be...",
+    "description2": "This mug brings beauty to the everyday - from baking holiday cookies to traveling the world - with gifts and home goods you will cherish for years to come.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512321/Screen_Shot_2020-07-11_at_5.03.09_PM_tjckyi.png"
 
-// },
-// { 
-//     "name": "No Sleep Tote",
-//     "price": 25.00,
-//     "category1": "accessories",
-//     "category2": "bag",
-//     "category3": "No Sleep",
-//     "description": "The bag could be filled with...",
-//     "description2": "This tote is sleek, stylish, and classic.",
-//     "mediaUrl": " "
+},
+{ 
+    "name": "FBC Tote",
+    "price": 25.00,
+    "category1": "accessories",
+    "category2": "bag",
+    "category3": "FBC",
+    "description": "The bag could be filled with...",
+    "description2": "This tote is sleek, stylish, and classic.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512316/Screen_Shot_2020-07-11_at_5.03.59_PM_tqldnr.png"
 
-// },
-// {
-//     "name": "No Sleep Spiral Notebook",
-//     "price": 9.00,
-//     "category1": "accessories",
-//     "category2": "notebook",
-//     "category3": "No Sleep",
-//     "description": "Let your dreams run wild",
-//     "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
-//     "mediaUrl": " "
+},
+{
+    "name": "FBC Spiral Notebook",
+    "price": 9.00,
+    "category1": "accessories",
+    "category2": "notebook",
+    "category3": "FBC",
+    "description": "Let your dreams run wild",
+    "description2": "A notebook to detail everything from your feelings about a particular situation in your social life to your thoughts on a current event in the political world.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512316/Screen_Shot_2020-07-11_at_5.04.23_PM_kcuxnt.png"
 
-// },
-// {
-//     "name": "No Sleep Zip Pouch",
-//     "price": 14.00,
-//     "category1": "accessories",
-//     "category2": "zip pouch",
-//     "category3": "No Sleep",
-//     "description": "To hold all your little things",
-//     "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
-//     "mediaUrl": " "
+},
+{
+    "name": "FBC Zip Pouch",
+    "price": 14.00,
+    "category1": "accessories",
+    "category2": "zip pouch",
+    "category3": "FBC",
+    "description": "To hold all your little things",
+    "description2": "This zip pouch combines chic French sensibility with no-fuss practicality.",
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594512315/Screen_Shot_2020-07-11_at_5.04.42_PM_gcwq19.png"
 
-// },
+},
 
 // {
 //     "name": "No Sleep Men's T-Shirt",
