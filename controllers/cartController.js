@@ -89,7 +89,29 @@ const cart = {
         
       })
     }
+  },
+  createOrder: function(req,res){
+    if(req.user){
+      db.Cart.find({user:req.user._id})
+      .then((res)=>{
+        // console.log("this is our res", res)
+        const order= res.map((element)=>{
+          return {product:element.product, orderQty:element.orderQty}
+        })
+        console.log("This is our order",order)
+        console.log("here comes the total", req.body ,typeof req.body)
+        db.Order.create({user:req.user._id,
+                          products:order,
+                          total:req.body.total})
+        
+      }).then(res=>{console.log("this our response from order create:", res)
+          db.Cart.deleteMany({user:req.user._id})
+                    
+    }).then(deleted=> res.sendStatus(200))
+     
+    }
   }
+
 };
 
 module.exports = cart;

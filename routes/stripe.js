@@ -1,5 +1,6 @@
 const router = require("express").Router()
-const stripe = require('stripe')('STRIPE_SECRET_KEY');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const {v4:uuidv4} =require("uuid")
 
 
 router.get("/", (req, res) => {
@@ -10,7 +11,7 @@ router.post("/payment", (req, res) => {
     const {product, token} = req.body;
     console.log("PRODUCT FOR STRIPE", product)
     console.log("RICE FOR STRIPE", product.price)
-    const idempontencyKey = uuid()
+    const idempontencyKey = uuidv4()
     // idempontencyKey => makes sure customer is only charged once
 
     return stripe.customers.create({
@@ -31,7 +32,8 @@ router.post("/payment", (req, res) => {
             }
         }, {idempontencyKey})
     })
-    .then(result => res.status(200).json(result))
+    .then(result => {res.status(200).json(result)
+    console.log("this is our Stripe" ,result)})
     .catch(err => console.log(err))
 })
 

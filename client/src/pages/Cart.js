@@ -15,17 +15,14 @@ function Cart(props) {
     const [, setRemoval]= useState();
     const [, setHideModal] = useState(false);
     const [showModal, setShowModal]=useState(false);
+    const [total, setTotal] = useState ();
 
     const closeModal = () => {
         setHideModal(true);
         setShowModal(false);
       }
    
-    const [product, setProduct] = useState ({
-        name: "FBC Women's T-Shirt",
-        price: 24,
-        productBy: "Queen St. Market"
-    })
+    
 
     const makePayment = token => {
         if (!user) {
@@ -34,7 +31,7 @@ function Cart(props) {
         else {
         const body = {
             token,
-            product
+            total
         }
         const headers = {
             "Content-Type": "application/json"
@@ -70,6 +67,11 @@ function Cart(props) {
           console.log("back:", cartItems.data);
           if (cart.length !== cartItems.data.length) {
             setCart(cartItems.data);
+            console.log("this is the qty", cartItems.data[0].orderQty, typeof cartItems.data[0].orderQty )
+            console.log("this is the qty", cartItems.data[0].product.price, typeof cartItems.data[0].product.price )
+            const payAmount= cartItems.data.reduce((total,element)=>{return total + element.orderQty* element.product.price} ,0)
+            console.log("this is how much we are going to spend",payAmount)
+            setTotal(payAmount)
           }
         });
       }
@@ -114,6 +116,14 @@ function Cart(props) {
            })
             
         }
+        const checkout= ()=>{
+            API.createCheckout(total)
+            .then(response =>{
+                console.log( "is total in there",response)
+            })
+
+        }
+        
 
     return (
         <>
@@ -156,14 +166,14 @@ function Cart(props) {
                 stripeKey="pk_test_51H2jAhF6rrHNM5skrWeDa7Ug2AjxFHAhKeuw8Dv1m2OGNI7WEWf1zebIu8zW5MLhYYygTV7WcfG5L7TOSCtwpfWX00nxZ8LW4t"
                 token={makePayment}
                 name= "Queen St. Market"
-                amount={product.price * 100}
+                amount={total*100}
                 shippingAddress
                 billingAddress
                 image="https://res.cloudinary.com/lindseytummond/image/upload/v1594480229/crown_only_wsj9yt.png"
         > { user ? ( <>
             <Row className="w-100 d-flex justify-content-center">
-             <button  size="lg" block className="mt-5 mb-5 p-2 center border border-muted">
-                Click here to complete your purchase. || Total: ${product.price}
+             <button  onClick={checkout} size="lg" block className="mt-5 mb-5 p-2 center border border-muted">
+                Click here to complete your purchase. || Total: ${total}
                 {/* comes from state on line 23 */}
             </button>
             </Row>
