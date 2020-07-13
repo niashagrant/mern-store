@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import CartCard from '../components/CartCard';
 import SignInModal from "../components/Modals/SignInModal";
 import Row from "react-bootstrap/Row";
-import Crown from"../images/crown.png";
 import API from "../utils/API";
 
 
@@ -124,8 +123,8 @@ function Cart(props) {
                 </Row>
             </Row>
             </>) : (<>
-            <h3 className="text-center border-bottom border-muted pb-3" style={{ fontFamily: 'Playfair Display'}}> YES. <image src={Crown} alt="crown"/>
-            You need all of this!
+            <h3 className="text-center border-bottom border-muted pb-3" style={{ fontFamily: 'Playfair Display'}}> YES. 👑 <image src="./images/crown.png" alt="crown"/>
+             You need all of this!
             </h3>
             
             {cart.map(( element ) =>{
