@@ -8,6 +8,7 @@ const session = require("express-session");
 const passport = require("./passport");
 const { v4: uuidv4 } = require('uuid');
 const cors = require("cors");
+require("dotenv").config();
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));

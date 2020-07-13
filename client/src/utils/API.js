@@ -22,6 +22,10 @@ export default {
     console.log("this is what we are sending to the back to update Qty:",qty);
     return axios.put("/updateCartQty", qty)
     
+  },
+  createCheckout: function(total){
+    console.log(" this is what we are sending to our create order:", total)
+    return axios.post("/completeCheckout", {total})
   }
   
 };
