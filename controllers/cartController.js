@@ -100,14 +100,16 @@ const cart = {
         })
         console.log("This is our order",order)
         console.log("here comes the total", req.body ,typeof req.body)
-        db.Order.create({user:req.user._id,
+        return db.Order.create({user:req.user._id,
                           products:order,
                           total:req.body.total})
         
       }).then(res=>{console.log("this our response from order create:", res)
-          db.Cart.deleteMany({user:req.user._id})
+          return db.Cart.remove({user:req.user._id})
                     
-    }).then(deleted=> res.sendStatus(200))
+    }).then(deleted=> {
+      console.log("DELETED", deleted)
+      res.sendStatus(200)})
      
     }
   }

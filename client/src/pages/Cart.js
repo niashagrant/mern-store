@@ -4,6 +4,7 @@ import CartCard from '../components/CartCard';
 import SignInModal from "../components/Modals/SignInModal";
 import Row from "react-bootstrap/Row";
 import API from "../utils/API";
+import axios from "axios"
 
 
 import StripeCheckout from "react-stripe-checkout"
@@ -25,6 +26,7 @@ function Cart(props) {
     
 
     const makePayment = token => {
+        console.log("MAKE PAYMENT")
         if (!user) {
             alert("Replace this with a modal");
         }
@@ -37,17 +39,18 @@ function Cart(props) {
             "Content-Type": "application/json"
         }
 
-        return fetch(`/payment`, {
-            method: "POST",
-            headers,
-            body: JSON.stringify(body)
-        })
+        // .then .catch why not working or being hit?
+        axios.post (`/payment`, body)
         .then(response => {
             console.log("RESPONSE", response)
             const {status} = response;
             console.log("STATUS", status)
+            // checkout()
         })
-        .catch(error => console.log(error))
+        .catch(error => {
+            // checkout()
+            console.log("CAN I SEE THIS????????")
+            console.log(error)})
     }}
 
     useEffect(() => {
@@ -117,9 +120,11 @@ function Cart(props) {
             
         }
         const checkout= ()=>{
+            console.log("***CHECKING OUT")
             API.createCheckout(total)
             .then(response =>{
                 console.log( "is total in there",response)
+                setCart([])
             })
 
         }
@@ -172,7 +177,7 @@ function Cart(props) {
                 image="https://res.cloudinary.com/lindseytummond/image/upload/v1594480229/crown_only_wsj9yt.png"
         > { user ? ( <>
             <Row className="w-100 d-flex justify-content-center">
-             <button  onClick={checkout} size="lg" block className="mt-5 mb-5 p-2 center border border-muted">
+             <button onClick={checkout} size="lg" block className="mt-5 mb-5 p-2 center border border-muted">
                 Click here to complete your purchase. || Total: ${total}
                 {/* comes from state on line 23 */}
             </button>
