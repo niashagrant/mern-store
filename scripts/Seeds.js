@@ -455,7 +455,7 @@ const products=[
     "category3": "This That",
     "description": "I can’t choose so I pick this && that.",
     "description2": "Pro tip: Carrying things makes you look busy! Look busy and fashionable at the same time. A nice tote that is versatile, trendy, and durable for any day use. This tote is made from 100% spun polyester with sturdy cotton webbed handles. Our design is printed on both sides of the bag. Machine washable.",
-    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501512/Screen_Shot_2020-07-11_at_2.02.49_PM_wnyfo8.png"
+    "mediaUrl": "https://res.cloudinary.com/lindseytummond/image/upload/v1594501512/Screen_Shot_2020-07-11_at_2.03.10_PM_bsbwfy.png"
 
 },
 {
