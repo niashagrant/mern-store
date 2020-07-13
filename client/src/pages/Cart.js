@@ -68,16 +68,16 @@ function Cart(props) {
         console.log("back:", cartItems.data);
         if (cart.length !== cartItems.data.length) {
           setCart(cartItems.data);
-          console.log(
-            "this is the qty",
-            cartItems.data[0].orderQty,
-            typeof cartItems.data[0].orderQty
-          );
-          console.log(
-            "this is the qty",
-            cartItems.data[0].product.price,
-            typeof cartItems.data[0].product.price
-          );
+          // console.log(
+          //   "this is the qty",
+          //   cartItems.data[0].orderQty,
+          //   typeof cartItems.data[0].orderQty
+          // );
+          // console.log(
+          //   "this is the qty",
+          //   cartItems.data[0].product.price,
+          //   typeof cartItems.data[0].product.price
+          // );
           const payAmount = cartItems.data.reduce((total, element) => {
             return total + element.orderQty * element.product.price;
           }, 0);
@@ -119,6 +119,7 @@ function Cart(props) {
     API.updateCartQty(qtyUpdate)
       .then((updated) => {
         console.log(updated);
+        // setTotal(updated)
       })
       .catch((err) => {
         console.log(err);
