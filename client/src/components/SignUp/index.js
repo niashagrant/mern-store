@@ -1,12 +1,25 @@
-import React, { useRef } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState, useRef } from "react";
+import { useHistory, Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import axios from "axios";
+import SignedUpModal from "../Modals/SignedUpModal";
+import "./style.css"
 
 function SignUp(props) {
+
+  const [hideModal, setHideModal] = useState(true);
+  const [showModal, setShowModal]=useState(false);
+
+   
+  const closeModal = () => {
+    setHideModal(true);
+    setShowModal(false);
+  }
+
   let firstName = useRef();
   let lastName = useRef();
   let email = useRef();
@@ -28,6 +41,7 @@ function SignUp(props) {
     };
 
     console.log(newUser);
+    setShowModal(true);
 
     axios
       .post("/signup", newUser)
@@ -38,12 +52,12 @@ function SignUp(props) {
       })
       .catch(function (err) {
         console.log(err);
-       
       });
   };
 
   return (
-    <Form onSubmit={submitHandler}>
+    <Container>
+    <Form className="signUpForm" onSubmit={submitHandler}>
       <Form.Group controlId="formBasicName">
         <Row>
           <Col>
@@ -69,10 +83,13 @@ function SignUp(props) {
         <Form.Control type="password" placeholder="Password" ref={password} />
       </Form.Group>
 
-      <Button variant="primary" type="submit">
+      <Button className="submitSignUp btn-sm text-white" variant="primary" type="submit">
         Submit
       </Button>
     </Form>
+    <Row className="p-3">Already have an account? <Link className="ml-2 goToLogIn" to ={"/login"} >Log-In Now!</Link></Row>
+    <SignedUpModal status={showModal} hideModal={closeModal}/>
+    </Container>
   );
 }
 

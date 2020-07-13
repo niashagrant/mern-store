@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -20,41 +20,39 @@ function MenuBar(props) {
   };
 
   return (
-    <Navbar expand="sm" variant="dark" className="menubar">
+    <Navbar expand="sm" variant="light" fixed="top" className="menubar mt-3">
       <Container className="col col-centered">
-        <Navbar.Brand href="/">Queen St. Market</Navbar.Brand>
+        {/* <Navbar.Brand className="navTitle" href="/">Queen St. Market</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
             <Nav.Link
+              className="navBarProducts"
               onClick={() => {
                 history.push("/");
               }}
             >
-              Home
+              Products
             </Nav.Link>
             <Nav.Link
+              className="navBarCart"
               onClick={() => {
                 history.push("/cart");
               }}
             >
               Cart
-              <sup>
-                <Badge variant="light" className="ml-1">
-                  9
-                </Badge>
-              </sup>
             </Nav.Link>
             {/* <Nav.Link  onClick={()=>{history.push("/account")}}>Account</Nav.Link> */}
             {user ? (
               <>
-                <Nav.Link onClick={logOut} href="#">
+                <Nav.Link className="navBarLogOut" onClick={logOut} href="#">
                   Log-Out
                 </Nav.Link>
               </>
             ) : (
               <>
                 <Nav.Link
+                  className="navBarLogIn"
                   onClick={() => {
                     history.push("/login");
                   }}

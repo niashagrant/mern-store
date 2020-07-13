@@ -1,4 +1,7 @@
 
+.Modal {
+    font-family: 'Playfair Display', serif;
+}
 
 .addModalClose {
 
@@ -14,6 +17,24 @@
 }
 
 .greatTaste {
-    font-family: 'Playfair Display', serif;
     font-size: 2rem;
+}
+
+
+.signUpModalLink,
+.logInModalLink {
+    border: none!important;
+    color: darkslategrey !important;
+    background-color: transparent !important;
+}
+
+.signUpModalLink:hover,
+.logInModalLink:hover {
+text-decoration: underline !important;
+font-size: 1.1rem;
+cursor: pointer;
+}
+
+Button {
+cursor: pointer;
 }

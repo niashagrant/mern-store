@@ -19,12 +19,12 @@ function Cards(props) {
           {" "}
           {props.name}{" "}
         </Card.Title>
-        <Card.Text>{props.description}</Card.Text>
+        <Card.Text className="shortDesc">{props.description}</Card.Text>
       </Card.Body>
       <Card.Footer className="footer">
-        <Card.Text className="float-left text-white">${props.price}</Card.Text>
+        <Card.Text className="float-left">${props.price}</Card.Text>
         <Link to={`/product/${props.id}`}>
-          <Button className="btn btn-outline-secondary btn-sm bg-white float-right viewItem">
+          <Button className="btn btn-sm bg-white float-right viewItem">
             View Item
           </Button>
         </Link>

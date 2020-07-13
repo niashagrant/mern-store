@@ -1,19 +1,43 @@
-.eachProductCard {
-    width: 50%;
-    height: 350px;
-    float: left;
+.eachCartCard {
     margin-bottom: 2vh;
-    margin-right: 3%;
-    border-color: #482B20 !important;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    border: none !important;
+    font-family: 'Playfair Display', serif !important;
 }
 
-.addToCart {
-    color: #482B20 !important;
-    border-color: #482B20 !important;
-    background-color: white !important;
+.updateQty {
+    border-style: none !important;
 }
 
-.eachProductFooter {
-    background-color: #482B20 !important;
+.deleteFromCart {
+    border-style: none !important;
 }
+
+.updateQty:hover,
+.deleteFromCart:hover {
+    text-decoration: underline !important;
+    font-size: .9rem;
+}
+
+.cartInputGroup {
+    width: 26.5vw !important;
+    font-size: .9rem !important;
+}
+
+.updateQtyInCart {
+    border-radius: 5px !important;
+}
+
+.cartPageImg {
+    width: 10% !important;
+}
+
+.cartPagePrice {
+    font-size: 1rem !important;
+}
+
+.cartPageTitle {
+    padding-bottom: 1vh;
+    /* padding-left: 3vw; */
+    font-size: 1rem !important;
+    border-bottom: 1px solid lightgray;
+} 
