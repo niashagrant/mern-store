@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import CartCard from '../components/CartCard';
 import SignInModal from "../components/Modals/SignInModal";
 import Row from "react-bootstrap/Row";
+import Crown from"../images/crown.png";
 import API from "../utils/API";
 
 
@@ -117,24 +118,15 @@ function Cart(props) {
         <>
         <Container>
             { !user? (<> 
-            <Row  className="d-flex justify-content-center">
-            <Row className="mt-5 mb-5">
-            <p variant="white" style={{ fontSize: ".1rem"}}>-</p> 
-            </Row>
-            <Row className="mt-5 mb-5">
-            <p variant="white" style={{ fontSize: ".1rem"}}>-</p> 
-            </Row>
-            <Row>
-            <h1 className="text-center mt-5 pt-5" style={{ fontFamily: 'Playfair Display'}}>Oh no! You must be logged in to access this page!</h1>
-            </Row>
+            <Row  className="d-flex justify-content-center pt-5 mt-5">
+                <Row>
+                <h5 className="text-center mt-5 pt-5" style={{ fontFamily: 'Playfair Display'}}>Oh no! You must be logged in to access this page!</h5>
+                </Row>
             </Row>
             </>) : (<>
-            <h1 className="text-center">👑 
-            <span className="mb-5" style={{ fontFamily: 'Playfair Display'}}> YES.</span>
-            </h1>
-            <h1 className="text-center mb-5">
-            <span className="mb-5 font-italic" style={{ fontFamily: 'Playfair Display'}}> You need all of this! </span>
-            </h1>
+            <h3 className="text-center border-bottom border-muted pb-3" style={{ fontFamily: 'Playfair Display'}}> YES. <image src={Crown} alt="crown"/>
+            You need all of this!
+            </h3>
             
             {cart.map(( element ) =>{
                 // console.log("this is our element:",element)
@@ -155,10 +147,8 @@ function Cart(props) {
            
             </>)}
         <SignInModal status={showModal} hideModal={closeModal}/>
-        </Container>
-        
-      
-       
+
+
         <StripeCheckout className="col col-sm-1 col-md-4 col-centered"
                 stripeKey="pk_test_51H2jAhF6rrHNM5skrWeDa7Ug2AjxFHAhKeuw8Dv1m2OGNI7WEWf1zebIu8zW5MLhYYygTV7WcfG5L7TOSCtwpfWX00nxZ8LW4t"
                 token={makePayment}
@@ -168,9 +158,9 @@ function Cart(props) {
                 billingAddress
                 image="https://res.cloudinary.com/lindseytummond/image/upload/v1594480229/crown_only_wsj9yt.png"
         > { user ? ( <>
-            <Row className="w-100 d-flex justify-content-right bg-primary">
-             <button variant="primary" size="lg" block className="mt-5 mb-5 py-2 px-1 center">
-                Click Here to Complete Your Purchase. || Total: ${product.price}
+            <Row className="w-100 d-flex justify-content-center">
+             <button  size="lg" block className="mt-5 mb-5 p-2 center border border-muted">
+                Click here to complete your purchase. || Total: ${product.price}
                 {/* comes from state on line 23 */}
             </button>
             </Row>
@@ -178,6 +168,7 @@ function Cart(props) {
         </>
         )}
         </StripeCheckout>
+        </Container>
     </>
     )
 }

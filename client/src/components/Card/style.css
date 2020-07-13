@@ -22,8 +22,12 @@
 
 .viewItem {
     color: darkslategrey !important;
-    border-color: slategrey !important;
-    background-color: white !important;
+    border: none !important;
+}
+
+.viewItem:hover {
+    text-decoration: underline !important;
+    border: none !important;
 }
 
 .shortDesc {
