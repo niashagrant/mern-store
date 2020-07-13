@@ -127,9 +127,6 @@ function Cart(props) {
             </>) : (<>
             
             <h3 className="text-center cartCrown"><img src="../../images/cartCrown.png" alt="crown"/> </h3>
-            <h3 className="text-center border-bottom border-muted pb-4" style={{ fontFamily: 'Playfair Display'}}> YES.
-             You need all of this!
-            </h3>
             
             {cart.map(( element ) =>{
                 // console.log("this is our element:",element)
