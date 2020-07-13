@@ -7,17 +7,30 @@ const cart = {
     // res.end();
 
     if (req.user) {
-      console.log("this is our create rq.body", req.body);
-
-      db.Cart.create({
+      // console.log("this is our create rq.body", req.body);
+      console.log("***********ADDING TO CART***********")
+      db.Cart.findOneAndUpdate( 
+      {
         user: req.user._id,
-        product: req.body.productId,
-        orderQty: req.body.quantity,
+        product: req.body.productId
+      },
+      {$inc: {orderQty: req.body.quantity}
       })
-        .then(() => {
+        .then((cartProduct) => {
+          console.log("THIS IS OUR CART PRODUCT ********: ", cartProduct)
+          if (cartProduct === null) {
+            console.log("<<<<<<<<<<<<<<<ADDING NEW PRODUCT TO OUR CART>>>>>>>>>>>>")
+            db.Cart.create({
+              user: req.user._id,
+              product: req.body.productId,
+              orderQty: req.body.quantity,
+            })
+          }
+        }).then(() => {
           res.sendStatus(200);
         })
         .catch(() => {
+          console.log("WHY CAN'T WE SEE OUR CONSOLE LOG FROM LINE 20?????????")
           res.sendStatus(403);
         });
     } else {
@@ -27,12 +40,12 @@ const cart = {
   },
 
   findAll: function(req, res) {
-      console.log("this is what we want",req.user._id)
+      // console.log("this is what we want",req.user._id)
       if (req.user) {
           db.Cart.find({user:req.user._id})
           .populate("product")
           .then (cartdb => {
-              console.log("this is our cart db",cartdb)
+              // console.log("this is our cart db",cartdb)
               res.json(cartdb)
           })
           .catch(error=> {

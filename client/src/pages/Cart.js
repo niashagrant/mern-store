@@ -12,8 +12,8 @@ function Cart(props) {
 
     const {user}=props;
     const [ cart, setCart ] = useState([]);
-    const [ removal, setRemoval]= useState();
-    const [hideModal, setHideModal] = useState(false);
+    const [, setRemoval]= useState();
+    const [, setHideModal] = useState(false);
     const [showModal, setShowModal]=useState(false);
 
     const closeModal = () => {
@@ -125,7 +125,9 @@ function Cart(props) {
                 </Row>
             </Row>
             </>) : (<>
-            <h3 className="text-center border-bottom border-muted pb-4" style={{ fontFamily: 'Playfair Display'}}> YES. 👑 <image src="./images/crown.png" alt="crown"/>
+            
+            <h3 className="text-center cartCrown"><img src="../../images/cartCrown.png" alt="crown"/> </h3>
+            <h3 className="text-center border-bottom border-muted pb-4" style={{ fontFamily: 'Playfair Display'}}> YES.
              You need all of this!
             </h3>
             
@@ -176,4 +178,7 @@ function Cart(props) {
 
 
 export default Cart;
+
+
+
 
