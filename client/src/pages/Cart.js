@@ -55,7 +55,7 @@ function Cart(props) {
     if (!user) {
       alert("You must be signed in to add items to your cart.");
     } else {
-      // something..
+      // something.. I just want to know if this works
       API.renderCart(user).then((cartItems) => {
         console.log("back:", cartItems.data);
         if (cart.length !== cartItems.data.length) {
