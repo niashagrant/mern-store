@@ -1,44 +1,58 @@
 * {
-    color: darkslategrey !important;
+  color: darkslategrey !important;
 }
 
 .eachCard {
-    width: 225px;
-    height: 400px;
-    float: left;
-    margin-bottom: 2vh;
-    margin-right: 3%;
-    color: darkslategrey;
-    border-color: #A8AB8C !important;
-    box-shadow: 0 2px 5px rgba(182, 182, 182, 0.75);
-    font-family: 'Playfair Display', serif;
+  width: 225px;
+  height: 400px;
+  float: left;
+  margin-bottom: 2vh;
+  margin-right: 3%;
+  color: darkslategrey;
+  border-color: #a8ab8c !important;
+  box-shadow: 0 2px 5px rgba(182, 182, 182, 0.75);
+  font-family: "Playfair Display", serif;
 }
 
 .cardImg {
-    margin: 0 auto;
-    max-height: 200px;
-    max-width: 150px;
+  margin: 0 auto;
+  max-height: 200px;
+  max-width: 150px;
 }
 
 .viewItem {
-    color: darkslategrey !important;
-    border: none !important;
+  color: darkslategrey !important;
+  border: none !important;
 }
 
 .viewItem:hover {
-    text-decoration: underline !important;
-    border: none !important;
+  text-decoration: underline !important;
+  border: none !important;
 }
 
 .shortDesc {
-    font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .footer {
-    /* background-color: #482B20 !important; */
-    color: darkslategrey !important;
+  /* background-color: #482B20 !important; */
+  color: darkslategrey !important;
 }
 
 .productTitle {
-    border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.zoom {
+  transition: transform 1s ease;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+  position: relative;
+  cursor: zoom-in;
+}
+
+.card {
+  overflow: hidden;
 }
