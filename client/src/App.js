@@ -24,8 +24,9 @@ const [user, setLogin]=useState()
     return (
       // <Elements stripe={stripePromise}>
       <Router>
+        <MenuBar setLogin={setLogin} user={user}{...props}/>
       <Marquee/>
-      <MenuBar setLogin={setLogin} user={user}{...props}/>
+      
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/account" component={Account}/>

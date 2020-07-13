@@ -23,7 +23,6 @@ const ProductSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-
   description: {
     type: String,
     required: true,
@@ -36,15 +35,10 @@ const ProductSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-
   stockQty: {
     type: Number,
     default: 5000,
-  },
-  buyer: {
-    type: Boolean,
-    default: false,
-  },
+  }
 });
 
 const Products =

@@ -7,54 +7,55 @@ import Button from 'react-bootstrap/Button';
 import "./style.css"
 
 
-
 function CartCard (props) {
 
   const [quantity, setQuantity] = useState(props.value);
 
     return (
-    <Card className="eachProductCard"  key={props.mediaUrl} style={{flex: 1}}>
+    <Card className="eachProductCard w-75 m-auto"  key={props.mediaUrl} style={{flex: 1}}>
+      <Card.Body className="mt-3">
       <Card.Img
         variant="top"
-        className="cardImg"
+        className="cartPageImg float-left"
         alt={props.name}
         src={process.env.PUBLIC_URL + props.image}
       />
-      <Card.Body>
-        <Card.Title> {props.name} </Card.Title>
-        <Card.Text>{props.description}</Card.Text>
-
+      <Row>
+      <Card.Title className="cartPageTitle float-left ml-5 mb-1 mb-0"> {props.name} </Card.Title>
+      </Row>
+      <Row>
+      <Card.Text className="float-left ml-5 mt-1 mb-2">{props.description}</Card.Text>
+      </Row>
+      <Row>
+      <Card.Text className="cartPagePrice ml-5 float-right border-top border-muted py-2">${props.price} /each</Card.Text>
+      </Row>
       </Card.Body>
       <Card.Footer className="eachProductFooter">
-      <InputGroup className="inputGroup">
-      <Card.Text className="float-left text-white">${props.price}</Card.Text>
-
-      {/* need to make changes below so that user can change/update qty  */}
+      <Row className="d-flex justify-content-end w-100">
+      <InputGroup className="cartInputGroup">
+        <Card.Text className="mr-2 ml-5 mt-3 totalQty">
+        Total Qty:
+        </Card.Text>
       <FormControl
-        className="quantityInputField float-right mr-4"
+        className="updateQtyInCart float-right"
         type="number" 
         min="1"
         max="9"
         placeholder="Qty"
         value={quantity}
         onChange={(event) => setQuantity(Number(event.target.value))}
-        // quantity={props.currentValue}
         />
-        {/* <Button  data-user={props.user} data-productid={props.id} onClick={props.handleButton} className="btn btn-outline-secondary btn-sm bg-white addToCart float-right">Add to Cart {props.buttonText}</Button> */}
-        <Row className="d-flex justify-content-end w-100">
-          {/* To update Qty - maybe add a update button here?  Or can we handle with window location reload?  */}
-          <Button data-id={props.productid} onClick={()=>props.updateQty(props.id,quantity)} className="btn btn-sm bg-light text-dark delete mt-1 mr-1">
-            Update Qty
-          </Button>
-          <Button  data-id={props.productid} onClick={props.updateThisCart} className="btn btn-sm bg-light text-dark delete mt-1 mr-2">
-            Delete
-          </Button>
+        <Button data-id={props.productid} onClick={()=>props.updateQty(props.id,quantity)} className="btn btn-sm bg-light text-dark delete updateQty">
+          Update Qty
+        </Button>
+        <h6 className="mt-3 ml-1">||</h6>
+        <Button  data-id={props.productid} onClick={props.updateThisCart} className="btn btn-sm bg-light text-dark delete deleteFromCart">
+          Delete Product
+        </Button>
+        </InputGroup>
         </Row>
-      </InputGroup>
-       
       </Card.Footer>
     </Card>
-
     )
 }
 

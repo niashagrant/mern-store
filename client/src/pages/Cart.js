@@ -1,6 +1,8 @@
-import React, { useState, useEffect, useReducer } from 'react'; // imported useEffect
+import React, { useState, useEffect } from 'react'; // imported useEffect
 import Container from 'react-bootstrap/Container';
 import CartCard from '../components/CartCard';
+import SignInModal from "../components/Modals/SignInModal";
+import Row from "react-bootstrap/Row";
 import API from "../utils/API";
 
 
@@ -11,9 +13,14 @@ function Cart(props) {
     const {user}=props;
     const [ cart, setCart ] = useState([]);
     const [ removal, setRemoval]= useState();
-   
+    const [hideModal, setHideModal] = useState(false);
+    const [showModal, setShowModal]=useState(false);
 
-    // TO DO: update with product in store vs hard coded!!!
+    const closeModal = () => {
+        setHideModal(true);
+        setShowModal(false);
+      }
+   
     const [product, setProduct] = useState ({
         name: "FBC Women's T-Shirt",
         price: 24,
@@ -22,7 +29,7 @@ function Cart(props) {
 
     const makePayment = token => {
         if (!user) {
-            alert("Replace this shit with a modal");
+            alert("Replace this with a modal");
         }
         else {
         const body = {
@@ -46,7 +53,7 @@ function Cart(props) {
         .catch(error => console.log(error))
     }}
 
-    useEffect(() => {                           // added useEffect in which we call loadThisCart()
+    useEffect(() => {
         console.log("user:", props);
         loadThisCart(); 
     }, [cart]);
@@ -56,7 +63,7 @@ function Cart(props) {
     const loadThisCart = () => {
       console.log("loadcart");
       if (!user) {
-        alert("You must be signed in to add items to your cart.");
+        setShowModal(true);
       } else {
         // something..
         API.renderCart(user).then((cartItems) => {
@@ -67,7 +74,7 @@ function Cart(props) {
         });
       }
     };
-    //function to send information about what porduct we want to delete from database
+    //function to send information about what product we want to delete from database
 
         const updateThisCart =(event)=>{
             if (!user) {
@@ -110,11 +117,18 @@ function Cart(props) {
 
     return (
         <>
-        <Container className="col col-sm-1 col-md-8 col-centered">
+        <Container>
             { !user? (<> 
-            <h6>Cart page not logged-in</h6>
+            <Row  className="d-flex justify-content-center pt-5 mt-5">
+                <Row>
+                <h5 className="text-center mt-5 pt-5" style={{ fontFamily: 'Playfair Display'}}>Oh no! You must be logged in to access this page!</h5>
+                </Row>
+            </Row>
             </>) : (<>
-            <h6 className="text-center"> YES.  You need all of this!</h6>
+            <h3 className="text-center border-bottom border-muted pb-4" style={{ fontFamily: 'Playfair Display'}}> YES. 👑 <image src="./images/crown.png" alt="crown"/>
+             You need all of this!
+            </h3>
+            
             {cart.map(( element ) =>{
                 // console.log("this is our element:",element)
              return(  <CartCard
@@ -131,10 +145,11 @@ function Cart(props) {
                 updateThisCart={updateThisCart}
                 />) }
             )}
+           
             </>)}
-        </Container>
-      
-       
+        <SignInModal status={showModal} hideModal={closeModal}/>
+
+
         <StripeCheckout className="col col-sm-1 col-md-4 col-centered"
                 stripeKey="pk_test_51H2jAhF6rrHNM5skrWeDa7Ug2AjxFHAhKeuw8Dv1m2OGNI7WEWf1zebIu8zW5MLhYYygTV7WcfG5L7TOSCtwpfWX00nxZ8LW4t"
                 token={makePayment}
@@ -144,14 +159,17 @@ function Cart(props) {
                 billingAddress
                 image="https://res.cloudinary.com/lindseytummond/image/upload/v1594480229/crown_only_wsj9yt.png"
         > { user ? ( <>
-             <button variant="primary" size="lg" block>
-                Purchase Total: ${product.price}
+            <Row className="w-100 d-flex justify-content-center">
+             <button  size="lg" block className="mt-5 mb-5 p-2 center border border-muted">
+                Click here to complete your purchase. || Total: ${product.price}
                 {/* comes from state on line 23 */}
             </button>
+            </Row>
         </>) : (<>
         </>
         )}
         </StripeCheckout>
+        </Container>
     </>
     )
 }
