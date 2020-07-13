@@ -125,7 +125,7 @@ function Cart(props) {
                 </Row>
             </Row>
             </>) : (<>
-            <h3 className="text-center border-bottom border-muted pb-3" style={{ fontFamily: 'Playfair Display'}}> YES. 👑 <image src="./images/crown.png" alt="crown"/>
+            <h3 className="text-center border-bottom border-muted pb-4" style={{ fontFamily: 'Playfair Display'}}> YES. 👑 <image src="./images/crown.png" alt="crown"/>
              You need all of this!
             </h3>
             
