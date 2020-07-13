@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Cards from "../components/Card";
-// import PaginationTwo from "../components/Pagination";
 import axios from "axios";
 
 function Home(props) {
