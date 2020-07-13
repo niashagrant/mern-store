@@ -6,12 +6,10 @@
 
 .updateQty {
     border-style: none !important;
-    text-decoration: underline;
 }
 
 .deleteFromCart {
     border-style: none !important;
-    text-decoration: underline;
 }
 
 .updateQty:hover,

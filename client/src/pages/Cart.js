@@ -21,7 +21,6 @@ function Cart(props) {
         setShowModal(false);
       }
    
-    // TO DO: update with product in store vs hard coded!!!
     const [product, setProduct] = useState ({
         name: "FBC Women's T-Shirt",
         price: 24,
@@ -54,25 +53,28 @@ function Cart(props) {
         .catch(error => console.log(error))
     }}
 
-    useEffect(() => {                           // added useEffect in which we call loadThisCart()
+    useEffect(() => {
         console.log("user:", props);
         loadThisCart(); 
-    }, []);
+    }, [cart]);
     
     // function to get the request from the back with product information and quantity
+
     const loadThisCart = () => {
-        // console.log("loadcart")
-        if (!user) {
-            setShowModal(true);
-        } else {
-            API.renderCart(user)
-            .then(cartItems => {
-                // console.log("back:", cartItems.data)
-              setCart(cartItems.data)  
-            })
-        }
-    }
-    //function to send information about what porduct we want to delete from database
+      console.log("loadcart");
+      if (!user) {
+        setShowModal(true);
+      } else {
+        // something..
+        API.renderCart(user).then((cartItems) => {
+          console.log("back:", cartItems.data);
+          if (cart.length !== cartItems.data.length) {
+            setCart(cartItems.data);
+          }
+        });
+      }
+    };
+    //function to send information about what product we want to delete from database
 
         const updateThisCart =(event)=>{
             if (!user) {

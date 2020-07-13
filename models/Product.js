@@ -35,7 +35,6 @@ const ProductSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-
   stockQty: {
     type: Number,
     default: 5000,
