@@ -18,6 +18,7 @@ function ProductCard(props) {
       <Card.Body>
         <Card.Title> {props.name} </Card.Title>
         <Card.Text>{props.description}</Card.Text>
+        {/* <Card.Text>{props.description2}</Card.Text> */}
       </Card.Body>
       <Card.Footer className="eachProductFooter">
         <InputGroup className="inputGroup">
@@ -29,7 +30,7 @@ function ProductCard(props) {
             type="number"
             min="1"
             max="9"
-            placeholder="Qty"
+            // placeholder="Qty"
             // value={props.value}
             onChange={props.onChange}
           />
@@ -41,11 +42,11 @@ function ProductCard(props) {
           >
             Add to Cart {props.buttonText}
           </Button>
-          <Row className="d-flex justify-content-end w-100">
+          {/* <Row className="d-flex justify-content-end w-100">
             <Card.Text className="text-light font-italic userNote">
               Sign-up to Add items to Cart
             </Card.Text>
-          </Row>
+          </Row> */}
         </InputGroup>
       </Card.Footer>
     </Card>

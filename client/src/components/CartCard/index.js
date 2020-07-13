@@ -46,7 +46,7 @@ function CartCard (props) {
           <Button data-id={props.productid} onClick={()=>props.updateQty(props.id,quantity)} className="btn btn-sm bg-light text-dark delete mt-1 mr-1">
             Update Qty
           </Button>
-          <Button  data-id={props.productid} onClick={props.deleteProd} className="btn btn-sm bg-light text-dark delete mt-1">
+          <Button  data-id={props.productid} onClick={props.updateThisCart} className="btn btn-sm bg-light text-dark delete mt-1 mr-2">
             Delete
           </Button>
         </Row>
