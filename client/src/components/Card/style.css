@@ -4,12 +4,14 @@
 
 .eachCard {
     width: 225px;
-    height: 375px;
+    height: 400px;
     float: left;
     margin-bottom: 2vh;
     margin-right: 3%;
+    color: darkslategrey;
     border-color: #A8AB8C !important;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    box-shadow: 0 2px 5px rgba(182, 182, 182, 0.75);
+    font-family: 'Playfair Display', serif;
 }
 
 .cardImg {
@@ -20,8 +22,12 @@
 
 .viewItem {
     color: darkslategrey !important;
-    border-color: darkslategrey !important;
+    border-color: slategrey !important;
     background-color: white !important;
+}
+
+.shortDesc {
+    font-size: .75rem;
 }
 
 .footer {

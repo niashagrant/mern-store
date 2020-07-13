@@ -1,18 +1,36 @@
 .eachProductCard {
-    width: 75%;
-    height: 350px;
-    float: left;
+    /* height: 400px; */
     margin-bottom: 2vh;
-    margin-right: 3%;
-    border-color: darkslategrey !important;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    border: none !important;
+    /* box-shadow: 0 3px 6px -6px #999; */
+    font-family: 'Playfair Display', serif !important;
 }
 
 .addToCart {
-    border-color: darkslategrey !important;
-    background-color: white !important;
+    padding: .2vh .3vw .2vh .3vw !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.addToCart:hover {
+    text-decoration: underline !important;
+    font-size: .9rem;
 }
 
 .quantityInputField {
-    margin-left: 65%;
+    margin-left: 75%;
+    border-radius: 5px !important;
+}
+
+.productPageImg {
+    width: 40% !important;
+}
+
+.productPagePrice {
+    font-size: 1.25rem !important;
+}
+
+.productPageTitle {
+    border-bottom: 1px solid lightgrey !important;
+    font-size: 1.5rem !important;
 }

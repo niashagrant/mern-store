@@ -2,11 +2,12 @@
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
-    /* border-bottom: 0 3px 6px solid #999 !important; */
-    /* box-shadow: 0 3px 6px -6px #999, 0 3px 6px #999; */
-    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    background-color: white !important;
+    box-shadow: 0 2px 5px rgba(182, 182, 182, 0.75);
 }
 
 .mastheadImage {
-    width: 100vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    width: 30%;
 }

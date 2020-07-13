@@ -1,6 +1,8 @@
-import React, { useState, useEffect, useReducer } from 'react'; // imported useEffect
+import React, { useState, useEffect } from 'react'; // imported useEffect
 import Container from 'react-bootstrap/Container';
 import CartCard from '../components/CartCard';
+import SignInModal from "../components/Modals/SignInModal";
+import Row from "react-bootstrap/Row";
 import API from "../utils/API";
 
 
@@ -11,8 +13,14 @@ function Cart(props) {
     const {user}=props;
     const [ cart, setCart ] = useState([]);
     const [ removal, setRemoval]= useState();
-   
+    const [hideModal, setHideModal] = useState(false);
+    const [showModal, setShowModal]=useState(false);
 
+    const closeModal = () => {
+        setHideModal(true);
+        setShowModal(false);
+      }
+   
     // TO DO: update with product in store vs hard coded!!!
     const [product, setProduct] = useState ({
         name: "FBC Women's T-Shirt",
@@ -22,7 +30,7 @@ function Cart(props) {
 
     const makePayment = token => {
         if (!user) {
-            alert("Replace this shit with a modal");
+            alert("Replace this with a modal");
         }
         else {
         const body = {
@@ -55,7 +63,7 @@ function Cart(props) {
     const loadThisCart = () => {
         // console.log("loadcart")
         if (!user) {
-            alert("You must be signed in to add items to your cart.")
+            setShowModal(true);
         } else {
             API.renderCart(user)
             .then(cartItems => {
@@ -107,11 +115,27 @@ function Cart(props) {
 
     return (
         <>
-        <Container className="col col-sm-1 col-md-8 col-centered">
+        <Container>
             { !user? (<> 
-            <h6>Cart page not logged-in</h6>
+            <Row  className="d-flex justify-content-center">
+            <Row className="mt-5 mb-5">
+            <p variant="white" style={{ fontSize: ".1rem"}}>-</p> 
+            </Row>
+            <Row className="mt-5 mb-5">
+            <p variant="white" style={{ fontSize: ".1rem"}}>-</p> 
+            </Row>
+            <Row>
+            <h1 className="text-center mt-5 pt-5" style={{ fontFamily: 'Playfair Display'}}>Oh no! You must be logged in to access this page!</h1>
+            </Row>
+            </Row>
             </>) : (<>
-            <h6 className="text-center"> YES.  You need all of this!</h6>
+            <h1 className="text-center">👑 
+            <span className="mb-5" style={{ fontFamily: 'Playfair Display'}}> YES.</span>
+            </h1>
+            <h1 className="text-center mb-5">
+            <span className="mb-5 font-italic" style={{ fontFamily: 'Playfair Display'}}> You need all of this! </span>
+            </h1>
+            
             {cart.map(( element ) =>{
                 // console.log("this is our element:",element)
              return(  <CartCard
@@ -128,8 +152,11 @@ function Cart(props) {
                 updateThisCart={updateThisCart}
                 />) }
             )}
+           
             </>)}
+        <SignInModal status={showModal} hideModal={closeModal}/>
         </Container>
+        
       
        
         <StripeCheckout className="col col-sm-1 col-md-4 col-centered"
@@ -141,10 +168,12 @@ function Cart(props) {
                 billingAddress
                 image="https://res.cloudinary.com/lindseytummond/image/upload/v1594480229/crown_only_wsj9yt.png"
         > { user ? ( <>
-             <button variant="primary" size="lg" block>
-                Purchase Total: ${product.price}
+            <Row className="w-100 d-flex justify-content-right bg-primary">
+             <button variant="primary" size="lg" block className="mt-5 mb-5 py-2 px-1 center">
+                Click Here to Complete Your Purchase. || Total: ${product.price}
                 {/* comes from state on line 23 */}
             </button>
+            </Row>
         </>) : (<>
         </>
         )}

@@ -19,6 +19,10 @@ const ProductSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  category3: {
+    type: String,
+    required: true,
+  },
   description: {
     type: String,
     required: true,
@@ -35,11 +39,7 @@ const ProductSchema = new mongoose.Schema({
   stockQty: {
     type: Number,
     default: 5000,
-  },
-  buyer: {
-    type: Boolean,
-    default: false,
-  },
+  }
 });
 
 const Products =

@@ -20,16 +20,3 @@ const CartSchema = new mongoose.Schema({
 
 const Cart = mongoose.models.Cart || mongoose.model("Cart", CartSchema);
 module.exports = Cart;
-
-// products: [
-//   {
-//     quantity: {
-//       type: Number,
-//       default: 1,
-//     },
-//     product: {
-//       type: ObjectId,
-//       ref: "Product",
-//     },
-//   },
-// ],

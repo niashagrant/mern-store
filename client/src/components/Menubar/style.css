@@ -1,9 +1,16 @@
 .menubar {
     font-family: 'Playfair Display', serif;
-    background-color: white;
-    height: 30px;
+    /* background-color: white; */
+    /* height: 30px; */
 }
 
 .navTitle {
     color: darkslategray !important;
+}
+
+.navBarProducts:hover,
+.navBarCart:hover,
+.navBarLogIn:hover,
+.navBarLogOut:hover {
+
 }

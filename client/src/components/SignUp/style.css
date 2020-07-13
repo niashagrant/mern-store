@@ -1,0 +1,15 @@
+.signUpForm {
+    font-family: 'Playfair Display', serif;
+}
+
+
+.submitSignUp {
+    background-color: darkslategrey !important;
+    border: none !important;
+}
+
+.goToLogIn {
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline;
+
+}

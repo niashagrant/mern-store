@@ -3,7 +3,7 @@ const productsController = require("../controllers/productsController.js");
 const cartController = require("../controllers/cartController");
 
 //route to our homepage and a get to get all the products in the database using the controller
-console.log("Do we see this???");
+// console.log("Do we see this???");
 
 router.route("/allproducts").get(productsController.findAll);
 
@@ -16,7 +16,6 @@ router.route("/userCart/:id")
 
 router.route("/delFromCart/:id")
 .delete(cartController.findOneAndDelete)
-
 
 //Work in progress - trying to update quantity
 router.route("/updateCartQty")

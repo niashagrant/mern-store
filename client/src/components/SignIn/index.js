@@ -41,7 +41,7 @@ function SignIn(props) {
 
   return (
     <Container>
-    <Form onSubmit={submitHandler}>
+    <Form className = "logInForm" onSubmit={submitHandler}>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" ref={email} />
@@ -55,11 +55,11 @@ function SignIn(props) {
         <Form.Control type="password" placeholder="Password" ref={password} />
       </Form.Group>
 
-      <Button className="login" variant="primary" type="submit">
+      <Button className="login btn-sm" type="submit">
         Submit
       </Button>
     </Form>
-    <Row className="p-3">Don't have an Account? <Link className="ml-2 signUp" to ={"/signup"} >Sign-Up Now!</Link></Row>
+    <Row className="p-3">Don't have an account? <Link className="ml-2 signUp" to ={"/signup"} >Sign-Up Now!</Link></Row>
     </Container>
   );
 }

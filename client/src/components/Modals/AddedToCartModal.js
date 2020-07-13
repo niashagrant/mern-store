@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import Logo from '../../images/modalLogo.jpg'
 import './style.css';
 
-const AddedModal = (props) => {
+const AddedToCartModal = (props) => {
     console.log("props for modals: ", props);
 
     const history=useHistory();
@@ -28,8 +28,9 @@ const AddedModal = (props) => {
         </Modal.Body>
         <Modal.Footer>
           <Row className="w-100 d-flex justify-content-between">
+          <Button className="addModalClose" onClick={()=>history.push("/")} href="#" >Go Back To Products</Button>
           <Button className="addModalClose" onClick={()=>history.push("/cart")} href="#" >View Cart</Button>
-          <Button className="addModalClose" status={props.status} onClick={props.hideModal}>Close</Button>
+          {/* <Button className="addModalClose" status={props.status} onClick={props.hideModal}>Close</Button> */}
           </Row>
         </Modal.Footer>
       </Modal>
@@ -37,4 +38,4 @@ const AddedModal = (props) => {
 }
 
 
-export default AddedModal;
+export default AddedToCartModal; 
