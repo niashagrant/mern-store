@@ -12,4 +12,5 @@
 .navBarCart:hover,
 .navBarLogIn:hover,
 .navBarLogOut:hover {
+  text-decoration: underline;
 }

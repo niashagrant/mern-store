@@ -20,7 +20,12 @@ function MenuBar(props) {
   };
 
   return (
-    <Navbar expand="sm" variant="light" fixed="top" className="menubar mt-3">
+    <Navbar
+      expand="sm"
+      variant="light"
+      fixed="top"
+      className="menubar mt-5 pt-5"
+    >
       <Container className="col col-centered">
         {/* <Navbar.Brand className="navTitle" href="/">Queen St. Market</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -18,6 +18,7 @@
   transform: scale(1.1);
   position: relative;
   /* top: -10px; */
+  cursor: zoom-in;
 }
 
 .addToCart {

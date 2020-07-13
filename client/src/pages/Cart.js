@@ -10,8 +10,8 @@ import StripeCheckout from "react-stripe-checkout";
 function Cart(props) {
   const { user } = props;
   const [cart, setCart] = useState([]);
-  const [removal, setRemoval] = useState();
-  const [hideModal, setHideModal] = useState(false);
+  const [, setRemoval] = useState();
+  const [, setHideModal] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
   const closeModal = () => {
@@ -41,27 +41,11 @@ function Cart(props) {
         method: "POST",
         headers,
         body: JSON.stringify(body),
-      }).catch((error) => console.log(error));
-    }
-  };
-
-  //function to send information about what porduct we want to delete from database
-
-  const updateThisCart = (event) => {
-    if (!user) {
-      alert("You must be signed in to add items to your cart.");
-    } else {
-      console.log("ProductId:", cart);
-      const itemToRemove = event.target.getAttribute("data-id");
-      console.log(itemToRemove);
-      const newCartArray = [...cart];
-      const filterCart = newCartArray.filter((cart) => cart !== itemToRemove);
-      API.delFromCart(itemToRemove)
-        .then((deleted) => {
-          event.preventDefault();
-          console.log("product was deleted", deleted);
-          setRemoval(deleted);
-          setCart(filterCart);
+      })
+        .then((response) => {
+          console.log("RESPONSE", response);
+          const { status } = response;
+          console.log("STATUS", status);
         })
         .catch((error) => console.log(error));
     }
@@ -89,6 +73,28 @@ function Cart(props) {
     }
   };
   //function to send information about what product we want to delete from database
+
+  const updateThisCart = (event) => {
+    if (!user) {
+      alert("You must be signed in to add items to your cart.");
+    } else {
+      console.log("ProductId:", cart);
+      const itemToRemove = event.target.getAttribute("data-id");
+      console.log(itemToRemove);
+      const newCartArray = [...cart];
+      const filterCart = newCartArray.filter((cart) => cart !== itemToRemove);
+      API.delFromCart(itemToRemove)
+        .then((deleted) => {
+          event.preventDefault();
+          console.log("product was deleted", deleted);
+          setRemoval(deleted);
+          setCart(filterCart);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  };
 
   const updateQty = (id, qty) => {
     console.log("button clicked");
@@ -122,13 +128,15 @@ function Cart(props) {
           </>
         ) : (
           <>
+            <h3 className="text-center cartCrown">
+              <img src="../../images/cartCrown.png" alt="crown" />{" "}
+            </h3>
             <h3
               className="text-center border-bottom border-muted pb-4"
               style={{ fontFamily: "Playfair Display" }}
             >
               {" "}
-              YES. 👑 <image src="./images/crown.png" alt="crown" />
-              You need all of this!
+              YES. You need all of this!
             </h3>
 
             {cart.map((element) => {
