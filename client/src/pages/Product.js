@@ -12,7 +12,7 @@ function Product(props) {
   const [quantity, setQuantity] = useState(1);
   const [product, setProduct] = useState({});
   const [error, setError] = useState(false);
-  const [hideModal, setHideModal] = useState(false);
+  const [, setHideModal] = useState(false);
   const [showModal, setShowModal]=useState(false);
   const { ProductId } = useParams();
   const history = useHistory();

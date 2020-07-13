@@ -10,6 +10,7 @@ import SignIn from "./components/SignIn/index";
 import SignUp from "./components/SignUp";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
+import Ticker from "./components/Ticker"
 
 
 // const stripePromise = loadStripe("pk_test_51H2jAhF6rrHNM5skrWeDa7Ug2AjxFHAhKeuw8Dv1m2OGNI7WEWf1zebIu8zW5MLhYYygTV7WcfG5L7TOSCtwpfWX00nxZ8LW4t");
@@ -24,6 +25,7 @@ const [user, setLogin]=useState()
     return (
       // <Elements stripe={stripePromise}>
       <Router>
+        <Ticker/>
         <MenuBar setLogin={setLogin} user={user}{...props}/>
       <Marquee/>
       
