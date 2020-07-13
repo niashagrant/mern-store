@@ -8,6 +8,10 @@
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
 
+/* .card {
+  overflow: hidden;
+} */
+
 .addToCart {
   color: #482b20 !important;
   border-color: #482b20 !important;
@@ -22,18 +26,12 @@
   margin-left: 65%;
 }
 
-.zoom {
-  -webkit-transition: all 1s ease; /* Safari and Chrome */
-  -moz-transition: all 1s ease; /* Firefox */
-  -o-transition: all 1s ease; /* IE 9 */
-  -ms-transition: all 1s ease; /* Opera */
-  transition: all 1s ease;
+/* .zoom {
+  transition: transform 0.5s ease;
 }
 
 .zoom:hover {
-  -webkit-transform: scale(3); /* Safari and Chrome */
-  -moz-transform: scale(3); /* Firefox */
-  -ms-transform: scale(3); /* IE 9 */
-  -o-transform: scale(3); /* Opera */
-  transform: scale(3);
-}
+  transform: scale(1.5);
+  position: relative;
+  top: -10px;
+} */
