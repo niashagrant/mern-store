@@ -50,11 +50,13 @@ function Cart(props) {
   }, [cart]);
 
   // function to get the request from the back with product information and quantity
+
   const loadThisCart = () => {
     console.log("loadcart");
     if (!user) {
       alert("You must be signed in to add items to your cart.");
     } else {
+      // something..
       API.renderCart(user).then((cartItems) => {
         console.log("back:", cartItems.data);
         if (cart.length !== cartItems.data.length) {
