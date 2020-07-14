@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; // imported useEffect
+import React, { useState, useEffect } from "react";
+// import { useHistory } from "react-router"; 
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import CartCard from "../components/CartCard";
 import SignInModal from "../components/Modals/SignInModal";
@@ -18,6 +20,7 @@ function Cart(props) {
   const [showThankYou, setThankYou] = useState(false)
   const [showModal, setShowModal] = useState(false);
   const [total, setTotal] = useState();
+  // const history=useHistory();
 
   const closeModal = () => {
     setHideModal(true);
@@ -89,7 +92,7 @@ function Cart(props) {
           return total + element.orderQty * element.product.price;
         }, 0);
         console.log("this is how much we are going to spend", payAmount);
-        if (total != payAmount) {
+        if (total !== payAmount) {
 
           setTotal(payAmount);
         }
@@ -159,7 +162,16 @@ function Cart(props) {
               </Row>
             </Row>
           </>
-        ) : (
+        ) : (cart.length===0) ? (  <>
+        
+        <h3  className="text-center mt-5 pt-5" style={{ fontFamily: "Playfair Display" }}>
+          Well this is sad.  Your cart is empty.
+        </h3>
+        <h4 className="text-center mt-5 pt-5" style={{ fontFamily: "Playfair Display" }}>
+           Go check out our <Link to="/" className="text-warning" style={{textDecoration: "underline"}} href="#" >Products</Link> !</h4>
+           <h5 className="text-center mt-3" style={{ fontFamily: "Playfair Display" }}> They are 'nice-to-have' <span>😉</span> .</h5>
+
+         </> ) : (
           <>
             <h3 className="text-center cartCrown"><img src="../../images/cartCrown.png" alt="crown"/> </h3>
 
@@ -196,7 +208,7 @@ function Cart(props) {
           image="https://res.cloudinary.com/lindseytummond/image/upload/v1594480229/crown_only_wsj9yt.png"
         >
           {" "}
-          {user ? (
+          {(user && cart.length > 0) ? (
             <>
             <Row className="w-100 d-flex justify-content-center">
             <Row className="w-75 d-flex justify-content-end">
