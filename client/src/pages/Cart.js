@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"; // imported useEffect
 import Container from "react-bootstrap/Container";
 import CartCard from "../components/CartCard";
 import SignInModal from "../components/Modals/SignInModal";
+import ThankYouModal from "../components/Modals/ThankYouModal";
 import Row from "react-bootstrap/Row";
 import API from "../utils/API";
 import axios from "axios";
@@ -13,6 +14,8 @@ function Cart(props) {
   const [cart, setCart] = useState([]);
   const [, setRemoval] = useState();
   const [, setHideModal] = useState(false);
+  const [ , setHideThankYou] = useState(false);
+  const [showThankYou, setThankYou] = useState(false)
   const [showModal, setShowModal] = useState(false);
   const [total, setTotal] = useState();
 
@@ -20,6 +23,11 @@ function Cart(props) {
     setHideModal(true);
     setShowModal(false);
   };
+
+  const closeThankYou = () => {
+    setHideThankYou(true);
+    setThankYou(false)
+  }
 
   const makePayment = (token) => {
     console.log("MAKE PAYMENT");
@@ -48,6 +56,7 @@ function Cart(props) {
           console.log("CAN I SEE THIS????????");
           console.log(error);
         });
+        setThankYou(true);
     }
   };
 
@@ -68,12 +77,20 @@ function Cart(props) {
         console.log("back:", cartItems.data);
         if (cart.length !== cartItems.data.length) {
           setCart(cartItems.data);
+
+        
+          const payAmount = cartItems.data.reduce((total, element) => {
+            return total + element.orderQty * element.product.price;
+          }, 0);
+          console.log("this is how much we are going to spend", payAmount);
+
         }      
         const payAmount = cart.reduce((total, element) => {
           return total + element.orderQty * element.product.price;
         }, 0);
         console.log("this is how much we are going to spend", payAmount);
         if (total != payAmount) {
+
           setTotal(payAmount);
         }
       });
@@ -144,16 +161,7 @@ function Cart(props) {
           </>
         ) : (
           <>
-            <h3 className="text-center cartCrown">
-              <img src="../../images/cartCrown.png" alt="crown" />{" "}
-            </h3>
-            <h3
-              className="text-center border-bottom border-muted pb-4"
-              style={{ fontFamily: "Playfair Display" }}
-            >
-              {" "}
-              YES. You need all of this!
-            </h3>
+            <h3 className="text-center cartCrown"><img src="../../images/cartCrown.png" alt="crown"/> </h3>
 
             {cart.map((element) => {
               // console.log("this is our element:",element)
@@ -190,14 +198,20 @@ function Cart(props) {
           {" "}
           {user ? (
             <>
+            <Row className="w-100 d-flex justify-content-center">
+            <Row className="w-75 d-flex justify-content-end">
+                <h5 className=" mr-4 pt-1" style={{ fontFamily: "Playfair Display" }}>Total: ${total}</h5>
+              </Row>
+              </Row>
               <Row className="w-100 d-flex justify-content-center">
+                
                 <button
                   onClick={checkout}
                   size="lg"
                   block
-                  className="mt-5 mb-5 p-2 center border border-muted"
+                  className="mt-5 mb-5 p-2 center border border-muted text-dark bg-warning"
                 >
-                  Click here to complete your purchase. || Total: ${total}
+                  Click here to complete your purchase.
                   {/* comes from state on line 23 */}
                 </button>
               </Row>
@@ -206,6 +220,7 @@ function Cart(props) {
             <></>
           )}
         </StripeCheckout>
+        <ThankYouModal status={showThankYou} hideModal={closeThankYou} />
       </Container>
     </>
   );
