@@ -21,4 +21,7 @@ router.route("/delFromCart/:id")
 router.route("/updateCartQty")
 .put(cartController.findOneAndUpdate)
 
+router.route("/completeCheckout")
+.post(cartController.createOrder)
+
 module.exports = router;

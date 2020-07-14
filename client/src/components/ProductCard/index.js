@@ -8,16 +8,19 @@ import "./style.css";
 
 function ProductCard(props) {
   return (
-    <Card className="eachProductCard" style={{ flex: 1 }}>
+    <Card className="eachProductCard ml-5" style={{ flex: 1 }}>
       <Card.Body className="">
-      <Card.Img
-        variant="top"
-        className="productPageImg float-left mr-3"
-        alt={props.name}
-        src={process.env.PUBLIC_URL + props.image}
-      />
-      
-        <Card.Title className="pb-3 mt-5 productPageTitle"> {props.name} </Card.Title>
+        <Card.Img
+          variant="top"
+          className="productPageImg float-left mr-4 zoom2"
+          alt={props.name}
+          src={process.env.PUBLIC_URL + props.image}
+        />
+
+        <Card.Title className="pb-3 mt-5 productPageTitle">
+          {" "}
+          {props.name}{" "}
+        </Card.Title>
         <Card.Text className="pt-3">{props.description}</Card.Text>
         {/* <Card.Text>{props.description2}</Card.Text> */}
       </Card.Body>
