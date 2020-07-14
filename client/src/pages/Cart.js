@@ -148,7 +148,7 @@ function Cart(props) {
 
   return (
     <>
-      <Container>
+      <Container className="mt-5">
         {!user ? (
           <>
             <Row className="d-flex justify-content-center pt-5 mt-5">
