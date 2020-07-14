@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import ReactDOM from 'react-dom';
-import axios from 'axios';
+import React from "react";
 import "./style.css"
 
-function Pagination() {
+const Pagination = ({products, loading}) => {
 
-    const [products, setProducts] = useState([])
-    const [loading, setLoading] = useState(false);
-    const [currentPage, setCurrentPage] = useState(1)
-
+    if(loading){
+        return<h1>Loading</h1>
+    }
 
     return (
-        <div className="Pagination-Section">
-            <h1>Pagination Test</h1>
-            <h2>FBC</h2>
-        </div>
-
+        <ul className="list-group mb-3">
+        {products.map(product => (
+            <li key={product.id} classame="list-group-item">
+                {product.title}
+            </li>
+        ))}
+        </ul>
     );
-}
+};
+
 
 export default Pagination;

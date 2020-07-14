@@ -3,8 +3,16 @@ import Container from "react-bootstrap/Container";
 import Cards from "../components/Card";
 import axios from "axios";
 
+import ReactDOM from 'react-dom';
+import Pagination from '../components/Pagination'
+
 function Home(props) {
   let [products, setProducts] = useState([]); //variable ref, variable function
+  
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [productsPerPage, setProductsPerPage] = useState(10);
+  
   useEffect(() => {
     // console.log('useEffects')
     axios
@@ -14,7 +22,22 @@ function Home(props) {
         console.log("dbproducts", dbproducts.data);
       })
       .catch((error) => console.log(error));
+
+    const fetchProducts = async () => {
+        const res = await axios.get('/');
+
+        setProducts(res.data);
+        setLoading(false);
+
+    };
+
+    fetchProducts();
+
   }, []);
+
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct * productsPerPage;
+  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct)
 
   return (
     <Container
@@ -32,6 +55,7 @@ function Home(props) {
           productId={element._id}
         />
       ))}
+      <Pagination products={currentProducts} loading={loading}/>
     </Container>
   );
 }
