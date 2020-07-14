@@ -82,14 +82,16 @@ const cart = {
     console.log ("This is the req for our update Qty: ", req.body)
     if(req.user){
       db.Cart.findOneAndUpdate({_id:req.body.id},{orderQty:req.body.qty})
-      .then(()=>{
-        res.sendStatus(200)
+      .then((updated)=>{
+        console.log( "our response when the qty gets updated:", updated)
+        res.json(updated)
       }).catch(err=>{
         console.log(err);
         
       })
     }
   },
+
   createOrder: function(req,res){
     if(req.user){
       db.Cart.find({user:req.user._id})
