@@ -60,7 +60,7 @@ function Product(props) {
 
   return (
     <>
-    <Container>
+    <Container className="mt-5">
       <ProductCard
         id={product._id}
         name={product.name}
