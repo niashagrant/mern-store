@@ -54,24 +54,31 @@ The user can sign-up and log-in to our store which allows them to have their own
 <p align="center">
   <img src="./images/userAuth.gif">
 </p>
+__
 
 ## Product interaction
 
 The user does not need to be authenticated in order to puruse the products or to view one product's details. In the product detail page, the user can adjust the quantity of the product before adding it to cart. 
 
-![product](./images/Products.gif)
-
+<p align="center">
+  <img src="./images/Product.gif">
+</p>
+__
 
 ## Cart Functionality
 
 If the user is not logged -in or signed-up they cannot access the cart and will be prompted to log-in by a modal. Once in the cart, the user can update the quantity of a product which will change the total amount they need to pay, delete a product or checkout.
 
-![cart](./images/cart2.gif)
-
+<p align="center">
+  <img src="./images/cart2.gif">
+</p>
+__
 
 ## Checkout
 
 Our checkout is executed by Stripe, the user will be prompted to input their email, their billing address and credit card information before performing the payment
 
-![checkout](./images/checkout.gif)
+<p align="center">
+  <img src="./images/checkout.gif">
+</p>
 
