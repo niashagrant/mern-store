@@ -1,5 +1,20 @@
 
 
 .carousel {
-    height: 10vh;
+    height: relative;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.carousel-indicators {
+    visibility: hidden;
+}
+
+
+@media (max-width: 450px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        visibility: hidden;
+    }
+
 }
