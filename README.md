@@ -51,8 +51,9 @@ Before we launch ourselves in explaining our creation process, our codes highlig
 ## Sign-up, Log-in and Log-out
 
 The user can sign-up and log-in to our store which allows them to have their own cart and to checkout safely. Tthey can also manually log-out if they so choose to. 
-
+<p align="center">
 ![authProcess](./images/userAuth.gif)
+</p>
 
 ## Product interaction
 
@@ -60,11 +61,13 @@ The user does not need to be authenticated in order to puruse the products or to
 
 ![product](./images/Products.gif)
 
+
 ## Cart Functionality
 
 If the user is not logged -in or signed-up they cannot access the cart and will be prompted to log-in by a modal. Once in the cart, the user can update the quantity of a product which will change the total amount they need to pay, delete a product or checkout.
 
 ![cart](./images/cart2.gif)
+
 
 ## Checkout
 
