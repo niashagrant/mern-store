@@ -52,23 +52,23 @@ Before we launch ourselves in explaining our creation process, our codes highlig
 
 The user can sign-up and log-in to our store which allows them to have their own cart and to checkout safely. Tthey can also manually log-out if they so choose to. 
 
-![authProcess]
+![authProcess](./images/userAuth.gif)
 
 ## Product interaction
 
 The user does not need to be authenticated in order to puruse the products or to view one product's details. In the product detail page, the user can adjust the quantity of the product before adding it to cart. 
 
-![product]
+![product](./images/Products.gif)
 
 ## Cart Functionality
 
 If the user is not logged -in or signed-up they cannot access the cart and will be prompted to log-in by a modal. Once in the cart, the user can update the quantity of a product which will change the total amount they need to pay, delete a product or checkout.
 
-![card]
+![cart](./images/cart2.gif)
 
 ## Checkout
 
 Our checkout is executed by Stripe, the user will be prompted to input their email, their billing address and credit card information before performing the payment
 
-![checkout]
+![checkout](./images/checkout.gif)
 
