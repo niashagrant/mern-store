@@ -52,7 +52,7 @@ Before we launch ourselves in explaining our creation process, our codes highlig
 
 The user can sign-up and log-in to our store which allows them to have their own cart and to checkout safely. Tthey can also manually log-out if they so choose to. 
 <p align="center">
-![authProcess](./images/userAuth.gif)
+  <img src="./images/userAuth.gif">
 </p>
 
 ## Product interaction
