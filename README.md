@@ -56,13 +56,13 @@ The user can sign-up and log-in to our store which allows them to have their own
 </p>
 
 ___
-
-## Product interaction
+<h2 align="center">
+ Product Interaction </h2>
 
 The user does not need to be authenticated in order to puruse the products or to view one product's details. In the product detail page, the user can adjust the quantity of the product before adding it to cart. 
 
 <p align="center">
-  <img src="./images/Product.gif">
+  <img src="./images/Products.gif">
 </p>
 
 ___
