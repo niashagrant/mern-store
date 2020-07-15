@@ -8,7 +8,6 @@ import ThankYouModal from "../components/Modals/ThankYouModal";
 import Row from "react-bootstrap/Row";
 import API from "../utils/API";
 import axios from "axios";
-
 import StripeCheckout from "react-stripe-checkout";
 
 function Cart(props) {
