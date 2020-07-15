@@ -14,3 +14,23 @@
 .navBarLogOut:hover {
   text-decoration: underline;
 }
+
+.navbar-toggler {
+  border: none !important;
+}
+
+
+@media (max-width: 450px) {
+  .navbar-toggler {
+    margin-top: 7vh;
+  }
+
+  .navBarProducts ,
+  .navBarCart ,
+  .navBarLogIn ,
+  .navBarLogOut {
+  
+    font-size: .7rem;
+  }
+
+} /* end of media querie max-width 450px */

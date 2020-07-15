@@ -18,8 +18,15 @@ function Home(props) {
 
   return (
     <Container
-      className="productContainer col col-sm-1 col-md-9 col-centered pl-4 mt-5"
-      style={{ height: "100vh" }}
+      className="productContainer mt-5 col w-75"
+      style={{ 
+        display: "flex",
+        flexFlow: "row wrap",
+        justifyContent: "space-around",
+        alignContent: "flex-start",
+        overflow: "auto",
+        paddingBottom: "3vh"
+      }}
     >
       {products.map((element, index) => (
         <Cards

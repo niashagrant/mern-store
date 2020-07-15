@@ -3,11 +3,9 @@
 }
 
 .eachCard {
-  width: 225px;
+  min-width: 225px !important;
   height: 400px;
-  float: left;
-  margin-bottom: 2vh;
-  margin-right: 3%;
+  margin: 1vh 1vw 1vh 1vw;
   color: darkslategrey;
   border-color: #a8ab8c !important;
   box-shadow: 0 2px 5px rgba(182, 182, 182, 0.75);
@@ -55,4 +53,13 @@
 
 .card {
   overflow: hidden;
+}
+
+
+@media (min-width: 300px) and (max-width: 450px) {
+
+  .eachCard {
+    max-width: 150px !important;
+  }
+  
 }

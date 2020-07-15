@@ -8,8 +8,8 @@ import "./style.css";
 
 function ProductCard(props) {
   return (
-    <Card className="eachProductCard ml-5" style={{ flex: 1 }}>
-      <Card.Body className="">
+    <Card className="eachProductCard" style={{ flex: 1 }}>
+      <Card.Body>
         <Card.Img
           variant="top"
           className="productPageImg float-left mr-4 zoom2"
