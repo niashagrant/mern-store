@@ -56,7 +56,7 @@ function SignUp(props) {
   };
 
   return (
-    <Container>
+    <Container className="mt-5">
     <Form className="signUpForm" onSubmit={submitHandler}>
       <Form.Group controlId="formBasicName">
         <Row>

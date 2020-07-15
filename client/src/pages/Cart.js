@@ -173,7 +173,7 @@ function Cart(props) {
 
          </> ) : (
           <>
-            <h3 className="text-center cartCrown"><img src="../../images/cartCrown.png" alt="crown"/> </h3>
+            <h3 className="text-center cartCrown mb-3"><img src="../../images/cartCrown.png" alt="crown"/> </h3>
 
             {cart.map((element) => {
               // console.log("this is our element:",element)

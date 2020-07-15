@@ -40,7 +40,7 @@ function SignIn(props) {
   };
 
   return (
-    <Container>
+    <Container className="mt-5">
     <Form className = "logInForm" onSubmit={submitHandler}>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>

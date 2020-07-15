@@ -14,3 +14,7 @@
 .navBarLogOut:hover {
   text-decoration: underline;
 }
+
+.navbar-toggler {
+  border: none !important;
+}

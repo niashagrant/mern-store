@@ -21,41 +21,40 @@ function MenuBar(props) {
 
   return (
     <Navbar
-      expand="sm"
+      expand="md"
       variant="light"
       fixed="top"
       className="menubar mt-5 pt-5"
     >
       <Container className="col col-centered">
-        {/* <Navbar.Brand className="navTitle" href="/">Queen St. Market</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link
-              className="navBarProducts"
-              onClick={() => {
-                history.push("/");
-              }}
-            >
-              Products
+          {!window.location.href.includes("cart") ? (
+            ""
+            ) : (
+            <Nav.Link className="navBarProducts" onClick={() => {history.push("/");}}>
+            Products
             </Nav.Link>
+              )}    
+            {window.location.href.includes("/cart") ? (
+              ""
+            ) : (
             <Nav.Link
               className="navBarCart"
               onClick={() => {
                 history.push("/cart");
               }}
-            >
+            >  
               Cart
             </Nav.Link>
-            {/* <Nav.Link  onClick={()=>{history.push("/account")}}>Account</Nav.Link> */}
-            {user ? (
-              <>
+            )}
+            
+            { user ? ( <> 
                 <Nav.Link className="navBarLogOut" onClick={logOut} href="#">
                   Log-Out
                 </Nav.Link>
-              </>
-            ) : (
-              <>
+              </>) : (<>
                 <Nav.Link
                   className="navBarLogIn"
                   onClick={() => {
@@ -64,9 +63,7 @@ function MenuBar(props) {
                 >
                   Log-In
                 </Nav.Link>
-                {/* <Nav.Link  onClick={()=>{history.push("/signup")}}>Sign-Up</Nav.Link> */}
-              </>
-            )}
+              </>)}
           </Nav>
         </Navbar.Collapse>
       </Container>
