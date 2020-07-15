@@ -54,7 +54,7 @@ The user can sign-up and log-in to our store which allows them to have their own
 <p align="center">
   <img src="./images/userAuth.gif">
 </p>
-__
+___
 
 ## Product interaction
 
@@ -63,7 +63,7 @@ The user does not need to be authenticated in order to puruse the products or to
 <p align="center">
   <img src="./images/Product.gif">
 </p>
-__
+___
 
 ## Cart Functionality
 
@@ -72,7 +72,7 @@ If the user is not logged -in or signed-up they cannot access the cart and will 
 <p align="center">
   <img src="./images/cart2.gif">
 </p>
-__
+___
 
 ## Checkout
 
