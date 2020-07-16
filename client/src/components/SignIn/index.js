@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import axios from "axios";
-import "./style.css"
+import "./signin.css"
 
 
 function SignIn(props) {
@@ -40,7 +40,7 @@ function SignIn(props) {
   };
 
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 signUpContainer">
     <Form className = "logInForm" onSubmit={submitHandler}>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -59,7 +59,7 @@ function SignIn(props) {
         Submit
       </Button>
     </Form>
-    <Row className="p-3">Don't have an account? <Link className="ml-2 signUp" to ={"/signup"} >Sign-Up Now!</Link></Row>
+    <Row className="ml-1 mt-3 switch pb-5">Don't have an account? <Link className="ml-2 signUp" to ={"/signup"} >Sign-Up Now!</Link></Row>
     </Container>
   );
 }

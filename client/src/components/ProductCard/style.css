@@ -46,6 +46,74 @@
 }
 
 .productPageTitle {
-  border-bottom: 1px solid lightgrey !important;
   font-size: 1.5rem !important;
 }
+
+@media (max-width: 349px) {
+  .quantityInputField {
+    max-width: 15vw !important;
+    margin-left: 40%;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .quantityInputField {
+    
+    margin-left: 45%;
+  }
+
+  .productPagePrice {
+    margin-right: 5vw;
+  }
+} 
+
+@media (min-width: 451px) and (max-width: 600px)  {
+
+
+
+}
+
+@media (min-width: 601px) and (max-width: 700px)  {
+  .quantityInputField {
+    max-width: 15vw !important;
+    margin-left: 60%;
+  }
+
+  .productPagePrice {
+    margin-right: 5vw;
+  }
+  .productPageTitle {
+    padding: 0 !important;
+  }
+
+}
+
+  @media (min-width: 701px) and (max-width: 767px)  {
+    .quantityInputField {
+      max-width: 8vw !important;
+      margin-left: 65%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1265px) {
+
+  .eachProductCard {
+    width: 80vw;
+  }
+
+  .quantityInputField {
+    max-width: 8vw !important;
+    margin-left: 75%;
+  }
+}
+
+@media (min-width: 1266px) {
+  .quantityInputField {
+    max-width: 8vw !important;
+    margin-left: 83%;
+  }
+
+}
+
+

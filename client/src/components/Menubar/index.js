@@ -26,9 +26,9 @@ function MenuBar(props) {
     >
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-        <Nav className="mt-5">
+        <Nav className="stacked mt-5">
           <Nav.Link className="navBarProducts" onClick={() => {history.push("/");}}>
-          Products
+          Main
           </Nav.Link>
           <Nav.Link
             className="navBarCart"

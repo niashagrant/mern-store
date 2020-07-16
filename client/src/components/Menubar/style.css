@@ -19,10 +19,25 @@
   border: none !important;
 }
 
-
-@media (max-width: 450px) {
+@media (max-width: 349px) {
   .navbar-toggler {
-    margin-top: 7vh;
+    margin-top: 25vh;
+    margin-left: -5vw;
+  }
+
+  .navBarProducts ,
+  .navBarCart ,
+  .navBarLogIn ,
+  .navBarLogOut {
+  
+    font-size: .5rem;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .navbar-toggler {
+    margin-top: 25vh;
+    margin-left: -4vw;
   }
 
   .navBarProducts ,
@@ -33,4 +48,53 @@
     font-size: .7rem;
   }
 
-} /* end of media querie max-width 450px */
+} 
+@media (min-width: 451px) and (max-width: 600px)  {
+  .navbar-toggler {
+    margin-top: 20vh;
+    margin-left: -2vw;
+  }
+
+
+  .nav-link {
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 700px)  {
+  .navbar-toggler {
+    margin-top: 22vh;
+    margin-left: -2vw;
+  }
+
+
+  .nav-link {
+    padding: 0 !important;
+  }
+
+}
+
+  @media (min-width: 701px) and (max-width: 767px)  {
+    .navbar-toggler {
+      margin-top: 25vh;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1265px) {
+  .stacked {
+    flex-direction: column !important;
+  }
+
+  #basic-navbar-nav {
+    margin-top: 20vh !important;
+  }
+}
+
+@media (min-width: 1266px) and (max-width: 1250px) {
+  #basic-navbar-nav {
+    margin-top: 15vh !important;
+  }
+
+}
+

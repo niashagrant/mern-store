@@ -17,7 +17,7 @@ function Ticker() {
     
   
   return (
-    <Carousel className="bg-warning carousel text-center pb-3 pt-3 flex-column">
+    <Carousel className="bg-warning carousel col col-sm-12 text-center pb-3 pt-3 flex-column">
       <Carousel.Item>
         <h6>Current Specials!</h6>
         <h6>All month - FREE shipping and NO taxes!</h6>

@@ -8,7 +8,7 @@ import "./style.css";
 
 function ProductCard(props) {
   return (
-    <Card className="eachProductCard" style={{ flex: 1 }}>
+    <Card className="eachProductCard mb-5" style={{ flex: 1 }}>
       <Card.Body>
         <Card.Img
           variant="top"
@@ -21,12 +21,13 @@ function ProductCard(props) {
           {" "}
           {props.name}{" "}
         </Card.Title>
+        <hr/>
         <Card.Text className="pt-3">{props.description}</Card.Text>
         {/* <Card.Text>{props.description2}</Card.Text> */}
       </Card.Body>
       <Card.Footer className="eachProductFooter mt-3">
         <InputGroup className="inputGroup">
-          <Card.Text className="float-left productPagePrice ml-5">
+          <Card.Text className="float-left productPagePrice">
             ${props.price}
           </Card.Text>
           <FormControl
@@ -43,7 +44,7 @@ function ProductCard(props) {
             data-user={props.user}
             data-productid={props.id}
             onClick={props.handleButton}
-            className="btn btn-sm addToCart ml-1 float-right mr-5"
+            className="btn btn-sm addToCart ml-1"
           >
             Add to Cart
           </Button>

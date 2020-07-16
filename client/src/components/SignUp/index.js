@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import axios from "axios";
 import SignedUpModal from "../Modals/SignedUpModal";
-import "./style.css"
+import "./signup.css"
 
 function SignUp(props) {
 
@@ -56,7 +56,7 @@ function SignUp(props) {
   };
 
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 signUpContainer">
     <Form className="signUpForm" onSubmit={submitHandler}>
       <Form.Group controlId="formBasicName">
         <Row>
@@ -83,11 +83,11 @@ function SignUp(props) {
         <Form.Control type="password" placeholder="Password" ref={password} />
       </Form.Group>
 
-      <Button className="submitSignUp btn-sm text-white" variant="primary" type="submit">
+      <Button className="submitSignUp btn-sm text-white ml-2" variant="primary" type="submit">
         Submit
       </Button>
     </Form>
-    <Row className="p-3">Already have an account? <Link className="ml-2 goToLogIn" to ={"/login"} >Log-In Now!</Link></Row>
+    <Row className="ml-1 mt-3 switch pb-5">Already have an account? <Link className="ml-2 goToLogIn" to ={"/login"} >Log-In Now!</Link></Row>
     <SignedUpModal status={showModal} hideModal={closeModal}/>
     </Container>
   );
