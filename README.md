@@ -93,7 +93,7 @@ Our checkout is executed by Stripe, the user will be prompted to input their ema
 
 _ _ _
 
-<h1 align="center">Back-End</h1>
+<h1 align="center">Server Side</h1>
 
 In order to set up our back end, we had to start by installing the necessary dependencies. 
 
@@ -192,7 +192,7 @@ Once that is set up then we move into creating routes that will be connecting to
 Later we then use this user Authentication to also protect certain routes that a user could only access if they were logged in. Once we talk about our front-end we will show how we did that. 
 _ _ _
 
-<h1 align="center">Front-End</h1>
+<h1 align="center">Client Side</h1>
 
 <h2 align="center">Creating the App</h2>
 Our front-end template was React. since we had React installed globally on our machines, in order to create a new app instance we had to run this command:
@@ -307,7 +307,7 @@ _ _ _
 This is how we use the UseEffect to render our page. Note that we keep track of the variable cart in the array portion of this function. So any changes that occurs with the products, this function will take into consideration. However, in order for these changes to appear in the page, we need to setCart (the useState function) so the useEffect knows to take those changes into account. 
 
 <p align="center">
-<img src="./images/useEffect2.png"></p>
+<img src="./images/UseEffect2.png"></p>
 
 _ _ _
 
@@ -318,7 +318,7 @@ In this example we show how we use the useState to update quantity in a function
 
 _ _ _
 
-<h1 align="center"> In Closing</h1>
+<h1 align="center">Note from Author</h1>
 
 There were many other aspects to creating this app and although I can't go over all of them, I can say that the ones I have outlined are the foundations of our app.
 
