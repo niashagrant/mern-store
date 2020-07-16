@@ -318,7 +318,7 @@ In this example we show how we use the useState to update quantity in a function
 
 _ _ _
 
-<h1 align="center">Enclosing</h1>
+<h1 align="center"> In Closing</h1>
 
 There were many other aspects to creating this app and although I can't go over all of them, I can say that the ones I have outlined are the foundations of our app.
 
