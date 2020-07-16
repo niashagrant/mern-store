@@ -93,7 +93,7 @@ Our checkout is executed by Stripe, the user will be prompted to input their ema
 
 _ _ _
 
-<h1 align="center">Back-End</h1>
+<h1 align="center">Server Side</h1>
 
 In order to set up our back end, we had to start by installing the necessary dependencies. 
 
@@ -192,7 +192,7 @@ Once that is set up then we move into creating routes that will be connecting to
 Later we then use this user Authentication to also protect certain routes that a user could only access if they were logged in. Once we talk about our front-end we will show how we did that. 
 _ _ _
 
-<h1 align="center">Front-End</h1>
+<h1 align="center">Client Side</h1>
 
 <h2 align="center">Creating the App</h2>
 Our front-end template was React. since we had React installed globally on our machines, in order to create a new app instance we had to run this command:
