@@ -11,3 +11,47 @@
     padding-bottom: 3vh;
     width: 30%;
 }
+
+
+@media (max-width: 349px) {
+    .mastheadImage {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 350px) and (max-width: 520px) {
+    .mastheadImage {
+        width: 80%;
+    }
+}
+
+@media (min-width: 521px) and (max-width: 700px) {
+    .mastheadImage {
+        width: 80%;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 767px) {
+    .mastheadImage {
+        width: 80%;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 900px)  {
+    .mastheadImage {
+        width: 80%;
+        }
+    }
+
+@media (min-width: 901px) and (max-width: 1000px)  {
+    .mastheadImage {
+        width: 60%;
+        }
+    }
+
+@media (min-width: 1001px) {
+    .mastheadImage {
+        width: 40%;
+        }
+    }

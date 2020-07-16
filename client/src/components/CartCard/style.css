@@ -41,3 +41,65 @@
     font-size: 1rem !important;
     border-bottom: 1px solid lightgray;
 } 
+
+
+@media (max-width: 349px) {
+
+
+  }
+  
+
+  @media (min-width: 350px) and (max-width: 450px) {
+
+  .cartPageImg {
+    width: 100% !important;
+}
+
+.cartInputGroup {
+    width: 100% !important;
+}
+
+.updateQtyInCart {
+    max-width: 12vw;
+}
+
+.eachCartProductFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.updateQty,
+.deleteFromCart {
+    justify-self: end;
+}
+
+  } 
+
+
+  @media (min-width: 451px) and (max-width: 600px)  {
+
+    
+  }
+  
+  @media (min-width: 601px) and (max-width: 700px)  {
+
+  
+  }
+  
+    @media (min-width: 701px) and (max-width: 767px)  {
+
+  
+  }
+  
+  @media (min-width: 768px) and (max-width: 1265px) {
+
+
+  }
+  
+  @media (min-width: 1266px) and (max-width: 1250px) {
+
+    
+  
+  }
+  
+  

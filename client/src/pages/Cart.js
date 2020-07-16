@@ -150,7 +150,7 @@ function Cart(props) {
             <Row className="d-flex justify-content-center pt-5 mt-5">
               <Row>
                 <h5
-                  className="text-center mt-5 pt-5"
+                  className="text-center mt-5 pt-5 pl-5 pr-5"
                   style={{ fontFamily: "Playfair Display" }}
                 >
                   Oh no! You must be logged in to access this page!
@@ -163,13 +163,13 @@ function Cart(props) {
         <h3  className="text-center mt-5 pt-5" style={{ fontFamily: "Playfair Display" }}>
           Well this is sad.  Your cart is empty.
         </h3>
-        <h4 className="text-center mt-5 pt-5" style={{ fontFamily: "Playfair Display" }}>
-           Go check out our <Link to="/" className="text-warning" style={{textDecoration: "underline"}} href="#" >Products</Link> !</h4>
-           <h5 className="text-center mt-3" style={{ fontFamily: "Playfair Display" }}> They are 'nice-to-have' <span>😉</span> .</h5>
+        <h5 className="text-center mt-5 pt-5" style={{ fontFamily: "Playfair Display" }}>
+           Go check out our <Link to="/" className="text-warning" style={{textDecoration: "underline"}} href="#" >Products</Link> !</h5>
+           <h6 className="text-center mt-3 mb-5" style={{ fontFamily: "Playfair Display" }}> They are 'nice-to-have' <span>😉</span> .</h6>
 
          </> ) : (
           <>
-            <h3 className="text-center cartCrown mb-3"><img src="../../images/cartCrown.png" alt="crown"/> </h3>
+            <h3 className="d-flex justify-content-center col col-sm-12 cartCrown mb-3"><img fluid className="w-75" src="../../images/cartCrown.png" alt="crown"/> </h3>
 
             {cart.map((element) => {
               // console.log("this is our element:",element)

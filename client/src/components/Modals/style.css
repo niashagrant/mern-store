@@ -38,3 +38,45 @@ cursor: pointer;
 Button {
 cursor: pointer;
 }
+
+
+@media (max-width: 500px) {
+
+    .Modal {
+        width: 99vw !important;
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .modalPic {
+        width: 100% !important;
+    }
+
+    .itemAdded {
+        padding: 0 3vw 0 3vw;
+    }
+
+    .modalPicQuery {
+        max-width: 80% !important;
+    }
+
+    .greatTaste {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (min-width: 501px) {
+    .Modal {
+        width: 95vw !important;
+    }
+
+    .modalPicQuery {
+        max-width: 80% !important;
+    }
+
+
+}

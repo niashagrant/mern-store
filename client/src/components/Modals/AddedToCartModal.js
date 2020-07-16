@@ -13,12 +13,12 @@ const AddedToCartModal = (props) => {
     return (
       <Modal className="Modal" id="contained-modal-title-vcenter" show={props.status}>
         <Modal.Header className="d-flex justify-content-center">
-          <Modal.Title id="contained-modal-title-vcenter">
-          <img src={Logo} alt="Queen St. Market"/>
+          <Modal.Title id="contained-modal-title-vcenter text-center">
+          <img src={Logo} className="modalPic col col-center" alt="Queen St. Market"/>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body className="d-flex justify-content-center text-center">
-          <img className="modalPic" src={process.env.PUBLIC_URL + props.image} alt="This is your product"/>
+        <Modal.Body className="d-flex justify-content-center">
+          <img className="modalPic modalPicQuery col col-center" src={process.env.PUBLIC_URL + props.image} alt="This is your product"/>
         </Modal.Body>
         <Modal.Body className="d-flex justify-content-center text-center">
           <Row className="greatTaste">You've got great taste!</Row>

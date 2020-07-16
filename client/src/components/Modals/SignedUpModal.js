@@ -13,8 +13,8 @@ const SignedUpModal = (props) => {
     return (
       <Modal className="Modal" id="contained-modal-title-vcenter" show={props.status}>
         <Modal.Header className="d-flex justify-content-center">
-          <Modal.Title id="contained-modal-title-vcenter">
-          <img src={Logo} alt="Queen St. Market"/>
+          <Modal.Title id="contained-modal-title-vcenter d-flex justify-content-center ">
+          <img src={Logo} className="modalPic col col-center" alt="Queen St. Market"/>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="d-flex justify-content-center text-center">
