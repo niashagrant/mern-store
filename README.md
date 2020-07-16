@@ -307,7 +307,7 @@ _ _ _
 This is how we use the UseEffect to render our page. Note that we keep track of the variable cart in the array portion of this function. So any changes that occurs with the products, this function will take into consideration. However, in order for these changes to appear in the page, we need to setCart (the useState function) so the useEffect knows to take those changes into account. 
 
 <p align="center">
-<img src="./images/useEffect2.png"></p>
+<img src="./images/UseEffect2.png"></p>
 
 _ _ _
 
