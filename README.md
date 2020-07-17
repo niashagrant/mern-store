@@ -266,7 +266,7 @@ _ _ _
 
 In this application instead of using classes we decided to use Hooks. 
 
-The two main hooks we used were;
+The two main hooks we used were:
 
 + useState
 - useEffect
