@@ -24,19 +24,20 @@
 }
 
 
-@media (min-width: 300px) and (max-width: 640px) {
+@media (max-width: 640px) {
 
     .signUpContainer {
-        max-width: 90vw !important;
+        max-width: 70vw !important;
     }
     
-    .menubar {
-        visibility: hidden;
-    }
-
     .switch {
         font-size: .75rem;
         margin-left: 1vw !important;
+    }
+
+    .first,
+    .last {
+        font-size: .8rem !important;
     }
 
 }

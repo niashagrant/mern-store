@@ -3,8 +3,8 @@
 }
 
 .eachCard {
-  min-width: 225px !important;
-  height: 400px;
+  min-width: 180px !important;
+  height: 425px;
   margin: 1vh 1vw 1vh 1vw;
   color: darkslategrey;
   border-color: #a8ab8c !important;
@@ -58,6 +58,10 @@
 @media (max-width: 349px) {
   .eachCard {
     margin-left: 5vw !important;
+  }
+
+  .eachCard {
+    width: 80% !important;
   }
 
 }

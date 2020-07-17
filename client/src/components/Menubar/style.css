@@ -32,6 +32,10 @@
   
     font-size: .5rem;
   }
+
+  .menubar {
+    position: absolute !important; 
+  }
 }
 
 @media (min-width: 350px) and (max-width: 450px) {
@@ -49,6 +53,7 @@
   }
 
 } 
+
 @media (min-width: 451px) and (max-width: 600px)  {
   .navbar-toggler {
     margin-top: 20vh;
@@ -67,9 +72,12 @@
     margin-left: -2vw;
   }
 
-
   .nav-link {
     padding: 0 !important;
+  }
+
+  .stacked {
+    margin-top: 0% !important;
   }
 
 }
