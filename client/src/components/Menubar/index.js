@@ -20,7 +20,6 @@ function MenuBar(props) {
   return (
     <Navbar
       expand="md"
-      variant="light"
       fixed="top"
       className="menubar mt-5 pt-5"
     >

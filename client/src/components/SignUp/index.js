@@ -62,11 +62,11 @@ function SignUp(props) {
         <Row>
           <Col>
             <Form.Label>First Name</Form.Label>
-            <Form.Control placeholder="First name" ref={firstName} />
+            <Form.Control className="first" placeholder="First name" ref={firstName} />
           </Col>
           <Col>
             <Form.Label>Last Name</Form.Label>
-            <Form.Control placeholder="Last name" ref={lastName} />
+            <Form.Control className="last" placeholder="Last name" ref={lastName} />
           </Col>
         </Row>
       </Form.Group>
