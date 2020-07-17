@@ -210,7 +210,7 @@ Once the new app is installed we get to work.
  We start with axios so we can communicate with our server
 
  ```
- npm axios
+ npm install axios
  ```
 
  Everytime we have a route in our server trying to serve or receive some data from the front-end we do it through and axios call. 
