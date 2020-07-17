@@ -311,7 +311,7 @@ This is how we use the UseEffect to render our page. Note that we keep track of 
 
 _ _ _
 
-In this example we show how we use the useState to update quantity in a function and setCart to triger a page re-render. It is important that the page re-renders and not reloads, otherwise our user would be logged-out every time they make a change.
+In this example we show how we use the useState to update quantity in a function and setCart to trigger a page re-render. It is important that the page re-renders and not reloads, otherwise our user would be logged-out every time they make a change.
 
 <p align="center">
 <img src="./images/updateQty.png"></p>
@@ -369,5 +369,3 @@ _ _ _
 + Lindsey Tummond: [Portfolio]( https://lindseytummond.github.io/portfolio/)
 - Niasha Ablago-Grant: [Portfolio]( https://niashagrant.github.io/updatedPortfolio/)
 
-# License
-This project is licensed under the MIT License
