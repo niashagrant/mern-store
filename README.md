@@ -44,7 +44,7 @@ React was our front-end choice since we all wanted to gain some exprience with i
 
 Finally we used Node to ease our development and allows to write our javascript code and test it right on our terminal. Node also made it possible to require our dependencies, export our files through module and use Command Lines to start our application, seed our database and much more. 
 
-<h1 align="center"> Choosing our Dependencies</h1>
+<h2 align="center"> Choosing our Dependencies</h2>
 
 After deciding what type of application we wanted to build, the next step was to decide what dependencies we wanted to use to facilitate the process. There are many libraries to choose from and therefore we had to do our due dilligence and research which ones would better serve our needs. Our main research hub was the [NPM](https://www.npmjs.com/) website where all the packages we used have readmes with all the information we need to know about it. We also rely heavly on google and forums where other developers shared their experiences with these packages. 
 
@@ -210,7 +210,7 @@ Once the new app is installed we get to work.
  We start with axios so we can communicate with our server
 
  ```
- npm axios
+ npm install axios
  ```
 
  Everytime we have a route in our server trying to serve or receive some data from the front-end we do it through and axios call. 
@@ -266,7 +266,7 @@ _ _ _
 
 In this application instead of using classes we decided to use Hooks. 
 
-The two main hooks we used were;
+The two main hooks we used were:
 
 + useState
 - useEffect
@@ -311,7 +311,7 @@ This is how we use the UseEffect to render our page. Note that we keep track of 
 
 _ _ _
 
-In this example we show how we use the useState to update quantity in a function and setCart to triger a page re-render. It is important that the page re-renders and not reloads, otherwise our user would be logged-out every time they make a change.
+In this example we show how we use the useState to update quantity in a function and setCart to trigger a page re-render. It is important that the page re-renders and not reloads, otherwise our user would be logged-out every time they make a change.
 
 <p align="center">
 <img src="./images/updateQty.png"></p>
@@ -369,5 +369,3 @@ _ _ _
 + Lindsey Tummond: [Portfolio]( https://lindseytummond.github.io/portfolio/)
 - Niasha Ablago-Grant: [Portfolio]( https://niashagrant.github.io/updatedPortfolio/)
 
-# License
-This project is licensed under the MIT License
