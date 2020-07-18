@@ -11,7 +11,7 @@ function Home(props) {
       .get("/allproducts")
       .then((dbproducts) => {
         setProducts(dbproducts.data.sort(() => Math.random() - 0.5));
-        console.log("dbproducts", dbproducts.data);
+        // console.log("dbproducts", dbproducts.data);
       })
       .catch((error) => console.log(error));
   }, []);

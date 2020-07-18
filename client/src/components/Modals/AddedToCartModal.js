@@ -18,7 +18,7 @@ const AddedToCartModal = (props) => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="d-flex justify-content-center">
-          <img className="modalPic modalPicQuery col col-center" src={process.env.PUBLIC_URL + props.image} alt="This is your product"/>
+          <img className="modalPicQuery col col-center" src={process.env.PUBLIC_URL + props.image} alt="This is your product"/>
         </Modal.Body>
         <Modal.Body className="d-flex justify-content-center text-center">
           <Row className="greatTaste">You've got great taste!</Row>

@@ -11,7 +11,7 @@ import "./signup.css"
 
 function SignUp(props) {
 
-  const [hideModal, setHideModal] = useState(true);
+  const [, setHideModal] = useState(true);
   const [showModal, setShowModal]=useState(false);
 
    
@@ -28,10 +28,10 @@ function SignUp(props) {
 
   let submitHandler = (event) => {
     event.preventDefault();
-    console.log(firstName.current.value);
-    console.log(lastName.current.value);
-    console.log(email.current.value);
-    console.log(password.current.value);
+    // console.log(firstName.current.value);
+    // console.log(lastName.current.value);
+    // console.log(email.current.value);
+    // console.log(password.current.value);
 
     let newUser = {
       firstName: firstName.current.value,
@@ -40,13 +40,13 @@ function SignUp(props) {
       password: password.current.value,
     };
 
-    console.log(newUser);
+    // console.log(newUser);
     setShowModal(true);
 
     axios
       .post("/signup", newUser)
       .then(function (data) {
-        console.log(data.data);
+        // console.log(data.data);
         props.setLogin(data.data);
         history.push("/");
       })

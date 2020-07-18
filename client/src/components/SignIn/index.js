@@ -9,7 +9,7 @@ import "./signin.css"
 
 
 function SignIn(props) {
-  console.log("This is our props:", props);
+  // console.log("This is our props:", props);
   let email = useRef();
   let password = useRef();
   let history = useHistory();
@@ -17,20 +17,20 @@ function SignIn(props) {
   let submitHandler = (event) => {
     event.preventDefault();
 
-    console.log(email.current.value);
-    console.log(password.current.value);
+    // console.log(email.current.value);
+    // console.log(password.current.value);
 
     let currentUser = {
       email: email.current.value,
       password: password.current.value,
     };
 
-    console.log(currentUser);
+    // console.log(currentUser);
 
     axios
       .post("/login", currentUser)
       .then(function (data) {
-        console.log(data.data);
+        // console.log(data.data);
         props.setLogin(data.data);
         history.push("/");
       })

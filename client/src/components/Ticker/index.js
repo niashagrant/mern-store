@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React from "react";
 // import Row from "react-bootstrap/Row";
 import Carousel from "react-bootstrap/Carousel";
 import "./style.css"
@@ -9,11 +9,6 @@ import "./style.css"
 
 
 function Ticker() {
-        const [index, setIndex] = useState(0);
-      
-        const handleSelect = (selectedIndex, e) => {
-          setIndex(selectedIndex);
-        };
     
   
   return (

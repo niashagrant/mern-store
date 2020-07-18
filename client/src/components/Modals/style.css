@@ -12,7 +12,8 @@
 
 }
 
-.modalPic {
+.modalPic,
+.modalPicQuery {
     width: 60%;
 }
 
@@ -61,6 +62,7 @@ cursor: pointer;
 
     .modalPicQuery {
         max-width: 80% !important;
+        max-height: 100vh !important;
     }
 
     .greatTaste {
@@ -76,6 +78,7 @@ cursor: pointer;
 
     .modalPicQuery {
         max-width: 80% !important;
+        max-height: 100vh !important;
     }
 
 
