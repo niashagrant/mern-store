@@ -40,9 +40,6 @@ function Cart(props) {
         token,
         total,
       };
-      const headers = {
-        "Content-Type": "application/json",
-      };
 
       // .then .catch why not working or being hit?
       axios
@@ -165,7 +162,7 @@ function Cart(props) {
         </h3>
         <h5 className="text-center mt-5 pt-5" style={{ fontFamily: "Playfair Display" }}>
            Go check out our <Link to="/" className="text-warning" style={{textDecoration: "underline"}} href="#" >Products</Link> !</h5>
-           <h6 className="text-center mt-3 mb-5" style={{ fontFamily: "Playfair Display" }}> They are 'nice-to-have' <span>😉</span> .</h6>
+           <h6 className="text-center mt-3 mb-5" style={{ fontFamily: "Playfair Display" }}> They are 'nice-to-have' <span role="img" aria-label="wink">😉</span> .</h6>
 
          </> ) : (
           <>
