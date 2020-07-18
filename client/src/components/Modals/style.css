@@ -12,9 +12,10 @@
 
 }
 
+/* Queen St. Market Logo */
 .modalPic,
 .modalPicQuery {
-    width: 60%;
+    width: 80vw;
 }
 
 .greatTaste {
@@ -61,8 +62,7 @@ cursor: pointer;
     }
 
     .modalPicQuery {
-        max-width: 80% !important;
-        max-height: 100vh !important;
+        max-height: 50vh !important;
     }
 
     .greatTaste {
@@ -77,8 +77,7 @@ cursor: pointer;
     }
 
     .modalPicQuery {
-        max-width: 80% !important;
-        max-height: 100vh !important;
+        max-height: 50vh !important;
     }
 
 
