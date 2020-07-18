@@ -19,8 +19,6 @@ function App (props) {
 const [user, setLogin]=useState()
  console.log(user);
  
-
-
     return (
       // <Elements stripe={stripePromise}>
       <Router>
@@ -35,11 +33,8 @@ const [user, setLogin]=useState()
         <Route exact path={"/login"} render={(props)=><SignIn setLogin={setLogin} {...props}/>}/>
         <Route exact path="/signup" component={()=><SignUp />}/>
         <Route exact path="/logout"/>
-        <Route exact path="/addToCart"/>
       </Switch>
       </Router>
-      // </Elements>
-
     );
   
 }

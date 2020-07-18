@@ -8,7 +8,6 @@ import ThankYouModal from "../components/Modals/ThankYouModal";
 import Row from "react-bootstrap/Row";
 import API from "../utils/API";
 import axios from "axios";
-
 import StripeCheckout from "react-stripe-checkout";
 
 function Cart(props) {
@@ -77,13 +76,10 @@ function Cart(props) {
         console.log("back:", cartItems.data);
         if (cart.length !== cartItems.data.length) {
           setCart(cartItems.data);
-
-        
           const payAmount = cartItems.data.reduce((total, element) => {
             return total + element.orderQty * element.product.price;
           }, 0);
           console.log("this is how much we are going to spend", payAmount);
-
         }      
         const payAmount = cart.reduce((total, element) => {
           return total + element.orderQty * element.product.price;
