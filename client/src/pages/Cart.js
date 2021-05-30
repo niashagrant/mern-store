@@ -15,7 +15,7 @@ function Cart(props) {
   const [cart, setCart] = useState([]);
   const [, setRemoval] = useState();
   const [, setHideModal] = useState(false);
-  const [ , setHideThankYou] = useState(false);
+  const [, setHideThankYou] = useState(false);
   const [showThankYou, setThankYou] = useState(false)
   const [showModal, setShowModal] = useState(false);
   const [total, setTotal] = useState();

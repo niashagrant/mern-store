@@ -1,17 +1,21 @@
 .jumbotron {
+    display: grid !important;
+    grid-template-columns: 1fr;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
     background-color: white !important;
-    box-shadow: 0 2px 5px rgba(182, 182, 182, 0.75);
+    /* box-shadow: 0 2px 5px rgba(182, 182, 182, 0.75); */
 }
 
 .mastheadImage {
     padding-top: 3vh;
     padding-bottom: 3vh;
     width: 30%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 auto;
 }
-
 
 @media (max-width: 349px) {
     .mastheadImage {

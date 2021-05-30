@@ -19,13 +19,11 @@ function MenuBar(props) {
 
   return (
     <Navbar
-      expand="md"
-      fixed="top"
-      className="menubar mt-5 pt-5"
+      className="menubar"
     >
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-        <Nav className="stacked mt-5">
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
+        <Nav className="stacked">
           <Nav.Link className="navBarProducts" onClick={() => {history.push("/");}}>
           Main
           </Nav.Link>

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-
 import MenuBar from "./components/Menubar";
 import Marquee from "./components/Marquee";
 import Cart from "./pages/Cart";
@@ -22,10 +20,10 @@ const [user, setLogin]=useState()
     return (
       // <Elements stripe={stripePromise}>
       <Router>
-        <Ticker/>
-        <MenuBar setLogin={setLogin} user={user}{...props}/>
+      <Ticker/>
       <Marquee/>
-      
+      <MenuBar setLogin={setLogin} user={user}{...props}/>
+
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/cart" render={(props)=><Cart user={user} {...props}/>}/>
