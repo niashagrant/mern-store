@@ -15,7 +15,7 @@ function Cart(props) {
   const [cart, setCart] = useState([]);
   const [, setRemoval] = useState();
   const [, setHideModal] = useState(false);
-  const [ , setHideThankYou] = useState(false);
+  const [, setHideThankYou] = useState(false);
   const [showThankYou, setThankYou] = useState(false)
   const [showModal, setShowModal] = useState(false);
   const [total, setTotal] = useState();
@@ -39,9 +39,6 @@ function Cart(props) {
       const body = {
         token,
         total,
-      };
-      const headers = {
-        "Content-Type": "application/json",
       };
 
       // .then .catch why not working or being hit?
@@ -165,11 +162,11 @@ function Cart(props) {
         </h3>
         <h5 className="text-center mt-5 pt-5" style={{ fontFamily: "Playfair Display" }}>
            Go check out our <Link to="/" className="text-warning" style={{textDecoration: "underline"}} href="#" >Products</Link> !</h5>
-           <h6 className="text-center mt-3 mb-5" style={{ fontFamily: "Playfair Display" }}> They are 'nice-to-have' <span>😉</span> .</h6>
+           <h6 className="text-center mt-3 mb-5" style={{ fontFamily: "Playfair Display" }}> They are 'nice-to-have' <span role="img" aria-label="wink">😉</span> .</h6>
 
          </> ) : (
           <>
-            <h3 className="d-flex justify-content-center col col-sm-12 cartCrown mb-3"><img fluid className="w-75" src="../../images/cartCrown.png" alt="crown"/> </h3>
+            <h3 className="d-flex justify-content-center cartCrownRow mb-3" style={{ fontFamily: "Playfair Display" }}>Yes! &nbsp; <img src="../../images/cartCrown.png" alt="crown"/>&nbsp; You need all of this! </h3>
 
             {cart.map((element) => {
               // console.log("this is our element:",element)

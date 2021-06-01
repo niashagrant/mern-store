@@ -50,30 +50,64 @@
 }
 
 @media (max-width: 349px) {
+
+  .eachProductCard {
+    max-width: 75vw !important;
+  }
   .quantityInputField {
     max-width: 15vw !important;
-    margin-left: 40%;
+  }
+
+  .eachProductCard {
+    width: 50%;
+  }
+
+  .productPageImg {
+    width: 100% !important;
+  }
+
+  .productPageTitle {
+    text-align: center;
+  }
+
+  .quantityInputField {
+    
+    margin-left: 10%;
   }
 }
 
 @media (min-width: 350px) and (max-width: 450px) {
+  .productPageImg {
+    width: 100% !important;
+  }
+
   .quantityInputField {
     
-    margin-left: 45%;
+    margin-left: 25%;
   }
 
   .productPagePrice {
     margin-right: 5vw;
   }
+  .eachProductCard {
+    max-width: 75vw !important;
+  }
+
 } 
 
 @media (min-width: 451px) and (max-width: 600px)  {
 
-
+  .eachProductCard {
+    max-width: 75vw !important;
+  }
 
 }
 
 @media (min-width: 601px) and (max-width: 700px)  {
+  .eachProductCard {
+    max-width: 75vw !important;
+  }
+
   .quantityInputField {
     max-width: 15vw !important;
     margin-left: 60%;
@@ -88,24 +122,16 @@
 
 }
 
-  @media (min-width: 701px) and (max-width: 767px)  {
+  @media (min-width: 701px) and (max-width: 1265px)  {
+    .eachProductCard {
+      max-width: 75vw !important;
+    }
+    
     .quantityInputField {
       max-width: 8vw !important;
       margin-left: 65%;
     }
 
-}
-
-@media (min-width: 768px) and (max-width: 1265px) {
-
-  .eachProductCard {
-    width: 80vw;
-  }
-
-  .quantityInputField {
-    max-width: 8vw !important;
-    margin-left: 75%;
-  }
 }
 
 @media (min-width: 1266px) {

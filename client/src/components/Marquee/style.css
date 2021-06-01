@@ -1,21 +1,26 @@
 .jumbotron {
+    display: grid !important;
+    grid-template-columns: 1fr;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
     background-color: white !important;
-    box-shadow: 0 2px 5px rgba(182, 182, 182, 0.75);
+    /* box-shadow: 0 2px 5px rgba(182, 182, 182, 0.75); */
 }
 
 .mastheadImage {
     padding-top: 3vh;
     padding-bottom: 3vh;
     width: 30%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 auto;
 }
-
 
 @media (max-width: 349px) {
     .mastheadImage {
         width: 80%;
+        max-height: 20vh !important;
     }
 
 }
@@ -23,35 +28,41 @@
 @media (min-width: 350px) and (max-width: 520px) {
     .mastheadImage {
         width: 80%;
+        max-height: 20vh !important;
     }
 }
 
 @media (min-width: 521px) and (max-width: 700px) {
     .mastheadImage {
-        width: 80%;
+        width: 60%;
+        max-height: 20vh !important;
     }
 }
 
 @media (min-width: 701px) and (max-width: 767px) {
     .mastheadImage {
-        width: 80%;
+        width: 60%;
+        max-height: 20vh !important;
         }
 }
 
 @media (min-width: 768px) and (max-width: 900px)  {
     .mastheadImage {
-        width: 80%;
+        width: 45%;
+        max-height: 20vh !important;
         }
     }
 
 @media (min-width: 901px) and (max-width: 1000px)  {
     .mastheadImage {
-        width: 60%;
+        width: 40%;
+        max-height: 20vh !important;
         }
     }
 
 @media (min-width: 1001px) {
     .mastheadImage {
-        width: 40%;
+        width: 30%;
+        max-height: 20vh !important;
         }
     }

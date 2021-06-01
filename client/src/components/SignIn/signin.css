@@ -1,5 +1,7 @@
+
 .logInForm {
     font-family: 'Playfair Display', serif;
+    z-index: 100;
 }
 
 
@@ -13,3 +15,4 @@
     text-decoration: underline;
     font-family: 'Playfair Display', serif;
 }
+
