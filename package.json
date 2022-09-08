@@ -29,7 +29,7 @@
     "express-session": "^1.17.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.9.20",
-    "passport": "^0.4.1",
+    "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "react-stripe-checkout": "^2.6.3",
     "stripe": "^8.69.0",
